@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 01 Oct 2019 10:59:31 at http://help.semafora-systems.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://help.semafora-systems.com -O1 "C:\Users\Bernd\OneDrive - TheGeigers\Documents\000 semafora\000 Web\help.semafora-systems.com" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:02:10	Error: 	"Not Found" (404) at link help.semafora-systems.com/null (from help.semafora-systems.com/ontoprise_content_static.html)
+11:12:18	Error: 	"Not Found" (404) at link help.semafora-systems.com/jonas.ow2.org/JONAS_5_2_0_M1/doc/doc-en/pdf/howto_install_jdbc_driver.pdf (from help.semafora-systems.com/installation_process.htm)
+11:12:27	Error: 	"Not Found" (404) at link help.semafora-systems.com/ontobroker_server.htm (from help.semafora-systems.com/configuration_gui.htm)
+
+HTTrack Website Copier/3.49-2 mirror complete in 13 minutes 8 seconds : 1144 links scanned, 1140 files written (17835180 bytes overall) [13229588 bytes received at 16788 bytes/sec], 6681353 bytes transferred using HTTP compression in 815 files, ratio 25%, 38.1 requests per connection
+(3 errors, 0 warnings, 0 messages)
