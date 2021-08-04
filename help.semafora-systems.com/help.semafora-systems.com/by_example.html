@@ -1,0 +1,269 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/by_example.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:07:54 GMT -->
+<head> 
+   <title> By Example </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index2541.html?by_example.htm"; }
+  else { parent.quicksync('a3.3.3.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="api_2.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="sparql_query.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Using Ontobroker as RDF Triple Store &gt; <a href="api_2.htm">API</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Using Ontobroker as RDF Triple Store &gt; <a href="api_2.htm">API</a> 
+     <a href="api_2.htm">api_2.htm</a>&nbsp;/&nbsp;
+     by_example.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">By Example</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>We start by initializing the ontology manager, either with a local connection or to a remote server instance. In this example a local connection is used, configured for RDF. In addition the module names ground is activated.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Properties</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">properties</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Properties();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">properties.setProperty(IConfig.MODULE_NAMES_GROUND,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IConfig.ON);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">OntologyManager</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">manager</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">KAON2Manager.newOntologyManager(OntologyLanguage.RDF,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">properties);</span></p>
+<p>A new ontology can be created using the initialized manager. The first argument "module" in createOntology equals the RDF context or graph identifier. Simply set this value to a valid absolute IRI. The second argument allows you to specify further options for the new ontology. For our example we do not need them and set the argument to null.<span style="font-size: 11pt; font-family: 'Courier';"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ontology</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ontology</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">manager.createOntology(module,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">null</span><span class="f_CodeExample">);</span></p>
+<p>The created ontology is empty. There are several ways to add new statements, i.e. triples. Let's start by importing the content of a RDF ontology file, here referred to as "sample.rdf" in the current directory. In this example, all of the additional arguments of the import method are not required.<span style="font-size: 11pt; font-family: 'Courier';"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ontology.importContentsFrom(</span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">File("sample.rdf"),</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">null</span><span class="f_CodeExample">,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">null</span><span class="f_CodeExample">);</span></p>
+<p>New statements can be also created using the API. The following lines of code show the construction of several RDF terms which are finally combined to a new RDF statement. This statement is then added to the ontology.´<span style="font-size: 11pt; font-family: 'Courier';"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">KAON2Factory factory = KAON2Manager.factory();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Constant subject = factory.constantIRI("http://www.example.com/#cain");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Constant predicate = factory.constantIRI("http://www.example.com/#name");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Constant object = factory.constantRDFText("Kain", "de");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">FPropertyMember stmt = factory.fpropertyMember(subject, predicate, object);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ontology.addAxiom(stmt);</span></p>
+<p>Using Turtle syntax, which is compact and easy to read and also avoids some issues of RDF/XML serialization, new statements can be inserted by executing a SPARQL Update command.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">manager.execute("sparqlUpdate \"\"\"PREFIX : &lt;http://www.example.com/#&gt; "</span><span class="f_CodeExample" style="color: #ffffff;"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">+</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"INSERT DATA { GRAPH &lt;urn:demo#&gt; { :able :age 32; :knows :cain. } }\"\"\"");</span></p>
+<p>Serializing a ontology is provided by the method saveOntology.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">ontology.saveOntology(OntoBrokerOntologyFileFormat.RDF_TURTLE,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">File("sample-modified.ttl"));</span></p>
+<p>Finally we query the ontology using SPARQL. This example specifies a simple query including a filter. The results are printed to the console. For details on queries see the SPARQL compatibility overview. Non-standard query extensions are also explained there. For example the 'debug' option generates a more verbose output and shows details of the internally used rules and query optimizations. A quite handy tool especially for the optimization of complex queries. For better legibility, exception and error handling has been excluded.</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-style: italic;">// Execute SPARQL query</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">reasoner</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ontology.createReasoner();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">queryText</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"SELECT * WHERE { ?s ?p ?o . FILTER (?o &gt; 30) } OPTIONS 'debug'";</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">query</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">reasoner.createQuery(Namespaces.INSTANCE,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">queryText);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">query.open();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-style: italic;">// show variables used</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">Variable[]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">vars</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">query.getDistinguishedVariables();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-weight: bold;">for</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(Variable</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">var:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">vars)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">System.out.print(var.getVariableName()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">+</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"\t");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">System.out.println();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-style: italic;">// show results</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">Term[]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">buffer</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">query.tupleBuffer();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">Formatting</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">format</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ontology.getOntologyFormatting().getDefaultFormatting();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-weight: bold;">while</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(!query.afterLast())</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">for</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(Term</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">term:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">buffer)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">System.out.print(term.toString(format)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">+</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"\t");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">System.out.println();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">query.next();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">query.close(</span><span style="font-size: 11pt; font-family: 'Courier'; color: #008b00;">)</span><span style="font-size: 11pt; font-family: 'Courier'; color: #008b24;">;</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/by_example.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:07:55 GMT -->
+</html>

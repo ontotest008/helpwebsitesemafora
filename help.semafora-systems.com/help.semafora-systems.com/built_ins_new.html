@@ -1,0 +1,2453 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/built_ins_new.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:10 GMT -->
+<head> 
+   <title> Built-ins </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index278a.html?built_ins_new.htm"; }
+  else { parent.quicksync('a3.22.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="range_restricted_rules.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="information_about__queryindex_.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Appendix > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Appendix 
+     <a href="range_restricted_rules.htm">range_restricted_rules.htm</a>&nbsp;/&nbsp;
+     built_ins_new.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Built-ins</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>In this chapter you find all of the OntoBroker built-ins with their syntax, a short description, their parameters and bindings. In the Bindings-column "b" means that it must be bound and "f" that the argument must be free, usually as a variable.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#c9c9c9" style="width:168px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Name</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#c9c9c9" style="width:44px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Arity</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#c9c9c9" style="width:247px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#c9c9c9" style="width:273px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Parameters</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#c9c9c9" style="width:104px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Bindings</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_abs"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">absolute double value</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input","absolute value"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;fb;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_absDecimal"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">absolute decimal value</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input","absolute value"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;fb;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_activeCollaborationUsers"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns active collaboration users and their hostname for a module</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","user","hostname"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">fff;bff;fbf;bbf;ffb;bfb;fbb;bbb;fff;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_activeSessions"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns active sessions</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["sessionid","type","user","hostname"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_add"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">adds numbers using double arithmetic or durations to date/times</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["summand","summand","sum"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbf;bfb;fbb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_addDecimal"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">adds numbers using decimal arithmetic</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["summand","summand","sum"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;fb;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_aggregations"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns all available aggregations</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["name","number of input variables","description","input variables"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_append"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">appends second to first list</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["first list","second list","merged list"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_applyStringTemplate"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">applies string template to the variable bindings</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["template","options","varBindings","output"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_bound"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Tests if input is bound (i.e. equals NULL value).</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["variable"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_builtins"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns all available built-ins</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["name","arity","description","list of parameter names"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_ceiling"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns the smallest (closest to negative infinity) value that is less than or equal to the argument and is equal to a mathematical integer</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["number","mathematical integer (double or decimal)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_charAt"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">char at position</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string","position","result"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_computeexplicit"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">transformation plug-ins for mapping tool</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["transformation","f(name,var)","result"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_concat"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">concatenate two strings</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["first string","second string","result"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bfb;fbb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_concepts"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">return concepts</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["concept","module"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ff;bf;fb;bb;ff;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_connectors"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns all available connectors</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["name","arity","description","list of parameter names"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_constraintByID"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns constraint text for given ID</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","constraintID","ruleText"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bff;bbf;bfb;gbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_constraintContainsTerm"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns aiomxIDs for which the term is contained in the constraint formula</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","term","constraintID"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_contains"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">first string/list contains second string/list</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string/list","string/list"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_containsN"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">first string/list contains second string/list</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string/list","string/list"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_containsTerm"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">is term contained in another term (functional term)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["term","containedTerm"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_currentDateTime"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns the current date time</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["currentDatetime"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">f;b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_currentUser"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns current login user as IRI (and only if config parameter Security.AccessControl = on)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["user"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">f;b;f;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_cut"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns a substring of the string-object truncated by the number of characters specified in the method argument. Truncation takes place on the right.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","offset","result"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_datatype"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Gets the data type IRI of typed literals, xsd:string for untyped literals, fails otherwise.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value","datatype"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_day"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns day</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["date/datetime","day (integer)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_days"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns days</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","days (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_diffAt"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">compares two strings and returns the position of the first not matching character</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","input","positionOfFirstDiffence"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_difference"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Creates difference of two maps</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["map1","map2","result map"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_ebv"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Generates the effective boolean value.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_endsWith"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">first string/list ends with second string/list</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string/list","string/list"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_equals"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">equals comparison (left == right)</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_false"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">0</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">always returns false</span></p>
+<p class="p_TableContent"><span class="f_TableContent">Example:</span><br>
+<span class="f_TableContent">?- _'false'. // single quotes needed as false is keyword in ObjectLogic</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_fill"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">fill String with n-times of the other string</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["baseString","fillString","timesToFill","resultString"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbbf;bbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_filter"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">filters values</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["variable","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_filterN"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">filters values</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["variable","right"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_filterdups"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">stores the list and is true if list is not a duplicate</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["variable instantiations","provenance list"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_firstIndexOf"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns first occurance of the second string/item within the first string/list</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","part","listOfPositions"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_flatten"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">flattens a list of lists into a flat list and eliminates duplicates</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["list of lists","flatted list"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_floor"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns the largest (closest to positive infinity) value that is less than or equal to the argument and is equal to a mathematical integer</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["number","mathematical integer (double or decimal)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_fractionalSecond"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns fractional second</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["time/datetime","fractional second (decimal or null)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_fragment"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns fragment of IRI</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","fragment string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_generateExplanationRuleText"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">generates explanation rule text for given ruleId and template</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","ruleId","template","output"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbbf;bbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_generateExplanationTemplate"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">generates explanation template for given ruleId</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","ruleId","templategroup","output"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbbf;bbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_geoDistance"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Calculation of distance between two geographic coordinates in kilometer.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["coordinate1 [geoCoordinate]","coordinate2 [geoCoordinate]","distance in kilometer [double]"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_greaterOrEquals"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">greater than or equals comparison (left &gt;= right)</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_greaterOrEqualsN"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">greater than or equals comparison (left &gt;= right)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_greaterThan"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">greater than comparison (left &gt; right)</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_greaterThanN"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">greater than comparison (left &gt; right)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb,</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_hasForeignRole"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if current user has given foreign role. Roles from the SecurityModuleAuthorizationRealm are not checked. This is only relevant if access control is enabled.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["role"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_host"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns host of IRI</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","host string"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_hour"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns hour</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["time/datetime","hour (integer)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_hours"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns hours</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","hours (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_indexOf"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns sorted list of offsets from the second string within the first</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","part","listOfPositions"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_info"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Retrieve information about OntoBroker. Currently \version\ and \fullVersion\ are supported</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["key","info"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_integer2iri"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">converts between integer and IRI</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["integer","iri prefix","iri"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_intersection"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Creates intersection of two maps</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["map1","map2","result map"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isBlank"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Tests if input is a blank node.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isConstraint"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">true if given id is a constraint</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","constraintID"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isCustomPermitted"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if current user has custom permission for module. This is only relevant is access control is enabled.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","customPermission"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isDatatype"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if object is a data type</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isIRI"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Tests if input is an IRI.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isLiteral"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Tests if input is a RDF literal.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isModulePermitted"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if current user has access right for module. This is only relevant is access control is enabled.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","accessRight"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isNull"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if object is the null value</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["term"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isPermitted"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if current user has given permission. This is only relevant is access control is enabled.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["permission"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isPropertyPermitted"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if current user has access right for property. This is only relevant is access control is enabled.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["property","accessRight"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isQuery"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">true if given id is a query</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","queryID"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isRule"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">true if given id is a rule</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","ruleID"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isTypeOf"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">checks if object is of given type</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","object"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">fb;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_isequal"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">X is equal Y</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X","Y"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_lang"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Gets the language of a RDF literal, if not available it returns an empty plain literal.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["literal","language"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_langMatches"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Language range matching as defined in RFC4647 section 3.3.1.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["language","filter"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_language"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns language part of plain literal</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["plain literal","language"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_lastIndexOf"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns last occurance of the second string/item within the first string/list</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","part","listOfPositions"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_latitude"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Get the latitude of a geographical coordinate.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["coordinate [geoCoordinate]","latitude [double]"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_length"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns the length of a string or list</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string/list","length"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_lessOrEquals"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">less than or equals comparison (left &lt;= right)</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_lessOrEqualsN"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">less than or equals comparison (left &lt;= right)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_lessThan"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">less than comparison (left &lt; right)</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_lessThanN"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">less than comparison (left &lt; right)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_localName"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns local name of IRI</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","local name"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_loginUser"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns login user and hostname</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["user","hostname"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ff;bf;fb;bb;ff;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_longitude"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Get the longitude of a geographical coordinate.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["coordinate [geoCoordinate]","longitude [double]"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_map2table"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Converts maps to flat table</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["map","path string","position","result value"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_match"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Y matches X</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X","Y"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_match"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">The string in the first argument is matched with the regular expression in the second argument. The result (third argument) of the method is a list of terms of the form match(matchingPosition,matchingSubstring), which represents matches inside the object-string. The list is sorted in the ascending order of positions of the matches. The counting of positions in the object string starts with 0.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","input","variable"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_member"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_list[*=&gt; _member(_object)]. Binding: bb. The method's argument and the list-object may not be fully ground. In this case, the method succeeds, if the argument to the method unifies with a member of the list.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["list","object"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_memberAt"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">The value of the method is the object that occurs in the list object at the position given by the argument to the method</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["list","index","value"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bff;bbf;bfb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_memberByPath"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Filters with xpath expression</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["map","path string","result value"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_metrics"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns metrics about the ontology manager</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["metrics"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">f;b;f;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_minute"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns minute</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["time/datetime","minute (integer)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_minutes"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns minutes</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","minutes (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_modules"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns the available modules</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["modules"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">f;b;f;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_month"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns month</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["date/datetime","month (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_months"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns months</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","months (integer)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_multiply"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">multiplies numbers using double arithmetic</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["factor","factor","product"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bfb;fbb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_multiplyDecimal"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">multiplies numbers using decimal arithmetic</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["factor","factor","product"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bfb;fbb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_namespace"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns namespace of IRI</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","namespace"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_negate"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">negates a duration</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","duration"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf; fb; bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_newInstance"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">5</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">creates a new instance of the given classname and assigns instance reference</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","classname","object","children","instance"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbbbf;bbbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_normalize"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Normalize order of key/value pairs for _map input or normalize to UTC timezone for _dateTime, _date or _time input.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input","normalized"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_normalizeWith"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Converts the years and months fields into the days field by using a specific dateTime/date instant as the reference point</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input (duration)","reference point (date or datetime)","result (duration)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbf; bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_numberToNumber"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Converts between floating-point and fixed-point numbers.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["Type URI 1","Type URI 2","Numeric Value 1","Numeric Value 2"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_overlappedBy"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">True if a suffix of the object string is also a prefix of the string given in the method's argument. The result of the method is the number of characters in the maximal overlap.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["suffixString","prefixstring","numberOfOverlappedChars"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_path"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns path of IRI</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","path string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_port"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns explizit port of IRI</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","port integer"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_prefices"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns prefix/namespace definitions per module</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","prefix","namespace"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bff;bbf;bfb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_properties"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">return properties</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["property","module"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_query"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns query of IRI</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","query string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_queryByID"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns query text for given ID</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","queryID","ruleText"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bff;bbf;bfb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_queryContainsTerm"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns queryIDs for which the term is contained in the query formula</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","term","queryID"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_queryInfo"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns query text and additional information for given ID</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","queryID","ruleText","info"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_regex"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Matches against a regular expression.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value","regular expression","options"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_replace"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Replaces every occurrence of the regular expression inside the object string with the string given in the second argument of the method. The regular expression is given in the first argument.</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input string","regexp","input","result"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbbf;bbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_reverse"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">reverses list/string</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["list/string","reversed list/string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;fb;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_rootconcepts"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">use the concept hierarchy to determine the root concepts</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["concept","module"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">ff;bf;fb;bb;ff;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_round"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">rounds number</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["number","rounded number"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_ruleByID"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns rule text for given ID</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","ruleID","ruleText"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bff;bbf;bfb;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_ruleContainsTerm"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns ruleIDs for which the term is contained either in rule head or body</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","term","isHead","ruleID"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbff;bbbf;bbfb;bbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_ruleID2ExplanationRuleID"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns transforms ruleID to/from ruleID of its explanation rule</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["ruleID","ruleExplanationRuleID"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_ruleoutlogger"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints input to console</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_scheme"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns scheme of IRI</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","scheme string"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_second"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns second</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["time/datetime","second (integer)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_seconds"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns seconds</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","seconds (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_sessionInfo"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns information about session</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["infoMap"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_sign"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns sign</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","sign (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_sort"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns sorted list</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["list","sorted list"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_split"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">splits before the first character of regexp</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input string","regexp","variable"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_startsWith"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">first string/list starts with second string/list</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string/list","string/list"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_startsWithN"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">first string/list starts with second string/list</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string/list","string/list"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_statisticsIndex"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">provides some statistics about an index</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","statistics text"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_statusIndex"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">provides up-to-date status for index</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["module","status text"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_str"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns the lexical form of a literal or the codepoint representation of an IRI.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["value","lexical form"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_stringToConstant"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">converts a lexical value to a constant and backwards</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","lexical value","constant"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_subset"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">true if first list contains all items of second list</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["first list","second list"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_substring"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns String.substring(start,end)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["content","start","end","substring"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbff;bbbf;bbfb;bbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_textValue"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns text part of plain literal</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["plain literal","text string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_timeInMilliseconds"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns time in milliseconds since January 1, 1970 (Gregorian), midnight UTC</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["datetime","milliseconds since January 1, 1970 (Gregorian), midnight UTC"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toLower"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">lower case of string</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string","lower string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toObjectLogicString"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns ObjectLogic representation</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["object","ObjectLogic representation"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toString"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns string representation</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["object","string representation"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameter</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","object"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameters</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","param2","object"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbbb; bbbf; bffb;bbfb; bfbb</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">5</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameters</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","param2","param3","object"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbff;bbbbf;bbbfb;bbbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">7</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameters</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","param2","param3","param4","param5","object"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbbbbbf;bbbbbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">8</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameters</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","param2","param3","param4","param5","param6","object"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbbbbbbf;bbbbbbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">9</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameters</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","param2","param3","param4","param5","param6","param7","object"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbbbbbbbf; bbbbbbbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toType"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">10</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns new instance for given parameters</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["typename","param1","param2","param3","param4","param5","param6","param7","param8","object"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbbbbbbbbf;bbbbbbbbbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_toUpper"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">upper-case of string</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string","upper string"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_tokenize"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Breaks the object-string into a list of tokens at every occurrence of any delimiter character given in the argument to the method (this argument is a string of delimeter characters). The delimiter characters are not retained as part of the tokens. For instance, 'xyzw.foo'[_tokenize('y.') -&gt; [x,zw,foo]]</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input string","delim","token"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_tokenizeRegExp"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">splits before the first character of regexp</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["input string","regexp","token"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_totalOrderLessThan"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">less than comparison (left &lt; right) providing a total ordering for all terms</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_trim"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Deletes from the object string all the leading and trailing characters specified in the argument to the method</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["string","characters","result"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbf;bbb</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_true"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">0</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">always returns true</span></p>
+<p class="p_TableContent"><span class="f_TableContent"> ?- _'true'. // single quotes needed as true is keyword in ObjectLogic</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_typeName"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns datatype of input</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["object","typename"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_unify"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Unifies first with second parameter</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["left","right"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;fb;bb;ff;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_union"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Creates union of two maps</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["map1","map2","result map"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_user"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns user of IRI</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["iri","user string"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_workingDaysBetween"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Calculates the number of working days between two dates. Public holidays are not considered.</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["startDate","endDate","durationInDays"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bbf (calculate days)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bfb (calculate end date)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bbb (validate)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">fbb (calculate start date)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_write"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints parameters</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X1"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_write"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints parameters</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X1","X2"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_write"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints parameters</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X1","X2","X3"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;b;b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_write"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints parameters</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X1","X2","X3","X4"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;b;b;b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_write"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">5</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints parameters</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X1","X2","X3","X4","X5"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">b;b;b;b;b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_write"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">6</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">prints parameters</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["X1","X2","X3","X4","X5","X6"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">b;b;b;b;b;b;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_year"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns year</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["date/datetime","year (integer)"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_years"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns years</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["duration","years (integer)"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_zoneHour"</span></p>
+</td>
+<td valign="top" width="44" bgcolor="#ffffff" style="width:44px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" bgcolor="#ffffff" style="width:247px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns zone hour (with sign)</span></p>
+</td>
+<td valign="top" width="273" bgcolor="#ffffff" style="width:273px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["time/datetime","zone hour"]</span></p>
+</td>
+<td valign="top" width="104" bgcolor="#ffffff" style="width:104px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"_zoneMinute"</span></p>
+</td>
+<td valign="top" width="44" style="width:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="247" style="width:247px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">returns zone minute (with sign)</span></p>
+</td>
+<td valign="top" width="273" style="width:273px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">["time/datetime","zone minute"]</span></p>
+</td>
+<td valign="top" width="104" style="width:104px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span style="width:45px">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">bf;bb;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/built_ins_new.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:12 GMT -->
+</html>

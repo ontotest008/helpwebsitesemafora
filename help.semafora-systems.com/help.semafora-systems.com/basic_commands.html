@@ -1,0 +1,364 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/basic_commands.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:59 GMT -->
+<head> 
+   <title> Basic Commands </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index4884.html?basic_commands.htm"; }
+  else { parent.quicksync('a3.20.3.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="server_commands.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="prepared_queries2.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; OntoBroker Server &gt; <a href="server_commands.htm">Server Commands</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; OntoBroker Server &gt; <a href="server_commands.htm">Server Commands</a> 
+     <a href="server_commands.htm">server_commands.htm</a>&nbsp;/&nbsp;
+     basic_commands.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Basic Commands</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p class="p_Heading2"><span class="f_Heading2">analyzeStorage</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">This command can be used to update the statistics of the OntoBroker storage. Recommended to execute after large updates when H2 storage is used.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Example: _ontobrokerManager.executeCommand("analyzeStorage")</span></td></tr></table></div><p><span style="width:48px">&nbsp;</span>Result: "Storage analyzed in 42 ms.W</p>
+<p class="p_Heading2"><span class="f_Heading2">busy</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Returns the server status. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: busy </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: true, false </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">client-side output: "[INFO]: Server busy state: [true|false]" </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">clear</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">All stored answers in the cache are removed </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: clear </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: cache cleared </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">commands</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Returns a list of all available commands in the server </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: commands </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: A list with all server commands </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">delete</span></p>
+<p>The command del has been removed since Ontobroker 6.0. Instead, please use the delete command which has a richer syntax.</p>
+<p>Here is an example of how to use delete instead of del.</p>
+<p>Old syntax in OntoBroker 5.3</p>
+<p class="p_CodeExample"><span class="f_CodeExample">del otto[age-&gt;18]. &nbsp;// syntax from OB 5.3, invalid in OntoBroker 6.1</span></p>
+<p>In OntoBroker 6.1 the corresponding command is</p>
+<p class="p_CodeExample"><span class="f_CodeExample">delete otto[name-&gt;"Otto"].</span></p>
+<p>The delete command is used to remove facts and rules from an ontology. Its syntax is very similar to the insert syntax.</p>
+<p>Example with single fact:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module &lt;http://yourcompany.com/ontology1&gt;.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">delete Person[name *=&gt; _string].</span></p>
+<p>Example with multiple facts and rules:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module &lt;http://yourcompany.com/ontology1&gt;.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">delete {</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;Person[name *=&gt; _string, age {0:1} *=&gt; _integer]. </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;otto:Person[name -&gt; "Otto Waalkers"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;fritz[name -&gt; "Fritz", age-&gt;9].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;@{rule1} ?X:Child :- ?X:Person, ?X.age &lt; 18 .</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>Example with where clause:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">delete {p(?X,?Y),q(?X),q(?Y).} where {@{options[inferOff]} ?- p(?Y,?X).}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">Also note that it is allowed to specify query options (since OB 6.0 Build 382)</span></p>
+<p class="p_Heading2"><span class="f_Heading2">delete clauses</span></p>
+<p>This command can be used to delete clauses (rules, queries, constraints) by their label.</p>
+<p>For example to delete the rule with the id r1 and the query with the id q1:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">delete clauses r1,q1</span></p>
+<p class="p_Heading2"><span class="f_Heading2">dump</span></p>
+<p>Writes a full dump of the extensional and the intensional database (internal representation). The target folder is the so called dump folder where OntoBroker is installed. </p>
+<p class="p_Heading2"><span class="f_Heading2">exportAllModules</span></p>
+<p>Writes a dump of all modules to the files system. The target folder is the folder where OntoBroker is installed. </p>
+<p>The command "exportAllModules" supports additional options:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">encrypt - modules are saved encrypted</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">sort - facts of modules are saved in sorted order</span></td></tr></table></div><p>NOTE: If, in the command line, you specify a directory to load the ontologies from like "ontobroker -obl decrypt:v1:dir", the decrypt handler first of all checks if the file is encrypted. Example: ontobroker -obl decrypt:v1:C:\ontologies</p>
+<p>Example</p>
+<p>Save modules &lt;http://yourcompany.com#ontology1&gt; to file c:\data\onto1.obl with sorted option</p>
+<p class="p_CodeExample"><span class="f_CodeExample">save &lt;http://yourcompany.com#ontology1&gt; to "c:\\data\\onto1.obl",sort.</span></p>
+<p>Save modules &lt;http://yourcompany.com#ontology1&gt; to file c:\data\onto1.obl with sort and encrypt option</p>
+<p class="p_CodeExample"><span class="f_CodeExample">save &lt;http://yourcompany.com#ontology1&gt; to "c:\\data\\onto1.obl",sort,encrypt.</span></p>
+<p>Export all modules sorted</p>
+<p class="p_CodeExample"><span class="f_CodeExample">exportAllModules sort.</span></p>
+<p>Export all modules sorted and encrypted</p>
+<p class="p_CodeExample"><span class="f_CodeExample">exportAllModules sort,encrypt</span><span style="font-size: 11pt; font-family: 'Courier';">.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: If "SerializerEscapeNewLines = on" is set in the OntoConfig.prp, new line characters in string constants are escaped on serialization (i.e. on commands like "exportAllModules" and "save")</span></p>
+<p>This switch can be set in OntoConfig.prp via:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;SerializerEscapeNewLines&gt; = &lt;on|off&gt;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">generateDynamicSvc</span></p>
+<p>There are now two commands for dynamic web services:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">generateDynamicSvc "path-to-specification-module.obl".</span></p>
+<p>The string argument must be a valid URL or path to the specification module file.</p>
+<p>and</p>
+<p class="p_CodeExample"><span class="f_CodeExample">deleteDynamicSvc &lt;module&gt;</span></p>
+<p>Here &lt;module&gt; is the module term of the specification module.</p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: OntoBroker must have been started with the "-webservice" option. The command is only available for Objectlogic</span></p>
+<p>Example</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">module</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">echo.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">prefix</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">in</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"http://schema.ontoprise.com/dynamic-svc/in#".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">prefix</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">out</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"http://schema.ontoprise.com/dynamic-svc/out#".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">prefix</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">meta</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"http://schema.ontoprise.com/dynamic-svc/meta#".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">// Spec for Input</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">in#Parameters[in#message</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{1:1}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">*=&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">_string].</span><span class="f_CodeExample" style="color: #ffffff;"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">// Spec for Output</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">out#Results[out#echo</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{0:1}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">*=&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">_string].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">// Generation of Output</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">theResults:out#Results.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">theResults[out#echo</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">-&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">?X]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">?P:in#Parameters[in#message-&gt;?X].</span></p>
+<p class="p_Heading2"><span class="f_Heading2">h2 backup &lt;output-name&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Example: h2backup "d:\\backup\\mybackup.data.db" </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">The single argument specifies the target filename of the database copy. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">This backups the database file to "d:\\backup\\mybackup.data.db".</span></td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; font-weight: bold;">Caution – All files like "d:\\backup\\mybackup.*" are deleted during the copy action to prevent the possible mixing of old and new temporary database files. </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Restoring a backup requires the following steps: </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction_Subinstruction"> Shutdown OntoBroker </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction_Subinstruction">Delete all H2 database files, e.g. if the database is named "edb", you have to delete "edb.*". </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction_Subinstruction">Copy the backup file to the old location and rename it to the original name. E.g if the database is named "edb", then the database file must be named "edb.data.db". </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span class="f_Instruction_Subinstruction">Start OntoBroker. On opening the database file, the indices will be reconstructed. This procedure may take some time (typically a few minutes/GB). </span></td></tr></table></div><p>NOTE: The command "h2backup" is only available if OntoBroker is running with H2 as storage. </p>
+<p class="p_Heading2"><span class="f_Heading2">info</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">This command checks some properties about the rules and facts and returns a (multiline) info message about the extensional database (EDB, the facts) and the intensional database (IDB, the rules). The output is similar to the output of the "ontology checker" commandline tool. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: info </span></td></tr></table></div><p>Example output </p>
+<p class="p_CodeExample"><span class="f_CodeExample">------------------------------------------------------</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">IDB</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">------------------------------------------------------</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[ ] program contains aggregation cycles (not allowed)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[ ] program is not bottomup evaluable (could be bad for performance)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[ ] program is not stratified and must be evaluated in wellfounded mode (bad for performance)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[ ] program contains rules with cross products (bad for performance)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[ ] program contains rules which apply aggregations incorrectly (not allowed)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># user rules: 0</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># internal rules (including standard axioms): 48</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># rules with negations: 3</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># rules with aggregations: 0</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># rules with connectors: 0</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># rules with other builtins: 4</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">------------------------------------------------------</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">EDB: RAM.Packed (RAM.Packed)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"># of tables: 1</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">------------------------------------------------------</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">1 tuples in obl:intern:module/1</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">...</span></p>
+<p class="p_Heading2"><span class="f_Heading2">insert</span></p>
+<p>The command &lt;add&gt; has been removed since Ontobroker 6.0. Please use the insert command which has a richer syntax instead. Here are some examples of how to use insert instead of add.</p>
+<p>Old syntax in OntoBroker 5.3:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">add otto[name-&gt;"Otto"]. &nbsp;// syntax from OB 5.3, invalid in OntoBroker 6.1</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">add RULE r1: FORALL X p(X) &lt;- q(X). &nbsp;// syntax from OB 5.3, invalid in OntoBroker 6.1</span></p>
+<p>In OntoBroker 6.1 the corresponding commands are:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">insert otto[name-&gt;"Otto"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">insert {@{r1} p(?X) :- q(?X).}</span></p>
+<p>The insert command is used to add facts and rules to an ontology. You can add multiple facts or rules with a single command if you use braces {...} around them.</p>
+<p>Example with single fact:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module &lt;http://yourcompany.com/ontology1&gt;.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">insert Person[name *=&gt; _string].</span></p>
+<p>Example with multiple facts and rules:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module &lt;http://yourcompany.com/ontology1&gt;.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">insert {</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;Person[name *=&gt; _string, age {0:1} *=&gt; _integer]. </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;otto:Person[name -&gt; "Otto Waalkers"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;fritz[name -&gt; "Fritz", age-&gt;9].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;@{rule1} ?X:Child :- ?X:Person, ?X.age &lt; 18 .</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">Note that you can add directives for the module and namespace alias as an header to the command.</span></p>
+<p>You can also generate additional facts by inferencing if you add a where part to the insert statement. In this case, all variable bindings resulting from the query of the where part are replaced in the insert part.</p>
+<p>Simple example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module &lt;http://yourcompany.com/ontology1&gt;.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">insert { ?X[lovesToys-&gt;true]. } where { ?- ?X:Child. }</span></p>
+<p>Assuming that the results of the query ?- ?X:Child are fritz and susan, this example would insert the facts fritz[lovesToys-&gt;true] and susan[lovesToys-&gt;true].</p>
+<p><span class="f_Heading2">isalive</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Checks whether the server is up and running </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: isalive </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: Inference Server on port 2267 is up and running ... </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">kill</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Kills the server. Behaves like shutdown now, but ends the OntoBroker process after 70 seconds if "shutdown now" was not successful within this time. Also see the shutdown command for alternative behavior. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: kill </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: inference server shutting down NOW ... </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">modify</span><br>
+With the modify command you can add and remove facts in a single step. As the variable bindings of the where part are used for both insert and delete, this can be quite useful and is easily covered by separate delete and insert commands.<br>
+Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// increment the age of all age attributes for persons</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">modify delete { ?P[age-&gt;?AGE]. } insert { ?P[age-&gt;?NEWAGE]. } where { ?- ?P:Person[age-&gt;?AGE], ?NEWAGE=?AGE + 1 .}</span></p>
+<p class="p_Heading2"><span class="f_Heading2">query</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Sends a ObjectLogic query to the server and receives the answers </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: query [ObjectLogic query] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">example: query "?- ?X:?Y@_defaultModule." </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: - </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">reload</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Causes the server to reload all files from the start-up </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: reload </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: - </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">removeExplanation</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Removes an explanation with the given name. If no explanation exists no error is reported. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: removeExplanation &lt;explanation module&gt; </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: Module prooftreefacts_(&lt;module1&gt;) deleted </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">shutdown</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Shutdown without argument causes OntoBroker to process all outstanding queries and commands, but no new queries and commands are accepted anymore. The variant "shutdown NOW" causes OntoBroker to drop all waiting queries and commands and to stop all running queries and commands immediately in a controlled way. Also see the kill command. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: shutdown [NOW] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: [INFO]: inference server shutting down ... </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">stopQuery</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Sets an interrupt flag for the currently running query with the given querykey. The query will stop in a controlled way.</span><br>
+<span class="f_List">The argument &lt;querykey&gt; identifies the query to stop. This value is returned immediately after starting a query command. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: stopquery &lt;querykey&gt; </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: "Interrupt flag set" or "No query found for querykey &lt;querykey&gt;" </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">Check for OWL 2 RL profile</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">This command checks if an OWL ontology is conformant with the OWL RL profile.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Syntax: checkOWLRLProfile &lt;ontology-uri&gt;</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Each found violation of the OWL RL profile is listed as output.</span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">Connector cache clear command</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">This command cleans a connector cache. This command can be executed only if Ontobroker is started with the option Connector.*.Cache.Lifetime = unlimited.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Syntax: clear_connector_cache all | cache key</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">all - all tuples will be deleted from the cache.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">cache key - only tuples for the cache key will be deleted. Cache key is a map term and can contain different values for different connectors.</span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">saveSessionSnapshot</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">This command saves all session facts and attributes to the given filename</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">To encrypt the session use: saveSessionSnapshot "filename", encrypt.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Syntax: saveSessionSnapshot "filename".</span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">loadSessionSnapshot</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>This command loads all session facts and attributes from the given filename.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Syntax: <span style="font-size: 10pt; font-family: 'Arial';">loadSessionSnapshot "filename".</span></td></tr></table></div> 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/basic_commands.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:00 GMT -->
+</html>
