@@ -1,0 +1,570 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/constants.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:09 GMT -->
+<head> 
+   <title> Constants </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index0103.html?constants.htm"; }
+  else { parent.quicksync('a5.20.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="annotations_for_objectlogic_mo.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="variables.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>ObjectLogic Reference &gt; Terms > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     ObjectLogic Reference &gt; Terms 
+     <a href="annotations_for_objectlogic_mo.htm">annotations_for_objectlogic_mo.htm</a>&nbsp;/&nbsp;
+     constants.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Constants</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Constants are atomic ground terms and they represent the value of a data type.</p>
+<p>In general, constants can be written in the following way:</p>
+<p><span style="width:48px">&nbsp;</span>"charseq"^^datatype</p>
+<p>The charseq supports escaping for Unicode and some other special characters.</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">String</span></p>
+<p>The string data type is used for character sequences.</p>
+<p>&nbsp;</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#string</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_string</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;double-quoted strings:<br>
+"charseq"</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;triple double-quoted strings:<br>
+"""charseq"""</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type:</p>
+<p>"charseq"^^_string<br>
+&nbsp;</p>
+<p>Double quoted strings without a data type (i.e. ^^datatype) are automatically interpreted as constants of the XML schema data type http://www.w3.org/2001/XMLSchema#string. </p>
+<p>ObjectLogic supports the Java-like escape sequences starting with the character '\' for Unicode characters and some special characters.</p>
+<p>Characters in the range ASCII 0x00 to 0x1f are not allowed as characters in quoted string but can be entered as escape sequence.</p>
+<p>New lines are directly allowed in double quoted strings.</p>
+<p>&nbsp;</p>
+<p>Escape sequences</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\u1a3b</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>UTF-16 character (here code point 1A3B)</p>
+<p>A Unicode escape sequence consists of</p>
+<p>1. a backslash character '\'</p>
+<p>2. a 'u'</p>
+<p>3. four hexadecimal digits</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\\</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>backslash character \ (ASCII 0x5c)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\"</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>double quote character " (ASCII 0x22)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\'</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>single quote character ' (ASCII 0x27)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\n</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>line feed character (ASCII 0x10)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\r</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>carriage return character (ASCII 0x13)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\t</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>horizontal tab character (ASCII 0x09)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="71" style="width:71px; border: solid 1px #000000;"><p>\f</p>
+</td>
+<td valign="top" width="263" style="width:263px; border: solid 1px #000000;"><p>form feed character (ASCII 0x0c)</p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="width:48px">&nbsp;</span></p>
+<p>Examples:</p>
+<p><span style="width:48px">&nbsp;</span>"foo" &nbsp; &nbsp; &nbsp; &nbsp;º "foo"^^_string</p>
+<p><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "foo"^^&lt;http://www.w3.org/2001/XMLSchema#string&gt;</p>
+<p><span style="width:48px">&nbsp;</span>"""multi-line</p>
+<p>second line</p>
+<p>third""" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "multi-line\nsecond line\nthird"</p>
+<p><span style="width:48px">&nbsp;</span>"M\u00fcller" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "Müller"^^_string</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">IRI</span></p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2007/rif#iri" target="_blank" class="weblink">http://www.w3.org/2007/rif#iri</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_iri</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;full qualified IRI reference</p>
+<p><span style="width:48px">&nbsp;</span>'&lt;' IRI '&gt;'</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;local part identifier (implicitly carries default namespace)</p>
+<p><span style="width:48px">&nbsp;</span>identifier</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;single quoted local part (implicitly carries default namespace)</p>
+<p><span style="width:48px">&nbsp;</span>'\'' charseq '\''</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;prefix plus local part<br>
+(identifier | '\'' charseq '\'') '#'<br>
+ &nbsp; (identifier | '\'' charseq '\'')</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;IRI in ObjectLogic reserved namespace</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;'_'(identifier | '\'' charseq '\'')</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;IRI in ObjectLogic internal namespace<br>
+'$' (identifier | '\'' charseq '\'')</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type</p>
+<p><span style="width:48px">&nbsp;</span>"charseq"^^_iri</p>
+<p>&nbsp;</p>
+<p>The following examples assume that these namespace prefixes are defined</p>
+<p>:- default prefix = "http://foo#".</p>
+<p>:- prefix a = "urn:ietf:rfc:".</p>
+<p>:- prefix 'i!' = "urn:isbn:".</p>
+<p>&nbsp;</p>
+<p>Examples:</p>
+<p>&lt;http://www.acme.com/project1#ontology1&gt;</p>
+<p><span style="width:48px">&nbsp;</span>º "http://www.acme.com/project1#ontology1"_iri</p>
+<p>&nbsp;</p>
+<p>Müller &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º &lt;http://foo#Müller&gt;</p>
+<p>'Jörg Müller' &nbsp; &nbsp; º &lt;http://foo#Jörg%20Müller&gt;</p>
+<p>a#'2648' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º &lt;urn:ietf:rfc:2648&gt;</p>
+<p>a#2648 (invalid syntax)</p>
+<p>'i!'#'0451450523' º &lt;urn:isbn:0451450523&gt;</p>
+<p>_bar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º &lt;obl:reserved:bar&gt;</p>
+<p>$bar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º &lt;obl:intern:bar&gt;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Double</span></p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#double</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_double</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;number containing decimal point</p>
+<p>['+'|'-']? digit+ '.' digit+ Exponent? FloatSuffix?</p>
+<p>['+'|'-']? '.' digit+ Exponent? FloatSuffix?<br>
+&nbsp;<br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;Exponent := ['E'|'e'] ('+'|'-')? Digit+<br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;FloatSuffix := ['d'|'D'|'f'|'F']</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;number containing exponent</p>
+<p>['+'|'-']? digit+ Exponent FloatSuffix?</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;number with float type suffix</p>
+<p>['+'|'-']? digit+ FloatSuffix</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type<br>
+"charseq"^^_double</p>
+<p>&nbsp;</p>
+<p>&nbsp;<br>
+All numbers containing a decimal point, or an exponent or a float type suffix are constants of the _double data type</p>
+<p>&nbsp;</p>
+<p>Examples:</p>
+<p>1.2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "1.2"^^_double</p>
+<p><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;º "1.2"^^&lt;http://www.w3.org/2001/XMLSchema#double&gt;</p>
+<p>.12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "0.12"^^_double</p>
+<p>-0.12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "-0.12"^^_double</p>
+<p>12e-34 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "1.2e-33"^^_double</p>
+<p>13d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º 13.0 º "13.0"^^_double</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Int</span></p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#int</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_int</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;numbers between -231 and 231-1 without decimal point</p>
+<p>digit+</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type<br>
+"charseq"^^_int</p>
+<p>&nbsp;</p>
+<p>All constants of type _int are the same term if it was defined with the same value but with either data type _int, _long, _integer or _decimal.<br>
+&nbsp;</p>
+<p>Examples:</p>
+<p>1234567 &nbsp; &nbsp; &nbsp; &nbsp;º "1234567"^^_int</p>
+<p><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;º "1234567"^^&lt;http://www.w3.org/2001/XMLSchema#int&gt;</p>
+<p>-98765 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "-98765"^^_int</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Long</span></p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#long" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#long</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_long</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;numbers between -263 and 263-1 without decimal point</p>
+<p>digit+</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type<br>
+"charseq"^^_long</p>
+<p>&nbsp;</p>
+<p>All constants of type _long are the same term if it was defined with the same value but with either data type _long, _integer or _decimal. If the value is between -231 and 231-1, it is also the same as the constant with the same value and data type _int.<br>
+&nbsp;</p>
+<p>Examples:</p>
+<p>123456789012345 &nbsp; &nbsp; &nbsp; &nbsp;º "123456789012345"^^_long</p>
+<p> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "123456789012345"^^&lt;http://www.w3.org/2001/XMLSchema#long&gt;</p>
+<p>-123456789012345 &nbsp; &nbsp; &nbsp; &nbsp;º "-123456789012345"^^_long</p>
+<p>1234567 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "1234567"^^_long º "1234567"^^_int</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Integer</span></p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#integer</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_integer</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;integer numbers less than -263 or greater than 263-1 without decimal point</p>
+<p>digit+</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type<br>
+"charseq"^^_integer</p>
+<p>Examples:</p>
+<p>123456789012345678901234567890</p>
+<p><span style="width:48px">&nbsp;</span>º "123456789012345678901234567890"^^_integer</p>
+<p><span style="width:48px">&nbsp;</span>º "123456789012345678901234567890"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Decimal</span></p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#decimal</a></p>
+<p>Shortcut: &nbsp; &nbsp; &nbsp; &nbsp;_decimal</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;string representation with data type<br>
+"charseq"^^_decimal</p>
+<p>If the decimal value is an integer, the term is the same as if it was defined with an integer data type. Constants of data type double and of data type decimal do not unify.</p>
+<p>Examples:</p>
+<p>"12.3456"^^_decimal º "12.3456"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt;</p>
+<p>12.3456  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;º "12.3456"^^_double</p>
+<p>&nbsp;</p>
+<p>"123"^^_decimal</p>
+<p><span style="width:48px">&nbsp;</span>º "123"^^_integer</p>
+<p><span style="width:48px">&nbsp;</span>º "123"^^_long</p>
+<p><span style="width:48px">&nbsp;</span>º "123"^^_int</p>
+<p><span style="width:48px">&nbsp;</span>º 123</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Date</span></p>
+<p>The date data type is used to specify a date.</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#date</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_date, _d</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;lexical representation according the XMLSchema data type<br>
+"YYYY-MM-DD"^^_date<br>
+"YYYY-MM-DDZ"^^_date<br>
+"YYYY-MM-DDShh:mm"^^_date<br>
+"YYYY-MM-DD"^^_d</p>
+<p>"YYYY-MM-DDZ"^^_d<br>
+"YYYY-MM-DDShh:mm"^^_d</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>YYYY &nbsp; &nbsp; &nbsp; &nbsp;indicates the year</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>MM &nbsp; &nbsp; &nbsp; &nbsp;indicates the month (1-12)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>DD &nbsp; &nbsp; &nbsp; &nbsp;indicates the day (1-31)</td></tr></table></div><p>&nbsp;</p>
+<p>To specify a date in UTC time is marked with the suffix 'Z'</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Z &nbsp; &nbsp; &nbsp; &nbsp;character 'Z' indicates that this date is in UTC time</td></tr></table></div><p>Alternatively, to specify the timezone you can add an offset from the UTC time by adding a positive or negative time behind the date</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>S &nbsp; &nbsp; &nbsp; &nbsp;+/- sign of the time zone offset relative to UTC</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>hh &nbsp; &nbsp; &nbsp; &nbsp;hours of time zone offset</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mm &nbsp; &nbsp; &nbsp; &nbsp;minutes of time zone offset (0-59)</td></tr></table></div><p>&nbsp;</p>
+<p>Examples:</p>
+<p>"2009-03-31"^^_date</p>
+<p>"1999-12-24Z"^^_date</p>
+<p>"2009-03-31-06:00"^^_date</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Time</span></p>
+<p>The time data type is used to specify a time.</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#time" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#time</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_time, _t</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;lexical representation according the XMLSchema data type<br>
+"hh:mm:ss.f"^^_time<br>
+"hh:mm:ss.fZ"^^_time<br>
+"hh:mm:ss.fShh:mm"^^_time<br>
+"hh:mm:ss.f"^^_t</p>
+<p>"hh:mm:ss.fZ"^^_t<br>
+"hh:mm:ss.fShh:mm"^^_t</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>hh &nbsp; &nbsp; &nbsp; &nbsp;indicates the hour (0-23)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mm &nbsp; &nbsp; &nbsp; &nbsp;indicates the minute (0-59)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>ss &nbsp; &nbsp; &nbsp; &nbsp;indicates the second (0-59)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>f &nbsp; &nbsp; &nbsp; &nbsp;optional part to indicate the fractions of a second</td></tr></table></div><p>&nbsp;</p>
+<p>To specify a date in UTC time is marked with the suffix 'Z'</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Z &nbsp; &nbsp; &nbsp; &nbsp;character 'Z' indicates that this date is in UTC time</td></tr></table></div><p>Alternatively, to specify the timezone you can add an offset from the UTC time by adding a positive or negative time behind the date</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>S &nbsp; &nbsp; &nbsp; &nbsp;+/- sign of the time zone offset relative to UTC</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>hh &nbsp; &nbsp; &nbsp; &nbsp;hours of time zone offset</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mm &nbsp; &nbsp; &nbsp; &nbsp;minutes of time zone offset (0-59)</td></tr></table></div><p>&nbsp;</p>
+<p>Examples:</p>
+<p>"13:57:00"^^_time</p>
+<p>"13:57:01.124"^^_time</p>
+<p>"23:15:00Z"^^_time</p>
+<p>"00:00:00.001+09:00"^^_time</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">DateTime</span></p>
+<p>The dateTime data type is used to specify a date and a time.</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#dateTime</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_datetime, _dt</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;lexical representation according the XMLSchema data type<br>
+"YYYY-MM-DDThh:mm:ss.f"^^_dateTime<br>
+"YYYY-MM-DDThh:mm:ss.fZ"^^_dateTime<br>
+"YYYY-MM-DDThh:mm:ss.fShh:mm"^^_dateTime<br>
+"YYYY-MM-DDThh:mm:ss.f"^^_dt</p>
+<p>"YYYY-MM-DDThh:mm:ss.fZ"^^_dt<br>
+"YYYY-MM-DDThh:mm:ss.fShh:mm"^^_dt</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>YYYY &nbsp; &nbsp; &nbsp; &nbsp;indicates the year</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>MM &nbsp; &nbsp; &nbsp; &nbsp;indicates the month (1-12)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>DD &nbsp; &nbsp; &nbsp; &nbsp;indicates the day (1-31)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>T &nbsp; &nbsp; &nbsp; &nbsp;the character 'T' indicates the start of the required time section</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>hh &nbsp; &nbsp; &nbsp; &nbsp;indicates the hour (0-23)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mm &nbsp; &nbsp; &nbsp; &nbsp;indicates the minute (0-59)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>ss  &nbsp; &nbsp; &nbsp; &nbsp;indicates the second (0-59)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>f  &nbsp; &nbsp; &nbsp; &nbsp;optional part to indicate the fractions of a second</td></tr></table></div><p>&nbsp;</p>
+<p>To specify a date in UTC time is marked with the suffix 'Z'</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>Z &nbsp; &nbsp; &nbsp; &nbsp;character 'Z' indicates that this date is in UTC time</td></tr></table></div><p>&nbsp;</p>
+<p>Alternatively, to specify the timezone you can add an offset from the UTC time by adding a positive or negative time behind the date</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>S &nbsp; &nbsp; &nbsp; &nbsp;+/- sign of the time zone offset relative to UTC</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>hh &nbsp; &nbsp; &nbsp; &nbsp;hours of time zone offset</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>mm &nbsp; &nbsp; &nbsp; &nbsp;minutes of time zone offset (0-59)</td></tr></table></div><p>&nbsp;</p>
+<p>Examples:</p>
+<p>"2009-03-31T13:57:00"^^_dateTime</p>
+<p>"2009-03-31T13:57:01.124"^^_dt</p>
+<p>"2009-03-31T23:15:00Z"^^_dt</p>
+<p>"2000-01-01T00:00:00.001+09:00"^^_dt</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Duration</span></p>
+<p>The duration data type is used to specify a time interval.</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#duration" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#duration</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_duration</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;lexical representation according the XMLSchema data type<br>
+"sPnYnMnDTnHnMn.fS "^^_duration<br>
+&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>s &nbsp; &nbsp; &nbsp; &nbsp;+/- sign of time interval (optional)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>P &nbsp; &nbsp; &nbsp; &nbsp;the character 'P' indicates the period (required)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>nY  &nbsp; &nbsp; &nbsp; &nbsp;indicates the number of years (optional)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>nM  &nbsp; &nbsp; &nbsp; &nbsp;indicates the number of months (optional)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>nD  &nbsp; &nbsp; &nbsp; &nbsp;indicates the number of days (optional)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>nH  &nbsp; &nbsp; &nbsp; &nbsp;indicates the number of hours (optional)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>nM  &nbsp; &nbsp; &nbsp; &nbsp;indicates the number of minutes (optional)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>n.fS &nbsp; &nbsp; &nbsp; &nbsp;indicates the number of seconds (optional) with optional fractions of seconds </td></tr></table></div><p>&nbsp;</p>
+<p>Examples:</p>
+<p>"-P1Y"^^_duration</p>
+<p>"PT1004199059S"^^_duration</p>
+<p>"P1DT2S"^^_duration</p>
+<p>"P1Y2M3DT5H20M30.123S"^^_duration</p>
+<p>&nbsp;</p>
+<p>The following values are invalid: 1Y (leading P is missing), P1S (T separator is missing), P-1Y (all parts must be positive), P1M2Y (parts order is significant and Y must precede M), or P1Y-1M (all parts must be positive).</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Boolean</span></p>
+<p>The boolean data type is used to specify a true or false value</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#boolean</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_boolean</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;lexical representation according the XMLSchema data type<br>
+"true"^^_boolean<br>
+"false"^^_boolean</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;Objectlogic keywords</p>
+<p>true</p>
+<p>false</p>
+<p>&nbsp;</p>
+<p>Examples:</p>
+<p>true &nbsp; &nbsp; &nbsp; &nbsp;º "true"^^_boolean</p>
+<p>false  &nbsp; &nbsp; &nbsp; &nbsp;º "false"^^_boolean</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Plain Literal</span></p>
+<p>The rdf:PlainLiteral data type is used to specify a text strings with an attached language tag. </p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#text" target="_blank" class="weblink">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_PlainLiteral, _text</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;lexical representation according RIF-DTB syntax <br>
+"str@lang"^^_PlainLiteral</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>"abc"{de} == "abc@de"^^_PlainLiteral</td></tr></table></div><p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>str &nbsp; &nbsp; &nbsp; &nbsp;character sequence (escaping conventions are same as for _string)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>@ &nbsp; &nbsp; &nbsp; &nbsp;the character '@' separates value and language tag</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>lang &nbsp; &nbsp; &nbsp; &nbsp;language tag (can be empty)</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;<br>
+Examples:</p>
+<p>"Wein@de"^^_PlainLiteral</p>
+<p>"vine@en"^^_PlainLiteral</p>
+<p>"vin@fr"^^_PlainLiteral</p>
+<p>"UNO@"^^_PlainLiteral</p>
+<p>&nbsp;</p>
+<p>See also: http://www.w3.org/2005/rules/wiki/DTB#ref-rdf-PlainLiteral</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">XMLLiteral</span></p>
+<p>The XMLLitereal data type is used to specify well-formed fragment of XML text.</p>
+<p>Data type: &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" target="_blank" class="weblink">http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</a></p>
+<p>Shortcuts: &nbsp; &nbsp; &nbsp; &nbsp;_XMLLiteral</p>
+<p>Syntax alternatives: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>· &nbsp; &nbsp; &nbsp; &nbsp;XML text with data type<br>
+"xmltext"^^_XMLLiteral</p>
+<p>&nbsp;<br>
+Examples:</p>
+<p>"&lt;foo&gt;bar&lt;/foo&gt; "^^_XMLLiteral</p>
+<p>"&lt;order id=\"12345\"/&gt;"^^_XMLLiteral</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/constants.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:10 GMT -->
+</html>

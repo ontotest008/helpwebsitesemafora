@@ -1,0 +1,277 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 9pt;
+ font-family: 'Calibri';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f__ScreenName /* _Screen Name */
+{
+ font-weight: bold;
+}
+span.f_AdvanceOrganizer /* Advance Organizer */
+{
+}
+span.f_BlankLine /* Blank Line */
+{
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_CrossReference /* Cross Reference */
+{
+}
+span.f_CrossReferenceHeading /* Cross Reference Heading */
+{
+ font-weight: bold;
+}
+span.f_Definition /* Definition */
+{
+}
+span.f_Definition_Hint /* Definition_Hint */
+{
+}
+span.f_Definition_Hint_Heading /* Definition_Hint_Heading */
+{
+ font-size: 10pt;
+ font-style: italic;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 18pt;
+ font-weight: bold;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #4a4a4a;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 11pt;
+ font-weight: bold;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_ImageCaptionno_indent /* Image Caption no_indent */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_Instruction /* Instruction */
+{
+}
+span.f_Instruction_Aim /* Instruction_Aim */
+{
+}
+span.f_Instruction_Alternative /* Instruction_Alternative */
+{
+}
+span.f_Instruction_Annotation /* Instruction_Annotation */
+{
+}
+span.f_Instruction_Precondition /* Instruction_Precondition */
+{
+}
+span.f_Instruction_Precondition_Heading /* Instruction_Precondition_Heading */
+{
+}
+span.f_Instruction_Prerequisite /* Instruction_Prerequisite */
+{
+}
+span.f_Instruction_Prerequisite_Heading /* Instruction_Prerequisite_Heading */
+{
+}
+span.f_Instruction_Result /* Instruction_Result */
+{
+}
+span.f_Instruction_Subinstruction /* Instruction_Subinstruction */
+{
+}
+span.f_Instruction_Subinstruction_Result /* Instruction_Subinstruction_Result */
+{
+}
+span.f_List /* List */
+{
+}
+span.f_List2 /* List2 */
+{
+}
+span.f_NormalText /* Normal Text */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_Path /* Path */
+{
+ font-family: 'Courier New';
+}
+span.f_TableContent /* Table Content */
+{
+}
+span.f_Table_Heading /* Table_Heading */
+{
+ font-size: 10pt;
+ font-weight: bold;
+}
+span.f_ToggleHeader /* Toggle Header */
+{
+ font-size: 10pt;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.f_Tooltip /* Tooltip */
+{
+ font-size: 10pt;
+ font-style: italic;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 4px 0px 3px 0px;
+}
+.p_AdvanceOrganizer /* Advance Organizer */
+{
+}
+.p_BlankLine /* Blank Line */
+{
+ margin: 0px 0px 0px 0px;
+}
+.p_CodeExample /* Code Example */
+{
+ background: #c0c0c0;
+ margin: 0px 0px 0px 0px;
+}
+.p_Comment /* Comment */
+{
+}
+.p_CrossReference /* Cross Reference */
+{
+ margin: 2px 0px 2px 26px;
+}
+.p_CrossReferenceHeading /* Cross Reference Heading */
+{
+ margin: 19px 0px 2px 0px;
+}
+.p_Definition /* Definition */
+{
+}
+.p_Definition_Hint /* Definition_Hint */
+{
+ margin: 2px 0px 2px 0px;
+}
+.p_Definition_Hint_Heading /* Definition_Hint_Heading */
+{
+ margin: 2px 0px 2px 0px;
+}
+.p_Heading1 /* Heading1 */
+{
+}
+.p_Heading2 /* Heading2 */
+{
+ margin: 19px 0px 3px 0px;
+}
+.p_Heading3 /* Heading3 */
+{
+ margin: 15px 0px 5px 0px;
+}
+.p_ImageCaption /* Image Caption */
+{
+ margin: 3px 0px 4px 26px;
+}
+.p_ImageCaptionno_indent /* Image Caption no_indent */
+{
+ margin: 3px 0px 4px 0px;
+}
+.p_Instruction /* Instruction */
+{
+ text-indent: -26px;
+ margin: 6px 0px 3px 26px;
+}
+.p_Instruction_Aim /* Instruction_Aim */
+{
+ margin: 19px 0px 3px 0px;
+}
+.p_Instruction_Alternative /* Instruction_Alternative */
+{
+ margin: 3px 0px 3px 26px;
+}
+.p_Instruction_Annotation /* Instruction_Annotation */
+{
+ margin: 0px 0px 3px 26px;
+}
+.p_Instruction_Precondition /* Instruction_Precondition */
+{
+ text-indent: -26px;
+ margin: 4px 0px 3px 26px;
+}
+.p_Instruction_Precondition_Heading /* Instruction_Precondition_Heading */
+{
+}
+.p_Instruction_Prerequisite /* Instruction_Prerequisite */
+{
+ text-indent: -26px;
+ margin: 4px 0px 3px 26px;
+}
+.p_Instruction_Prerequisite_Heading /* Instruction_Prerequisite_Heading */
+{
+ margin: 4px 0px 0px 0px;
+}
+.p_Instruction_Result /* Instruction_Result */
+{
+ margin: 0px 0px 6px 26px;
+}
+.p_Instruction_Subinstruction /* Instruction_Subinstruction */
+{
+ text-indent: -26px;
+ margin: 6px 0px 3px 52px;
+}
+.p_Instruction_Subinstruction_Result /* Instruction_Subinstruction_Result */
+{
+ margin: 4px 0px 3px 26px;
+}
+.p_List /* List */
+{
+ text-indent: -26px;
+ margin: 0px 0px 5px 26px;
+}
+.p_List2 /* List2 */
+{
+ text-indent: -26px;
+ margin: 0px 0px 3px 52px;
+}
+.p_NormalText /* Normal Text */
+{
+}
+.p_Notes /* Notes */
+{
+}
+.p_TableContent /* Table Content */
+{
+ margin: 4px 0px 3px 3px;
+}
+.p_Table_Heading /* Table_Heading */
+{
+ margin: 4px 0px 3px 3px;
+}
+.p_ToggleHeader /* Toggle Header */
+{
+ margin: 19px 0px 5px 0px;
+}

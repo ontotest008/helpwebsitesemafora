@@ -1,0 +1,330 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/data_integration.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:40 GMT -->
+<head> 
+   <title> Data Integration </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="Changing the connection data,External Databases,Integration,Optimization,SQL"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexa5e3.html?data_integration.htm"; }
+  else { parent.quicksync('a3.6'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="storage_systems.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="integration_scenario.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 
+     <a href="storage_systems.htm">storage_systems.htm</a>&nbsp;/&nbsp;
+     data_integration.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Data Integration</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Besides serving as a common communication language and representing expert knowledge, ontologies serve as an integration means of different legacy systems. The ontology is used to reinterpret given information sources in a common language and thus provide a common and single view of different data sources. An ontology can collect different sources and integrate them in a common logical model. This goes far beyond just building connectors between applications. The goal of integration is to consolidate distributed information intelligently, free of redundancy and providing users and applications with simple access to information without considering the underlying data structure or system.</p>
+<p>&nbsp;</p>
+<p>Supported external Databases: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Microsoft SQL Server 2000, 2005 and 2008</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Oracle 10g and 11g</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Oracle TimesTen in-memory database 11g</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Oracle TimesTen in-memory database cache 11g</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">DB2 9.0 and 9.5</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">other JDBC drivers can be embedded by configuration</span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">Creation of database mapping rules</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Database Schema Import in OntoStudio</span></p>
+<p>Database mapping rules will be created automatically when using the database schema import.</p>
+<p class="p_Heading3"><span class="f_Heading3">SQLExecute</span></p>
+<p>You can create your own db mapping rules, using the sqlexecute predicate:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X:"Person"@_defaultModule :- _sqlexecute("SELECT colname FROM tblname",[?X],"mydbconnection").</span></p>
+<p>&nbsp;</p>
+<p>NOTE: There must be a fact stored in an loaded ontology defining the connection details of "mydbconnection", e.g:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_dbaccessuserdata("mydbconnection", "oracle","databasename","localhost:1521","user","pwd").</span></p>
+<p>For more information see the <a href="built_ins_new.html">built-in</a> “_dbaccessuser”.</p>
+<p class="p_Heading3"><span class="f_Heading3">Database User Management and Database Configuration</span></p>
+<p>For external database access you will need read access to the tables and read &amp; write access to the relevant database for creating temporary tables.<br>
+The conversion of data types in a database can be different from the data type conversion of OntoBroker. Of course it can happen that when you execute built-ins like string2number on the database, the result differs from the OntoBroker result. When non-trivial queries involving rules with _dbaccessuser built-ins are executed, it can be necessary to create temporary tables for storing intermediate results. Therefore your connection needs permissions to create and delete temporary tables and insert facts in these tables.</p>
+<p class="p_Heading3"><span class="f_Heading3">MS SQL Server</span></p>
+<p>The following user privileges are required:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Select</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Insert</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Create table</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Drop table</span></td></tr></table></div><p>The tempdb database is used. It is necessary that the database and the tempdb have the same collation. </p>
+<p class="p_Heading3"><span class="f_Heading3">Oracle</span></p>
+<p>The following user privileges are required:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Select</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Insert</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Create table</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Drop table</span></td></tr></table></div><p>If you don´t have write access to the schema, proceed in the following way:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Create a new user.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Grant writing access to this new user on his own schema.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Grant just read access to this user on the schema with data. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span class="f_Instruction">Login with this new user when doing a DB schema import in OntoStudio. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Choose the schema with data and import the tables. </span></td></tr></table></div><p class="p_Heading3"><span class="f_Heading3">DB2</span></p>
+<p>The following user privileges are required:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Select</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Insert</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Create table</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Drop table</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Use on user temporary tablespace (for Version DB2 8)</span></td></tr></table></div><p>You need a user temporary tablespace for Version DB2 8.  </p>
+<p class="p_Heading2"><span class="f_Heading2">Optimization</span></p>
+<p class="p_Heading3"><span class="f_Heading3"><a href="shrinkdbaccess_rewriter_for_ex.html">ShrinkDBAccess</a>, SQLRewriter</span></p>
+<p style="text-align: justify;">Access to the database will be optimized whilst executing a query: _dbaccessuser/3 literals are rewritten in a way so that only the required columns are selected. Furthermore, the dbaccessuser literals are combined with some built-ins in a SQL query so that there are some restrictions. </p>
+<p style="text-align: justify;">Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _dbaccessuser("projects",F(id,VAR1,project,VAR1),"mydbconnection") and equal(VAR1,"myproject").</span></p>
+<p style="text-align: justify;">will be rewritten </p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _sqlexecute("select id, project from projects where project =’myproject’",[?VAR1,?VAR2],"mydbconnection").</span></p>
+<p style="text-align: justify;">It is also possible to combine multiple _dbaccessuser/3 literals. _sqlexecute/3 literals are not optimized. </p>
+<p style="text-align: justify;">You may encounter performance problems when dbaccessuser literals are not executed correctly (e.g. needless columns are selected, dbaccessuser literals are executed without restrictions). For a detailed analysis you can turn on the SQL tracing. </p>
+<p style="text-align: justify;">You may also try out if changing some of the following switches significantly improves the performance:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Other evaluation methods</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Use namesground switches: CNG, ANG, MNG on/off.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Using StrongUnfolder (can also be used if you only use a couple of rules) </span></td></tr></table></div><p style="text-align: justify;">Evaluation method DynamicFiltering2 with ANG=on is often a good choice. </p>
+<p class="p_Heading2"><span class="f_Heading2">Null Values</span></p>
+<p>The access of external databases with the dbaccessuser built-in may result in null values from the database. A built-in with a null value as an argument is assumed to be false. As a consequence the built-ins are not called as soon as a null value occurs in its arguments.</p>
+<p class="p_Heading3"><span class="f_Heading3">SuppressNull </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: there was a bugfix on SuppressNull! This bugfix can change the behavior of old ontologies with db mapping!</span></p>
+<p>OntoConfig Option:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">SuppressNull = on</span></p>
+<p>Default value is on.</p>
+<p>Example<span style="font-style: italic;">:</span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">Table "test" has following rows:</span></p>
+<p><span style="font-weight: bold;">ID &nbsp; &nbsp; &nbsp; &nbsp; NAME</span></p>
+<p>1 &nbsp; &nbsp; &nbsp; &nbsp; a</p>
+<p>2 &nbsp; &nbsp; &nbsp; &nbsp; null</p>
+<p><span style="font-style: italic;">Rule:</span> </p>
+<p class="p_CodeExample"><span class="f_CodeExample">p(?X) :- _dbaccessuser("test", F(ID,?X,NAME,?Y), "connectiondatasource").</span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">Result before the bugfix:</span></p>
+<p><span style="font-weight: bold;">?X</span></p>
+<p><span style="font-weight: bold;">1</span></p>
+<p><span style="font-weight: bold;">2</span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">Result after the bugfix:</span></p>
+<p><span style="font-weight: bold;">?X</span></p>
+<p><span style="font-weight: bold;">1</span></p>
+<p>The second row (2, null) is not selected now because the NAME is null. For getting the old result you should change the rule as follows:</p>
+<p><span class="f_CodeExample">p(?X) :- _dbaccessuser("tblname", F(ID,?X), "connectiondatasource").</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Query Option Fillnull</span></p>
+<p>Example: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q,options[fillNull]} ?- ?X:Person AND ?X[hasForename-&gt;?Y].</span></p>
+<p>&nbsp;</p>
+<p>Result:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="158" bgcolor="#c9c9c9" style="width:158px; height:23px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">SuppressNull = off</span></p>
+</td>
+<td valign="top" width="144" bgcolor="#c9c9c9" style="width:144px; height:23px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">SuppressNull = on</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="158" style="width:158px; height:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1,B</span></p>
+<p class="p_TableContent"><span class="f_TableContent">2,null</span></p>
+</td>
+<td valign="top" width="144" style="width:144px; height:44px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1,B</span></p>
+<p class="p_TableContent"><span class="f_TableContent">2,null</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>For more information on fillnull, see the <a href="handling_of_null_values.html">accordant chapter</a>.</p>
+<p class="p_Heading2"><span class="f_Heading2">Changing the Connection Data</span></p>
+<p>You can change the connectionsdata by editing dbaccessuserdata_ fact:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_dbaccessuserdata("key","oracle","databasename","host:port","user","password").</span></p>
+<p>For more information on data integration, see the OntoStudio Manual -&gt; Import -&gt; Import.</p>
+<p><span style="font-style: italic; font-weight: bold;">Connector for tuple cache</span></p>
+<p>Connector Cache Options for OntoConfig</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">Connector.Database.Cache.Lifetime = query | unlimited</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">Connector.SPARQL.Cache.Lifetime = query | unlimited</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">Connector.OntoBroker.Cache.Lifetime = query | unlimited</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">Connector.Excel.Cache.Lifetime = query | unlimited</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">Connector.WebService.Cache.Lifetime = query | unlimited</span></td></tr></table></div><p><span style="font-size: 10pt; font-family: 'Arial';">query </span>- tuple cache is removed after the query execution. This is the default value for this option for all connectors in OntoStudio and for the WebService connector in Ontobroker.</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">unlimited</span> - tuple cache is not removed after the query execution and can be used for the next query. This option is better for performance and should always be used if a database won't be updated a lot. The cache update should be done manually (see "Clear connector cache command"). This is the default value for this option in OntoBroker for all of the connectors except for the WebService connector.</p>
+<p class="p_Heading2"><span class="f_Heading2">Connector cache clear command</span></p>
+<p><span class="f_Path">clear_connector_cache all | cache key</span></p>
+<p>The command cleans a connector cache. This command can be executed only if Ontobroker is started with the option Connector.*.Cache.Lifetime = unlimited.</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">all</span> - all tuples will be deleted from the cache.</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">cache key</span> - only tuples for the cache key will be deleted. The cache key is a map term and can contain different values for different connectors.</p>
+<p>Examples<span style="font-style: italic;">:</span></p>
+<p>Database connector:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">clear_connector_cache [_host-&gt;"data",_port-&gt;1521,_database-&gt;"orcl11",_user-&gt;"testuser",_table-&gt;"tblname"]</span></p>
+<p>The table is optional; if no host is defined, the localhost will be used.</p>
+<p class="p_Heading2"><span class="f_Heading2">MergeImports</span></p>
+<p>If the MergeImports parameter is set to "on" in the OntoConfig.prp, imported ontologies are directly merged into the importing root ontology. This means that the imported ontologies are not available as separate ontologies as for OntoStudio.</p>
+<p class="p_Notes"><span class="f_Notes">Example</span></p>
+<p>To activate the MergeImports switch, set in the OntoConfig.prp</p>
+<p class="p_CodeExample"><span class="f_CodeExample">MergeImports = on</span></p>
+<p>Assume that you have three ontologies A,B, and C. A imports B and B imports C. Then, after loading you have only one ontology A' (consisting of rules and facts from A,B, and C).</p>
+<p class="p_Comment"><span class="f_Comment">NOTE 1: The flag influences only the loading process on OntoBroker start (or reload command).</span></p>
+<p class="p_Comment"><span class="f_Comment">NOTE 2: The MergeImports flag cannot be used together with project files.</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/data_integration.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:40 GMT -->
+</html>

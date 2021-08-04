@@ -1,0 +1,883 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/data_types_.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:15 GMT -->
+<head> 
+   <title> Data Types&nbsp; </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index3b21.html?data_types_.htm"; }
+  else { parent.quicksync('a3.22.4.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="general_syntactic_changes.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="properties_settings.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Appendix &gt; <a href="built_ins_new.htm">Built-ins</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Appendix &gt; <a href="built_ins_new.htm">Built-ins</a> 
+     <a href="general_syntactic_changes.htm">general_syntactic_changes.htm</a>&nbsp;/&nbsp;
+     data_types_.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Data Types </span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Primitive data types are represented by constants of special form: _datatypeName"literal". The underscore _ and the quotes are part of the syntax. datatypeName is the name of the data type and literal is the value-part of the constant. The data type names and their attributes are listed below. The supported data types closely correspond to XML Schema data types. </p>
+<p>Note that the form of the data type constants makes no assumption about the actual internal representation of these constants. A variety of options is possible. The compiler can translate such constants to function terms or to external calls to Java or C programs. For instance, a constant of the time data type such as "12:33:44"^^_time can be compiled into a term like $#%&amp;time(12,33,44) or into $#%&amp;time(12,33,44,45224) (45224 is the number of seconds in the time literal and can be used for comparison with other literals) or into Time#@!([49,50,51,51,52,52]) (here the numbers in the list are the ASCII codes of the digits in the date). </p>
+<p>We also define syntax for variables that can be bound only to constants of the corresponding data types. The syntax is ?variableName^^datatypeName, where ^^ and ? are part of the syntax, while datatypeName is the name of a data type. For instance, ?Y^^_time. </p>
+<p>Some data types, like time, dateTime, etc., are exact analogues of the corresponding XML Schema types. In this case, their names will be denoted using strings that have the form of a IRI. For instance, 'http://www.w3.org/2001/XMLSchema#time'. However, for convenience, all type names will have one or more F-logic specific abbreviated forms, such as _time or _t. These abbreviated forms are case-insensitive. So, _time and _TiMe are assumed to be equivalent. In addition, when the type names have the form of an IRI, the compact prefix representation is supported. For instance, if xsd is a prefix name for 'http://www.w3.org/2001/XMLSchema#' then "12:33:55"^^&lt;http://www.w3.org/2001/XMLSchema#time&gt; can be written as "12:33:55"^^xsd#time'. </p>
+<p>The methods that are applicable to each particular primitive type vary from type to type. However, certain methods are more or less common: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">_toString</span><span class="f_List">, which applies to a data type constant and returns its printable representation. For instance, if ?Y is bound to "12:44:23"^^_time then ?Y[_toString-&gt;'12:44:23'] will be true. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">_toType( parameters )</span><span class="f_List">, which applies to the any class corresponding to a primitive data type (for instance, _time). Most types will have two versions of this method. One will apply to arguments that represent the components of a data type. For instance, _time[_toType(12,23,45)-&gt;"12:23:45"^^_time]. The other will apply to the string representation of the data type. For instance, _time[_toType('12:23:45')-&gt;"12:23:45"^^_time]. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">_isTypeOf( constant )</span><span class="f_List">, which applies to every data type class (e.g., _time) and determines whether constant has the given primitive type (_time in this example). </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">_equal( constant )</span><span class="f_List">, which tells when the given datatype constant equals some other term. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">_lessThan( constant )</span><span class="f_List">, which tells when one constant is less than some other terms. For integers, floats, time, dates, durations, and strings, this method corresponds to the natural order on these types. For other types this method returns false. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">_typeName</span><span class="f_List">, which tells the type name (and thus also class) of the given data type. </span></td></tr></table></div><p>&nbsp;</p>
+<p>We now list the supported data types:</p>
+<p class="p_Heading3"><span class="f_Heading3">_dateTime </span></p>
+<p>Explanation: XML Schema dateTime type. <br>
+Normal form: </p>
+<p>"ZYYYY-MM-DDTHH:MM:SS.sZHH:MM"^^_dateTime. <br>
+The symbols -, :, T, and . are part of the syntax. The leftmost Z is optional sign (-). The part that starts with the second Z is optional and represents the time zone (the second Z is a sign, which can be either + or -; note that the first Z can be only the minus sign or nothing). The part that starts with T is also optional; it represents the time of the specified day. The part of the time component of the form .s represents fractions of the second. Here s can be any positive integer. </p>
+<p>&nbsp;<br>
+Class: _dateTime <br>
+Synonyms: _dt, &lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;. </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_dateTime[_toType(_integer,_integer,_integer,_integer,_integer,_integer,_decimal,_integer,_integer,_integer) =&gt; _dateTime] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_dateTime[_toType(_integer,_integer,_integer,_integer,_integer,_decimal,_integer,_integer) =&gt; _dateTime] </span><br>
+<span class="f_List">The meaning of the arguments is as follows (in that order): date sign, year, month, day, hour, minute, second, zone sign,, zone hour, zone minute. </span><br>
+<span class="f_List">All arguments, except date sign and zone sign, are assumed to be positive integers, while date sign and zone sign can be either 1 or -1. For negative time zones both values have to be negative, for dates the same. Date sign and zone sign are not available. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_dateTime[_toType(_string) =&gt; _dateTime] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_dateTime[=&gt; _isTypeOf(_object)] Tells if object belongs to the primitive type _dateTime </span></td></tr></table></div><p>Component methods: </p>
+<p>_dateTime[_dateSign *=&gt; _integer] <br>
+_dateTime[_year *=&gt; _integer] <br>
+_dateTime[_month *=&gt; _integer] <br>
+_dateTime[_day *=&gt; _integer] <br>
+_dateTime[_hour *=&gt; _integer] <br>
+_dateTime[_minute *=&gt; _integer] <br>
+_dateTime[_second *=&gt; _integer] <br>
+_dateTime[_zoneSign *=&gt; _integer] <br>
+_dateTime[_zoneHour *=&gt; _integer] <br>
+_dateTime[_zoneMinute *=&gt; _integer] </p>
+<p>Other methods: </p>
+<p>_dateTime[_toString *=&gt; _string] <br>
+_dateTime[*=&gt; _equals(_object)] <br>
+_dateTime[*=&gt; _lessThan(_object)] <br>
+_dateTime[_typeName *=&gt; _string] <br>
+_dateTime[_add(_duration) *=&gt; _dateTime] </p>
+<p>Examples: </p>
+<p>"2001-11-23T12:33:55.123-02:30"^^_dateTime <br>
+"2001-11-23T12:33:55.123-02:30"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;<br>
+"-0237-11-23T12:33:55"^^_dateTime <br>
+Note that this date refers to year 238 BCE. <br>
+"2001-11-23T10:00:00Z"^^_dateTime[_day -&gt; 23] <br>
+"2001-11-23T10:00:00Z"^^_dateTime.[_toString -&gt; '2001-11-23T00:00:00+00:00'] <br>
+"2001-11-23T18:33:44-02:30"^^_dateTime[_add("-P22Y2M10DT1H2M3S"^^_duration) -&gt; "1979-09-13T17:31:41-02:30"^^_dateTime]. </p>
+<p class="p_Heading3"><span class="f_Heading3">_date</span> </p>
+<p>Explanation: XML Schema date type. <br>
+Normal form: </p>
+<p>"ZYYYY-MM-DDSHH:MM"^^_date. <br>
+The symbols - and : are part of the syntax. The symbol S represents the timezone sign (+ or -). The timezone part (beginning with S) is optional. The leftmost Z is optional sign (-). Note that unlike _dateTime, which represents a single time point, _date represents duration of a single day. </p>
+<p>&nbsp;<br>
+Class: _date <br>
+Synonyms: _d, &lt;http://www.w3.org/2001/XMLSchema#date&gt;. </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_date[_toType(_integer,_integer,_integer,_integer,_integer,_integer,_integer) =&gt; _date] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_date[_toType(_integer,_integer,_integer,_integer,_integer) =&gt; _date] </span><br>
+<span class="f_List">The meaning of the arguments is as follows (in that order): date sign, year, month, day, zone sign, zone hour, zone minute. </span><br>
+<span class="f_List">All arguments, except date sign and zone sign, are assumed to be positive integers, while date sign and zone sign can be either 1 or -1. For negative time zones both values have to be negative, for dates the same. Date sign and zone sign are not available. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_date[_toType(_string) =&gt; _date] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_date[=&gt; _isTypeOf(_object)] Tells if object belongs to the primitive type _date </span></td></tr></table></div><p>Component methods: </p>
+<p>_date[_dateSign *=&gt; _integer] <br>
+_date[_year *=&gt; _integer] <br>
+_date[_month *=&gt; _integer] <br>
+_date[_day *=&gt; _integer] <br>
+_date[_zoneSign *=&gt; _integer] <br>
+_date[_zoneHour *=&gt; _integer] <br>
+_date[_zoneMinute *=&gt; _integer] </p>
+<p>Other methods: </p>
+<p>_date[_toString *=&gt; _string] <br>
+_date[*=&gt; _equals(_object)] <br>
+_date[*=&gt; _lessThan(_object)] <br>
+_date[_typeName *=&gt; _string] <br>
+_date[_add(_duration) *=&gt; _date] </p>
+<p>Examples: </p>
+<p>"2001-11-23-02:30"^^_date <br>
+"2001-11-23"^^_date, <br>
+"-0237-11-23"^^_date <br>
+Note that this date refers to year 238 BCE. <br>
+"2001-11-23"^^_date[_day -&gt; 23] <br>
+"2001-11-23"^^_date[_toString -&gt; '2001-11-23+00:00'] <br>
+"2001-11-23-02:30"^^_date[_add("-P2Y2M10DT1H2M"^^_duration) -&gt; "1979-09-13-03:32"^^_dateTime]. </p>
+<p class="p_Heading3"><span class="f_Heading3">_time </span></p>
+<p>Explanation: XML Schema time data type <br>
+Normal form: </p>
+<p>"HH:MM:SS.sZHH:MM"^^_time <br>
+The symbols : and . are part of the syntax. The part .s is optional. It represents fractions of a second. Here s can be any positive integer. The sign Z represents the sign of the timezone (+ or -). The following HH represents time zone hours and MM time zone minutes. The time zone part is optional. </p>
+<p>&nbsp;<br>
+Synonyms: _t, &lt;http://www.w3.org/2001/XMLSchema#time&gt;. <br>
+Class: _time </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_time[_toType(_integer,_integer,_decimal,_integer,_integer,_integer) =&gt; _time] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_time[_toType(_integer,_integer,_decimal,_integer,_integer) =&gt; _time] </span><br>
+<span class="f_List">The arguments represent hour, minute, second, time zone sign, time zone hour, and time zone minute. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_time[_toType(_string) =&gt; _time] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_time[=&gt; _isTypeOf(_object)] Tells if object belongs to the primitive type _time </span></td></tr></table></div><p>Component methods: </p>
+<p>_time[_hour *=&gt; _integer] <br>
+_time[_minute *=&gt; _integer] <br>
+_time[_second *=&gt; _integer] <br>
+_time[_zoneSign *=&gt; _integer] <br>
+_time[_zoneHour *=&gt; _integer] <br>
+_time[_zoneMinute *=&gt; _integer] </p>
+<p>Other methods: </p>
+<p>_time[_toString *=&gt; _string] <br>
+_time[*=&gt; _equals(_object)] <br>
+_time[*=&gt; _lessThan(_object)] <br>
+_time[_typeName *=&gt; _string] <br>
+_time[_add(_duration) *=&gt; _time] </p>
+<p>Examples: </p>
+<p>"11:24:22"^^_time <br>
+"11:24:22"^^&lt;http://www.w3.org/2001/XMLSchema#time&gt; <br>
+_time[_toType(12,44,55) -&gt; "12:44:55"^^_time] <br>
+"12:44:55"^^_time[_minute -&gt; 44] <br>
+"12:44:55"^^_time[_toString -&gt; '12:44:55'] <br>
+"12:44:55"^^_time[_add("P2M3S"^^_duration) -&gt; "12:46:58"^^_time] </p>
+<p class="p_Heading3"><span class="f_Heading3">_duration </span></p>
+<p>Explanation: XML Schema duration type <br>
+Normal form: </p>
+<p>"sPnYnMnDTnHnMnS"^^_duration <br>
+Here s is optional sign (-), P indicates that this is a duration type, and Y, M, D, H, M, S denote year, month, date, hour, minutes, and seconds. T separates date from time. The symbol n stands for any positive number (for instance, the number of hours can be more than 12 and the number of minutes and seconds can be more than 60. The part that starts with T is optional and some of the elements in the date and the time parts can be omitted. </p>
+<p>&nbsp;<br>
+Class: _duration </p>
+<p>Synonyms: &lt;http://www.w3.org/2001/XMLSchema#duration&gt; </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_duration[_toType(_integer,_integer,_integer,_integer,_integer,_integer) =&gt; _duration] The meaning of the arguments (in that order) is: year, month, day, hour, minute, second. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_duration[_toType(_string) =&gt; _duration] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_duration[=&gt; _isTypeOf(_object)] Tells if object belongs to the primitive type _duration </span></td></tr></table></div><p>Component methods: </p>
+<p>_duration[_years *=&gt; _integer] <br>
+_duration[_months *=&gt; _integer] <br>
+_duration[_days *=&gt; _integer] <br>
+_duration[_hours *=&gt; _integer] <br>
+_duration[_minutes *=&gt; _integer] <br>
+_duration[_seconds *=&gt; _integer] </p>
+<p>Other methods: </p>
+<p>_duration[_toString *=&gt; _string] <br>
+_duration[*=&gt; _equals(_object)] <br>
+_duration[*=&gt; _lessThan(_object)] <br>
+_duration[_typeName *=&gt; _string] <br>
+_duration[_add(_duration) *=&gt; _duration] </p>
+<p>Examples: </p>
+<p>"P5Y5M10DT11H24M22S"^^_duration <br>
+"-P2Y05M10DT11H24M22"^^_duration[_minutes -&gt; 24] </p>
+<p class="p_Heading3"><span class="f_Heading3">_boolean </span></p>
+<p>Explanation: XML Schema Boolean type <br>
+Normal form: </p>
+<p>"true"^^_boolean, "false"^^_boolean <br>
+or shorter forms: _true, _false </p>
+<p>Synonyms: &lt;http://www.w3.org/2001/XMLSchema#boolean&gt; <br>
+Class: _boolean </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_boolean[_toString =&gt; _string] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_boolean[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Other methods: </p>
+<p>_boolean[_toString *=&gt; _string] <br>
+_boolean[*=&gt; _equals(_object)] <br>
+_boolean[*=&gt; _lessThan(_object)] <br>
+(NOTE: _false[_lessThan(_true)]) <br>
+_boolean[_typeName *=&gt; _string] </p>
+<p>Examples: </p>
+<p>"true"^^_Bool, _true, _false </p>
+<p class="p_Heading3"><span class="f_Heading3">_double</span> </p>
+<p>Explanation: XML Schema double type <br>
+Normal form: </p>
+<p>"value"^^_double <br>
+where value is a floating point number of double length that uses the regular decimal point representation with an optional exponent. <br>
+Short forms: same representation without "..."^^_double wrapper. </p>
+<p>Synonyms: &lt;http://www.w3.org/2001/XMLSchema#double&gt; </p>
+<p>Class: _double </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_double[_toType(_decimal) =&gt; _double] Converts decimals to doubles. Error, if overflow. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_double[_toType(_long) =&gt; _double] Converts long integers to doubles. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_double[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Other methods: </p>
+<p>_double[_floor *=&gt; _integer] <br>
+_double[_ceiling *=&gt; _integer] <br>
+_double[_round *=&gt; _integer] <br>
+_double[_toString *=&gt; _string] <br>
+_double[*=&gt; _equals(_object)] <br>
+_double[*=&gt; _lessThan(_object)] <br>
+_double[_typeName *=&gt; _string] </p>
+<p>Examples: </p>
+<p>"2.50"^^_double, 2.50, 25E-1 </p>
+<p class="p_Heading3"><span class="f_Heading3">_decimal </span></p>
+<p>Explanation: XML Schema decimal type (arbitrary precision) <br>
+Normal form: </p>
+<p>"value"^^_decimal <br>
+where value is a number that uses the regular decimal point representation. This type is a supertype of _integer. </p>
+<p>Synonyms: &lt;http://www.w3.org/2001/XMLSchema#decimal&gt;</p>
+<p>Class: _decimal </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_decimal[_toType(_string) =&gt; _decimal] Converts string to decimal, if string represents a decimal in textual form. If it does not, then the method fails. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_decimal[_toType(_double) =&gt; _decimal] Converts doubles to decimals. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_decimal[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Other methods: </p>
+<p>_decimal[_floor *=&gt; _integer] <br>
+_decimal[_ceiling *=&gt; _integer] <br>
+_decimal[_round *=&gt; _integer] <br>
+_decimal[_toString *=&gt; _string] <br>
+_decimal[*=&gt; _equals(_object)] <br>
+_decimal[*=&gt; _lessThan(_object)] <br>
+_decimal[_toString *=&gt; _string] <br>
+_decimal[_typeName *=&gt; _string] </p>
+<p>Examples: </p>
+<p>"2.50"^^_decimal, "12"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt;</p>
+<p class="p_Heading3"><span class="f_Heading3">_integer</span> </p>
+<p>Explanation: XML Schema integers (arbitrary length) <br>
+Normal form: </p>
+<p>"value"^^_integer <br>
+where value is an integer in its regular representation in the decimal system. <br>
+_integer is a subtype of _decimal. For instance, "12"^^_integer = "12"^^_decimal = "12.0"^^_decimal, etc. <br>
+Note that although XML schema prescribes that _integer must be a supertype of _long, we do not enforce this rule due to the difficulty in implementing it. However, the _equals method is supposed to recognice that _long is a subtype of _integer, i.e., "18"^^_long[_equals("18"^^_int)] must be true and so must be "18"^^_int[_equals("18"^^_long)]. </p>
+<p>Synonyms: </p>
+<p>_int, &lt;http://www.w3.org/2001/XMLSchema#integer&gt; </p>
+<p>Class: _integer </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_integer[_toType(_string) =&gt; _integer] Converts strings to integers, if the string represents an integer in textual form. If it does not then this method fails. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_integer[_toType(_long) =&gt; _integer] Converts long to integers. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_integer[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Other methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_integer[_toString *=&gt; _string] _integer[*=&gt; _equals(_object)] </span><br>
+<span class="f_List">_integer[*=&gt; _lessThan(_object)] </span><br>
+<span class="f_List">_integer[_typeName *=&gt; _string] </span></td></tr></table></div><p>Examples: </p>
+<p>"55"^^_integer, "55"^^_int </p>
+<p class="p_Heading3"><span class="f_Heading3">_long </span></p>
+<p>Explanation: XML Schema long integers <br>
+Normal form: </p>
+<p>"value"^^_long <br>
+where value is an integer in its regular representation in the decimal system. A shorter form without the "..."^^_long wrapper is also allowed. <br>
+Note that although XML schema prescribes that _long must be a subtype of _integer, we do not enforce this rule due to the difficulty in implementing it. However, the _equals method is supposed to recognice that _long is a subtype of _integer, i.e., "18"^^_long[_equals("18"^^_int)] must be true and so must be "18"^^_int[_equals("18"^^_long)]. </p>
+<p>Synonyms: </p>
+<p>&lt;http://www.w3.org/2001/XMLSchema#long&gt; </p>
+<p>Class: _long </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_long[_toType(_string) =&gt; _long] Converts strings to long integers, if the string represents an integer in textual form. If it does not then this method fails. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_long[_toType(_integer) =&gt; _long] Converts long integers to arbitrary big integers. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_integer[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Other methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_long[_toString *=&gt; _string] _long[*=&gt; _equals(_object)] </span><br>
+<span class="f_List">_long[*=&gt; _lessThan(_object)] </span><br>
+<span class="f_List">_long[_typeName *=&gt; _string] </span></td></tr></table></div><p>Examples: </p>
+<p>123, 55, "55"^^_long </p>
+<p class="p_Heading3"><span class="f_Heading3">_iri </span></p>
+<p>Explanation: IRI as defined by [RFC 2396], as amended by [RFC 2732] <br>
+Normal form: </p>
+<p>"string IRI representation"^^_iri </p>
+<p>Synonyms: </p>
+<p>&lt;http://www.w3.org/2007/rif#iri&gt; <br>
+&lt;http://www.w3.org/2007/rif#uri&gt;<br>
+_"string IRI representation". For instance, "http://foo.bar.com/moo"^^_iri can be written as _"http://foo.bar.com/moo". </p>
+<p>&nbsp;<br>
+Class: _iri </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_iri[_toType(_string) =&gt; _iri] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_iri[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Component methods: </p>
+<p>_iri[_scheme *=&gt; _string] <br>
+_iri[_user *=&gt; _string] <br>
+_iri[_host *=&gt; _string] <br>
+_iri[_port *=&gt; _string] <br>
+_iri[_path *=&gt; _string] <br>
+_iri[_query *=&gt; _string] <br>
+_iri[_fragment *=&gt; _string] <br>
+Note that the exact meaning of the above components depends on the IRI scheme. For http, ftp, file, etc., the meaning the first five components is clear. The query is an optional part of the IRI that follows the ?-sign, and fragment is the last part that follows #. Some components might be optional for some IRI schemes. For instance, for the urn and file schemata, only the path component is defined. For mailto scheme, port, path, query, and fragment are not defined. If a scheme is not recognized then the part of the IRI that follows the scheme goes into the path component unparsed. <br>
+_iri[_localName *=&gt; _string] <br>
+_iri[_prefix *=&gt; _string] <br>
+These two attributes return the local name and prefix of the IRI as defined by RDF best practices. **** Define local names! **** The prefix is the part of the IRI that precedes the local name. </p>
+<p>Other methods: </p>
+<p>_iri[_toString *=&gt; _string] <br>
+_iri[*=&gt; _equals(_object)] <br>
+_iri[_typeName *=&gt; _string] </p>
+<p>Examples: </p>
+<p>_"http://foo.bar.com/abc" <br>
+"http://foo.bar.com/abc"^^_iri <br>
+_iri[_toType('http://foo.bar.com/abc') -&gt; "http://foo.bar.com/abc"^^_iri] <br>
+_"http://foo.bar.com/abc"[_host -&gt; 'foo.bar.com'] </p>
+<p class="p_Heading3"><span class="f_Heading3">_string</span> </p>
+<p>Explanation: XML Schema string type </p>
+<p>Characters can be Unicode characters, excluding the surrogate blocks FFFE and FFFF. </p>
+<p>Synonyms: http://www.w3.org/2001/XMLSchema#string </p>
+<p>Normal form: </p>
+<p>"value"^^_string <br>
+A shorter form 'value' is also allowed. <br>
+Single-quoted sequence of characters. Alphanumeric strings that start with a letter do not need to be quoted. In the full representation (with the "..."^^_string wrapper), the double quote symbol and the backslash must be escaped with a backslash. In short representation, the single quote symbol and the backslash must be escaped with a backslash. </p>
+<p>Class: _string </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><p>Other methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[*=&gt; _equals(_object)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[*=&gt; _lessThan(_object)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_typeName *=&gt; _string]. Bindings: bf, bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[*=&gt; _contains(_string)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_concat(_string) *=&gt; _string]. Bindings: fbb, bfb, bbf, bbb </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_cut(_integer) *=&gt; _string]. Bindings: bbf, bbb. Returns a substring of the string-object truncated by the number of characters specified in the method argument. Truncation takes place on the right. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_fill(_string) *=&gt; _string]. Bindings: bbbf, bbbb. Fills the object-string with a letter from the first method argument up to the length specified in the second method argument. For instance, abc[_fill(D,7) -&gt; abcDDDD]. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_match(_string) *=&gt; _list]. Bindings: bbf, bbb. The result of the method is a list of terms of the form match(matchingPosition,matchingSubstring), which represents matches inside the object-string. The match is done against a Perl regular expression given as the method argument. The list is sorted in the ascending order of positions of the matches. The counting of positions in the object string starts with 0. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_indexOf(_string) *=&gt; _int]. Bindings: bbf, bbb. The result of this method is a list of positions at which the string given as argument to the method matches within the object string. The positions in the list are ordered in the ascending order. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_lastIndexOf(_string) *=&gt; _int]. Bindings: bbf, bbb. The result of this method is a list of positions at which the string given as argument to the method matches within the object string. The positions in the list are ordered in the descending order.For this behaviour, use _indexOf together with reverse. This implementation delivers just the last position. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_firstIndexOf(_string) *=&gt; _int]. Bindings: bbf, bbb. This method is added from us. It delivers just the first position. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_replace(_string,_string) *=&gt; _string]. Binding: bbbf, bbbb. Replaces every occurrence of the Perl regular expression inside the object string with the string given in the second argument of the method. The Perl regular expression is given in the first argument. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_split(_string) *=&gt; [_string,_string]]. Binding: bbf, bbb. Splits the object-string by the regular expression given in the method argument. The split occurs at the first character of the first match. The result is a list of two strings obtained by the split. For instance, Eddie[_split(d) -&gt; [E,ddie]]. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_reverse *=&gt; _string]. Bindings: bf, fb, bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_length *=&gt; _integer]. Binding: bf, bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_tokenize(_string) *=&gt; _list]. Bindings: bbf, bbb. Breaks the object-string into a list of tokens at every occurrence of any delimiter character given in the argument to the method (this argument is a string of delimeter characters). The delimiter characters are not retained as part of the tokens. For instance, 'xyzw.foo'[_tokenize('y.') -&gt; [x,zw,foo]]. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_toUpper *=&gt; _string]. Bindings: bf, bb. The value of the method is the object string with all characters converted to the upper case. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_toLower *=&gt; _string]. Bindings: bf, bb. The value of the method is the object string with all characters converted to the lower case. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_charAt(_integer) *=&gt; _string]. Bindings: bbf, bbb. The value of the method is the character that occurs in the object string at the position given by the argument to the method. Positions start with 0. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_diffAt(_string) *=&gt; _number_integer]. Bindings: bbf, bbb. The result of the method is the first position where the object string and the method argument differ. Positions start with 0. The the truth value is false if the two strings are equal. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[*=&gt; _startsWith(_string)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[*=&gt; _endsWith(_string)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_substring(_integer,_integer) *=&gt; _string]. Binding: bbbf.and: bbbb Returns a substring of the object string, where the starting and the ending position of the substring are given by the arguments of the method. -1 in argument 2 means the end of the string. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_trim(_string) *=&gt; _string]. Bindings: bbf, bbb. Deletes from the object string all the leading and trailing characters specified in the argument to the method. For instance, ' .ab c,\n'[_trim('\n\r .,') -&gt; 'ab c']. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_string[_overlappedBy(_string) *=&gt; _integer]. Bindings: bbf, bbb. True if a suffix of the object string is also a prefix of the string given in the method's argument. The result of the method is the number of characters in the maximal overlap. </span></td></tr></table></div><p>Examples: </p>
+<p>"abc"^^_string <br>
+'abc' <br>
+"a string\n"^^_String <br>
+'a string\n' <br>
+'a\tstring\b' <br>
+'string with a \'quoted\' substring' </p>
+<p class="p_Heading3"><span class="f_Heading3">_PlainLiteral </span></p>
+<p>Explanation: XML Schema string type with additional language tag. NOTE: this data type is currently under discussion at W3C, so the specifics might change. </p>
+<p>This is like _string, but the same string with different language tags are considered different. _text is a subtype of _string, so all of the methods of _string are applicable to _text. We don't support this subtype property, because we could not decide what type to generate as result. If needed, _text has to be converted to string explicitly. The language tag can be also ISO-639-1 (or ISO-639-2) to specify encodings. </p>
+<p>Synonyms: http://www.w3.org/2007/rif#text </p>
+<p>Normal form: </p>
+<p>"value@language"^^_text <br>
+Escaping conventions are the same as for _string. </p>
+<p>Class: _text </p>
+<p>Class methods: See _string </p>
+<p>Other methods: </p>
+<p>See _string. <br>
+_text[_language *=&gt; _string]. Binding bf, bb. Get the language of the string. <br>
+_text[_text *=&gt; _string]. Binding: bf, bb. Gets the text without the language tag. </p>
+<p>Examples: </p>
+<p>"abc@en"^^_text <br>
+"a string\n@en"^^_Text </p>
+<p class="p_Heading3"><span class="f_Heading3">_list </span></p>
+<p>Explanation: The Prolog type of list. <br>
+Normal form: </p>
+<p>[elt1, ..., eltn], [elt1,...,eltn|List] <br>
+This is the usual type for list terms. </p>
+<p>Class: _list </p>
+<p>Class methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[=&gt; _isTypeOf(_object)] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_toType(_object,_list) =&gt; _list] </span><br>
+This method is here for completeless only. It defined simply as _list[_toType(obj,list) =&gt; [obj|list], for all objects obj and lists list. </td></tr></table></div><p>Other methods: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_toString *=&gt; _string] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[*=&gt; _lessThan(_object)]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[*=&gt; _equals(_object)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_typeName *=&gt; _string] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[*=&gt; _contains(_list)]. Binding: bb. Tells if a list object contains the method's argument as a sublist. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[*=&gt; _member(_object)]. Binding: bb. The method's argument and the list-object may not be fully ground. In this case, the method succeeds, if the argument to the method unifies with a member of the list. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_append(_list) *=&gt; _list]. Bindings: fbb, bfb, bbf, bbb </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_indexOf(_object) *=&gt; _long]. Bindings: bbf, bbb. The result of this method is the first position at which the argument-object unifies with the list-object. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_length *=&gt; _long]. Binding: bbbf, bbbb. Computes the length of the list. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_reverse *=&gt; _list]. Bindings: bf, fb, bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_sort *=&gt; _list]. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_memberAt(_integer) *=&gt; _object]. Bindings: bbf, bbb. The value of the method is the object that occurs in the list object at the position given by the argument to the method. Positions start with 0. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[*=&gt; _startsWith(_list)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[*=&gt; _endsWith(_list)]. Binding: bb. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[ *=&gt; _subset(_list)]. Binding: bb. True if the list object contains the argument list. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">_list[_overlappedBy(_list) *=&gt; _integer]. Bindings: bbf, bbb. True if a suffix of the list object is also a prefix of the list given in the method's argument. The result of the method is the number of characters in the maximal overlap. </span></td></tr></table></div><p>Examples: </p>
+<p>[a,b,c] <br>
+[a,b|?X] <br>
+[a,b,c|[d,e]] </p>
+<p class="p_Heading3"><span class="f_Heading3">_XMLLiteral </span></p>
+<p>Explanation: XMLLiteral type of RDF. </p>
+<p>An XML literal is a string that contains a well-formed fragment of XML text. _XMLLiteral is a subtype of _string, so all of the methods of _string are applicable to _text. We don't support this subtype property, because we could not decide what type to generate as result. If needed, _XMLLiteral has to be converted to string explicitly. </p>
+<p>Synonyms: http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral </p>
+<p>Normal form: </p>
+<p>"some fragment of XML"^^_XMLLiteral </p>
+<p>Class: _XMLLiteral </p>
+<p>Class methods: See _string </p>
+<p>Other methods: </p>
+<p>See _string. <br>
+Should add a path expression method. </p>
+<p>Examples: </p>
+<p>"&lt;foo&gt;bar&lt;/foo&gt;"^^_XMLLiteral </p>
+<p>&nbsp;</p>
+<p>map data typ</p>
+<p>Mapping between Java objects and ObjectLogic</p>
+<p>Example:<br>
+BLZ Service of the Deutsche Bundesbank, see<br>
+http://www.thomas-bayer.com/axis2/services/BLZService?wsdl<br>
+Generating the Java client for this web service results in (simplified here):</p>
+<p>&nbsp;<br>
+Java</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">interface</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BLZService</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">Details</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">getDetails(String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">blz);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Details</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">bezeichnung;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">bic;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ort;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">plz;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>A web service call from ObjectLogic could look like this:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _callWebservice("http://bundesbank/services/BLZService",</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">"getDetails", [blz-&gt;"66010075"],?Result).</span></p>
+<p>&nbsp;</p>
+<p>Internally the input parameters, here the single parameter “blz” is extracted from the input map and the web service is called via the generated Java client. The result is returned in a Details object. This object is mapped into a map constant term:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?Result = [bezeichnung-&gt;"Postbank Karlsruhe",</span><br>
+<span class="f_CodeExample"> &nbsp;bic-&gt;"PBNKDEFF",ort-&gt;"Karlsruhe",plz-&gt;"76127"]</span></p>
+<p>&nbsp;</p>
+<p>Mapping between XML and ObjectLogic</p>
+<p>Using both maps and lists, it would become possible to map XML directly into an ObjectLogic constant term without loosing the hierarchical structure and sequence order. This would be very similar to the mapping between XML and JSON.<br>
+Example:<br>
+XML</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">animals</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">id</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">1</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Rufus</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">labrador</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">id</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">2</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Marty</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">whippet</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">cat</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">Matilda</span><span class="f_CodeExample" style="color: #0000ff;">"/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">animals</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p>&nbsp;<br>
+ObjectLogic</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X = [animals-&gt;[</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">[dog-&gt;[</span><br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[id-&gt;1,name-&gt;"Rufus",breed-&gt;"labrador"],</span><br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[id-&gt;2,name-&gt;"Marty",breed-&gt;"whippet"]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> ],</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> cat-&gt;[</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[name-&gt;"Matilda"]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> ]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp;]</span></p>
+<p>&nbsp;</p>
+<p>Options parameter for built-ins</p>
+<p>Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _queryIndex(module,[return(type),return(title),includeAll,stringMetric("Jaro")],</span><br>
+<span class="f_CodeExample"> &nbsp;"searchString",0,10,?OBJ,?TC,?SCORE,?ORDER,?OPT)</span>.</p>
+<p>&nbsp;</p>
+<p>Using the map data type this becomes more readable to</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _queryIndex(module,</span><br>
+<span class="f_CodeExample"> [return-&gt;{type,title},includeAll-&gt;true,stringMetric-&gt; "Jaro")],</span><br>
+<span class="f_CodeExample"> "searchString",0,10,?OBJ,?TC,?SCORE,?ORDER,?OPT).</span></p>
+<p>&nbsp;</p>
+<p>Result parameter for built-ins with variable content structure</p>
+<p>Sometime built-ins need to return variable result sets depending on the options. This has already been needed in the above web service example. Another example is here also the _queryIndex/10 built-in, where the ?OPT variable returns variable a list of functions, which is hard to pass directly in ObjectLogic.</p>
+<p>&nbsp;<br>
+For the above example, the ?OPT variable currently returns things like<br>
+<span class="f_CodeExample">?OPT = [type("c"),title("Reparaturanleitung")]</span></p>
+<p>Using the map data type, this would be instead <br>
+<span class="f_CodeExample">?OPT = [type-&gt;"c",title-&gt;"Reparaturanleitung"]</span></p>
+<p>Specification Details</p>
+<p>The syntax is just an overloading of the list syntax. The square brackets would contain key/value pairs instead of terms. Mixing terms and key/value pairs is forbidden, also the head/tail syntax used for lists.</p>
+<p>Assignments</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#c9c9c9" style="width:368px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic syntax</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#c9c9c9" style="width:259px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty list (special constant)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[-&gt;]</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty map (special constant)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[1,2,3]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">list</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[1|?Y]</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">List head / tail</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[a-&gt;1,b-&gt;2]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Map</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[a-&gt;{1,2,3},b-&gt;[1,2]]</span><br>
+<span class="f_TableContent">equivalent to </span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X=[a-&gt;1,a-&gt;2,a-&gt;3,b-&gt;[1,2]]</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Multi-valued map. Note the difference between the values for a and b.</span></p>
+<p class="p_TableContent"><span class="f_TableContent">a is multi-valued, but b has a list as value.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X = [1,a-&gt;b] &nbsp;// invalid</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Mixing of list terms and key value pairs is not allowed. ObjectLogic compiler must throw exception</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Facts</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="369" style="width:369px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">p([a-&gt;1,b-&gt;2]).</span></p>
+</th>
+<th valign="top" width="256" style="width:256px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Predicate p/1 with a map term as first argument</span></p>
+</th>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Rules , Queries, Built-ins</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">p([?X-&gt;?Y]) :- r(?X,?Y).</span></p>
+</th>
+<th valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">map in rule head</span></p>
+</th>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">p(?Z) :- ?Z = [?X-&gt;?Y], r(?X,?Y).</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">same as above</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- ?M = collectmap { ?X,?Y | r(?X,?Y) }.</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">translates into:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?- _aggr_collectmap([],[?X,?Y], ?X, ?Y, ?M), r(?X,?Y)).</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Aggregation collectmap to collect key/value pairs in one map</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3][_memberAt(?X)-&gt;?Y].</span><br>
+<span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span><br>
+<span class="f_TableContent">?X = a, ?Y = 1</span><br>
+<span class="f_TableContent">?X = a, ?Y = 2</span><br>
+<span class="f_TableContent">?X = b, ?Y = 3</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Extended built-in _memberAt/3 to extract keys and/or values from a map</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3,c-&gt;4][_intersection([a-&gt;1, c-&gt;5])-&gt;?X].</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X = [a-&gt;1]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _intersection/3 to create intersection of two maps</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3,c-&gt;4][_union([a-&gt;1, c-&gt;5])-&gt;?X].</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X = [a-&gt;{1,2},b-&gt;3,c-&gt;{4,5}]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _union/3 to create union of two maps</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3,c-&gt;4] [_difference([a-&gt;1, c-&gt;5])-&gt;?X].</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X = [a-&gt;2,b-&gt;3,c-&gt;4]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _difference/2 to remove all key/value pairs of argument1 from argurment 0</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [b-&gt;1,a-&gt;4,a-&gt;2][_normalize-&gt;?X].</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span><br>
+<span class="f_TableContent">?X = [a-&gt;{2,4}, b-&gt;1]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _normalize/2 to bring map in internal order</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- _map[_toType(a,2)-&gt;?X].</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span><br>
+<span class="f_TableContent">?X = [a-&gt;2]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Extended built-in _toType/4 to generate singleton map</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- ?M = [a-&gt;[b-&gt;[1,2], c-&gt;3], d-&gt;4], _memberByPath(?M,_path(a,b),?V).</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns </span></p>
+<p class="p_TableContent"><span class="f_TableContent">?V = [1,2]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _memberByPath/3 to filter with xpath expression</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- ?M = [a-&gt;[b-&gt;[1,2], c-&gt;3], d-&gt;4], _map2table(?M,?P,?I,?V).</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns</span></p>
+<p class="p_TableContent"><span class="f_TableContent">P &nbsp; &nbsp; &nbsp;I &nbsp; &nbsp; &nbsp;V</span></p>
+<p class="p_TableContent"><span class="f_TableContent">---------------</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;0 &nbsp; &nbsp; &nbsp;1</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;1 &nbsp; &nbsp; &nbsp;2</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.c" &nbsp;0 &nbsp; &nbsp; &nbsp;3</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"d" &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;4</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?- ?M = [a-&gt;[b-&gt;{1,2}, c-&gt;3], d-&gt;4], _map2table(?M,?P,?I,?V).</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns</span></p>
+<p class="p_TableContent"><span class="f_TableContent">P &nbsp; &nbsp; &nbsp;I &nbsp; &nbsp; &nbsp;V</span></p>
+<p class="p_TableContent"><span class="f_TableContent">---------------</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;0 &nbsp; &nbsp; &nbsp;1</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;1 &nbsp; &nbsp; &nbsp;2</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.c" &nbsp;0 &nbsp; &nbsp; &nbsp;3</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"d" &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;4</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _map2table/4 to convert a map to flat table. Note that list values are converted to flat table too.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;1,b-&gt;2] == [b-&gt;2,a-&gt;1].</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">true</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_equals/2 should be extended to compare maps independently from the order</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Side remark: Mapping ObjectLogic instances to and from maps</p>
+<p>Interestingly, you can also extract all attribute values of an ObjectLogic instance into a map. It “strips” off the instance and leaves the blank attribute map.</p>
+<p>&nbsp;</p>
+<p>Example 1 (flat):</p>
+<p class="p_CodeExample"><span class="f_CodeExample">juergen[name-&gt;"Jürgen", age-&gt;28].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?M = collectmap { ?Z | ?Z=[?X,?Y], juergen[?X-&gt;?Y] }.</span></p>
+<p>&nbsp;<br>
+results in:<br>
+<span class="f_CodeExample">?M = [name-&gt;"Jürgen", age-&gt;28]</span></p>
+<p>&nbsp;</p>
+<p>Example 2 (hierarchical):</p>
+<p class="p_CodeExample"><span class="f_CodeExample">juergen:Person[name-&gt;"Jürgen", age-&gt;28, address-&gt;ja].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ja:Address[street-&gt;"An der RaumFabrik", ort-&gt;"Durlach"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?M = collectmap { ?Z</span><br>
+<span class="f_CodeExample"> | ((?Z=[?X,?Y], NOT ?Y:?) </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp;OR (?M1 = collectmap {?Z1 | ?Z1=[?X1,?Y1], ?Y[?X1-&gt;?Y1]}, ?Y:?), ?Z=[?X,?M1]), juergen[?X-&gt;?Y] }.</span></p>
+<p>&nbsp;<br>
+results in:<br>
+<span class="f_CodeExample">?M = [name-&gt;"Jürgen", age-&gt;28,</span><br>
+<span class="f_CodeExample"> &nbsp;address-&gt;[street-&gt;"An der RaumFabrik", ort-&gt;"Durlach"]].</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Implementation</span></p>
+<p>Maps are stored as functions internally. The function symbol is $m and the arguments are a sequence of key value pairs. This implies that the key value pairs are ordered and that a key can have multiple values. </p>
+<p>Therefore [a-&gt;b,c-&gt;d] does not unify with [c-&gt;d,a-&gt;b]. If you need to unify maps, use the normalize built-in to bring the key/value pairs in a the same order.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#c9c9c9" style="width:238px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic term</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#c9c9c9" style="width:389px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#c9c9c9" style="width:259px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Internal Representation</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" style="width:238px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[]</span></p>
+</td>
+<td valign="top" width="389" style="width:389px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty list (special constant)</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#ffffff" style="width:238px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[-&gt;]</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#ffffff" style="width:389px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty map (special constant)</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[-&gt;]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" style="width:238px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[1,2,3]</span></p>
+</td>
+<td valign="top" width="389" style="width:389px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">list</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$l(1,$l(2,$l(3,[])))</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#ffffff" style="width:238px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[1|?Y]</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#ffffff" style="width:389px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">List head / tail</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$l(1,?Y)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" style="width:238px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[a-&gt;1,b-&gt;2]</span></p>
+</td>
+<td valign="top" width="389" style="width:389px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Map</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$m(a,1,b,2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#ffffff" style="width:238px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[a-&gt;{1,2,3},b-&gt;[1,2]]</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#ffffff" style="width:389px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Multi-valued map. Note the difference between the values for a and b. a is multi-valued, but b has a list as value.</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$m(a,1,a,2,a,3,b,$l(1,$l(2,[])))</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>from the copyright of the web page http://forum.projects.semwebcentral.org/forum-syntax.html</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/data_types_.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:16 GMT -->
+</html>

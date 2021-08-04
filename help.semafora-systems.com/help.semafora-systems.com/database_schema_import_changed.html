@@ -1,0 +1,339 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/database_schema_import_changed.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:43 GMT -->
+<head> 
+   <title> Database Schema Import Changed </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexf69a.html?database_schema_import_changed.htm"; }
+  else { parent.quicksync('a3.22.7.32'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="transformation_between_owl_an3.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="querydefinition_distinguishedv.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Appendix &gt; Changelog > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Appendix &gt; Changelog 
+     <a href="transformation_between_owl_an3.htm">transformation_between_owl_an3.htm</a>&nbsp;/&nbsp;
+     database_schema_import_changed.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Database Schema Import Changed</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Database Schema Import was changed. All foreign keys of a table were imported in one rule. It causes a wrong result if foreign key columns have null values. Bugfix: Now one rule is generated for each foreign key. Please note that the bugfix only affects new database schema imports, but not old ontologies. So it's recommended to re-import database schemas for old ontologies.</p>
+<p class="p_Heading2"><span class="f_Heading2">Example</span></p>
+<p>Tables t1, t2, t3.</p>
+<p><span style="font-weight: bold;">t1</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="168" bgcolor="#707173" style="width:168px; background-color:#707173; border: solid 1px #808080;"><p class="p_Table_Heading"><span class="f_Table_Heading">ID</span></p>
+</th>
+<th valign="top" width="212" bgcolor="#707173" style="width:212px; background-color:#707173; border: solid 1px #808080;"><p class="p_Table_Heading"><span class="f_Table_Heading"> NAME</span></p>
+</th>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #808080;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="212" style="width:212px; border: solid 1px #808080;"><p class="p_TableContent"><span class="f_TableContent">a</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #808080;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="212" style="width:212px; border: solid 1px #808080;"><p class="p_TableContent"><span class="f_TableContent">b</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">t2</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="89" bgcolor="#c9c9c9" style="width:89px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ID1</span></p>
+</th>
+<th valign="top" width="81" bgcolor="#c9c9c9" style="width:81px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ID2</span></p>
+</th>
+<th valign="top" width="206" bgcolor="#c9c9c9" style="width:206px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">NAME</span></p>
+</th>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="89" style="width:89px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="81" style="width:81px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">33</span></p>
+</td>
+<td valign="top" width="206" style="width:206px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">c</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="89" bgcolor="#ffffff" style="width:89px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="81" bgcolor="#ffffff" style="width:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">44</span></p>
+</td>
+<td valign="top" width="206" bgcolor="#ffffff" style="width:206px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">d</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">t3</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="53" bgcolor="#c9c9c9" style="width:53px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ID</span></p>
+</th>
+<th valign="top" width="69" bgcolor="#c9c9c9" style="width:69px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">t1ID</span></p>
+</th>
+<th valign="top" width="91" bgcolor="#c9c9c9" style="width:91px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading"> t2ID1</span></p>
+</th>
+<th valign="top" width="71" bgcolor="#c9c9c9" style="width:71px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">t2ID2</span></p>
+</th>
+<th valign="top" width="83" bgcolor="#c9c9c9" style="width:83px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">COL</span></p>
+</th>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="53" style="width:53px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">555</span></p>
+</td>
+<td valign="top" width="69" style="width:69px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="91" style="width:91px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">4</span></p>
+</td>
+<td valign="top" width="71" style="width:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">44</span></p>
+</td>
+<td valign="top" width="83" style="width:83px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">w</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="53" bgcolor="#ffffff" style="width:53px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">777</span></p>
+</td>
+<td valign="top" width="69" bgcolor="#ffffff" style="width:69px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="91" bgcolor="#ffffff" style="width:91px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">null</span></p>
+</td>
+<td valign="top" width="71" bgcolor="#ffffff" style="width:71px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">null</span></p>
+</td>
+<td valign="top" width="83" bgcolor="#ffffff" style="width:83px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">q</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Table t3 has the following foreign keys: t3 (t1ID) references t1 column ID and t3 (t2ID1, t2ID2) references t2(ID1, ID2). </p>
+<p class="p_Heading2"><span class="f_Heading2">Generated Foreign Keys Mapping Rule</span></p>
+<p>Before the bugfix:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">c(T3,?VAR1)[FK_T3_T1-&gt;c(T1,?VAR2), FK_T3_T2-&gt;c(T2,?VAR3, ?VAR4)] :- _dbaccessuser("T3", f("ID", ?VAR1, "T1ID", ?VAR2, "T2ID1", ?VAR3, "T2ID2", ?VAR4),"conndatasource").</span></p>
+<p>&nbsp;</p>
+<p>After the bugfix:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">c(T3,?VAR1)[FK_T3_T1-&gt;c(T1,?VAR2)] :- _dbaccessuser("T3", f("ID", ?VAR1, "T1ID", ?VAR2),"conndatasource").</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">c(T3,?VAR1)[FK_T3_T2-&gt;c(T2,?VAR2, ?VAR3)] :- _dbaccessuser("T3", f("ID", ?VAR1, "T2ID1", ?VAR2, "T2ID2", ?VAR3),"conndatasource").</span></p>
+<p>&nbsp;</p>
+<p>Query:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{options[outorder(?T31_T3_COL,?T31_T3_T1ID,?T31_T3_ID)]} ?- ?T31:T3[T3_T1ID-&gt;?T31_T3_T1ID,T3_ID-&gt;?T31_T3_ID,T3_COL-&gt;?T31_T3_COL,FK_T3_T1-&gt;?T11] and ?T11:T1.</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Result</span></p>
+<p>Before the bugfix:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">"w" 1 555</span></p>
+<p>After the bugfix:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">"w" 1 555</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">"q" 2 777</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/database_schema_import_changed.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:43 GMT -->
+</html>

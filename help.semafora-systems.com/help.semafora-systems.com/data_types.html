@@ -1,0 +1,251 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/data_types.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:03 GMT -->
+<head> 
+   <title> Data types </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index0441.html?data_types.htm"; }
+  else { parent.quicksync('a5.7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="attribute.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="custom_datatypes.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>ObjectLogic Reference > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     ObjectLogic Reference 
+     <a href="attribute.htm">attribute.htm</a>&nbsp;/&nbsp;
+     data_types.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Data types</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>ObjectLogic supports various data types from the XML schema definition language</p>
+<p class="p_Heading2"><span class="f_Heading2">The old Flogic syntax:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">xsd#string, xsd#int,…</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">ObjectLogic abbreviations:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">_string, _int,…</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading2">Date and time:</span></p>
+<p>_dateTime &nbsp; &nbsp; <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#dateTime</a></p>
+<p>_date  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#date</a></p>
+<p>_time  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#time" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#time</a></p>
+<p>_duration  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#duration" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#duration</a></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading2">Numbers:</span></p>
+<p>_double  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#double</a></p>
+<p>_decimal  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#decimal</a></p>
+<p>_integer  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#integer</a> (any number)</p>
+<p>_long  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#long" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#long</a> </p>
+<p>_int  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#int</a> (32-bit)</p>
+<p>&nbsp;</p>
+<p><span class="f_Heading2">Strings and text:</span></p>
+<p>_string  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#string</a></p>
+<p>_PlainLiteral  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#text" target="_blank" class="weblink">http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a></p>
+<p>_XMLLiteral  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" target="_blank" class="weblink">http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</a></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading2">Others:</span></p>
+<p>_boolean  &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" class="weblink">http://www.w3.org/2001/XMLSchema#boolean</a></p>
+<p>_iri  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.w3.org/2007/rif#iri" target="_blank" class="weblink">http://www.w3.org/2007/rif#iri</a></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/data_types.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:04 GMT -->
+</html>

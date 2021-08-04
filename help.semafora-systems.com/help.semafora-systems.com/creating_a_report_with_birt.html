@@ -1,0 +1,252 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/creating_a_report_with_birt.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:02:46 GMT -->
+<head> 
+   <title> Creating a report with BIRT </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index4e0a.html?creating_a_report_with_birt.htm"; }
+  else { parent.quicksync('a2.1.9.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="birt.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="deploying_a_report_on_tomcat.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoStudio 3.1 &gt; General &gt; <a href="birt.htm">BIRT (Business Intelligence and Reporting Tools)</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoStudio 3.1 &gt; General &gt; <a href="birt.htm">BIRT (Business Intelligence and Reporting Tools)</a> 
+     <a href="birt.htm">birt.htm</a>&nbsp;/&nbsp;
+     creating_a_report_with_birt.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Creating a report with BIRT</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">From the top level menu select: </span><span class="f__ScreenName">Window</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Open Perspective</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Other...</span><span class="f_Instruction">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td>Select <span style="font-weight: bold;">Report Design</span> and click on <span style="font-weight: bold;">OK</span>.</td></tr></table></div><p class="p_Instruction"><img src="clip0392.png" width="282" height="329" border="0" alt="clip0392"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">A new view appears:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><img src="clip0393.png" width="761" height="587" border="0" alt="clip0393"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Select your ontology project from the Navigator.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td>Make a right mouse click on the project and choose <span class="f__ScreenName">New</span> -&gt; <span class="f__ScreenName">Report</span>.</td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">A new dialog box appears:</span></p>
+<p class="p_Instruction_Result"><img src="clip0395.png" width="536" height="615" border="0" alt="clip0395"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Select a project, give a name to the report and click on </span><span class="f__ScreenName">Next</span><span class="f_Instruction">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">6.</span></td><td><span class="f_Instruction">Choose a type of report and click on </span><span class="f__ScreenName">Finish</span><span class="f_Instruction">.</span></td></tr></table></div><p class="p_Instruction"><img src="clip0396.png" width="535" height="614" border="0" alt="clip0396"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">The report is generated:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span class="f_ImageCaption"> &nbsp;  </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span class="f_ImageCaption"> <img src="clip0397.png" width="1002" height="701" border="0" alt="clip0397"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">7.</span></td><td><span class="f_Instruction_Annotation">Create a new ObjectLogic Data Source.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">a.</span></td><td><span class="f_Instruction_Subinstruction">Choose the tab </span><span class="f_Instruction_Subinstruction" style="font-weight: bold;">Data Explorer</span><span class="f_Instruction_Subinstruction">. Then make a right mouse click on </span><span class="f__ScreenName">Data Source</span><span class="f_Instruction_Subinstruction"> and select </span><span class="f__ScreenName">New Data Source</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p class="p_Instruction_Subinstruction"><img src="clip0398.png" width="333" height="290" border="0" alt="clip0398"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">b.</span></td><td><span class="f_Instruction_Subinstruction" style="font-size: 10pt; font-family: 'Arial';">Select </span><span class="f_Instruction_Subinstruction" style="font-size: 10pt; font-family: 'Arial'; font-weight: bold;">OntoBroker Data Source</span><span class="f_Instruction_Subinstruction" style="font-size: 10pt; font-family: 'Arial';"> and give a name to the data source and click on </span><span class="f__ScreenName">Next</span><span class="f_Instruction_Subinstruction" style="font-size: 10pt; font-family: 'Arial';">.</span></td></tr></table></div><p class="p_Instruction_Subinstruction"><img src="clip0399.png" width="571" height="424" border="0" alt="clip0399"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">c)</span></td><td><span class="f_Instruction_Subinstruction">Fill out the fields and click on </span><span class="f__ScreenName">Finish</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p> &nbsp; <img src="clip0400.png" width="572" height="573" border="0" alt="clip0400"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">8.</span></td><td><span class="f_Instruction">Create a new data set.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">a.</span></td><td><span class="f_Instruction_Subinstruction">Make a right mouse click on </span><span class="f__ScreenName">Data Sets </span><span class="f_Instruction_Subinstruction">and select </span><span class="f__ScreenName">New Data Set</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p> &nbsp;  <img src="clip0401.png" width="331" height="287" border="0" alt="clip0401"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">b.</span></td><td><span class="f_Instruction_Subinstruction">Fill out the fields and click on </span><span class="f_Instruction_Subinstruction" style="font-weight: bold;">Next</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span class="f_ImageCaption"> &nbsp;  <img src="clip0402.png" width="645" height="639" border="0" alt="clip0402"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">c.</span></td><td><span class="f_Instruction_Subinstruction">Choose the query for which the report will be created and click on </span><span class="f_Instruction_Subinstruction" style="font-weight: bold;">Finish</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p> &nbsp; <img src="clip0403.png" width="647" height="638" border="0" alt="clip0403"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">d.</span></td><td><span class="f_Instruction_Subinstruction">Click on </span><span class="f_Instruction_Subinstruction" style="font-weight: bold;">OK</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p> &nbsp; <img src="clip0404.png" width="795" height="495" border="0" alt="clip0404"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">9.</span></td><td><span class="f_Instruction">Drag&amp;Drop the data set element from the Data Explorer to the new report view to create a simple table view of your data.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">See below for the result:</span></p>
+<p><img src="clip0406.png" width="1074" height="748" border="0" alt="clip0406"><span class="f_ImageCaption"> </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">10.</span></td><td><span class="f_Instruction">Click on the </span><span class="f__ScreenName">Preview</span><span class="f_Instruction"> tab.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The result of the query appears:</span></p>
+<p><img src="clip0408.png" width="722" height="453" border="0" alt="clip0408"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">11.</span></td><td><span class="f_Instruction">Switch back to the </span><span class="f__ScreenName">Layout</span><span class="f_Instruction"> tab.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">12.</span></td><td><span class="f_Instruction">Select </span><span class="f__ScreenName">Chart</span><span class="f_Instruction"> from the Palette to create a chart.</span></td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span class="f_ImageCaption"> &nbsp; <img src="clip0409.png" width="366" height="344" border="0" alt="clip0409"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">13.</span></td><td><span class="f_Instruction">Drag&amp;Drop from Chart to the report.</span></td></tr></table></div><p><span class="f_ImageCaption">  <img src="clip0410.png" width="1050" height="632" border="0" alt="clip0410"></span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result"> A new dialog box appears:</span></p>
+<p class="p_Instruction_Result"><img src="clip0411.png" width="781" height="704" border="0" alt="clip0411"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">14.</span></td><td><span class="f_Instruction">Select a chart type and click on </span><span class="f__ScreenName">Next</span><span class="f_Instruction">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">15.</span></td><td><span class="f_Instruction">Select the </span><span class="f__ScreenName">Use Data Set</span><span class="f_Instruction"> radio button and select the data set to be used.</span></td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span class="f_ImageCaption"> &nbsp; <img src="clip0412.png" width="831" height="782" border="0" alt="clip0412"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">16.</span></td><td> <span class="f_Instruction">Drag&amp;drop the data column to the appropriate text field and click on </span><span class="f__ScreenName">Next</span><span class="f_Instruction">.</span></td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span class="f_ImageCaption"> &nbsp; <img src="clip0413.png" width="826" height="784" border="0" alt="clip0413"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-weight: bold; font-size: 9pt; font-family: 'Calibri'; color: #000000;">17.</span></td><td><span class="f_Instruction">Click on </span><span class="f__ScreenName">Finish</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The chart is created:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><img src="clip0418.png" width="1073" height="753" border="0" alt="clip0418"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">18.</span></td><td><span class="f_Instruction">Click on the </span><span class="f__ScreenName">Preview</span><span class="f_Instruction"> tab.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">You can see all of the generated charts.</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/creating_a_report_with_birt.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:03:11 GMT -->
+</html>

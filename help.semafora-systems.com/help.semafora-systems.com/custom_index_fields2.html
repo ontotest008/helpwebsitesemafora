@@ -1,0 +1,518 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/custom_index_fields2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:23 GMT -->
+<head> 
+   <title> Custom Index Fields </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index1c79.html?custom_index_fields2.htm"; }
+  else { parent.quicksync('a3.22.5.11.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="fulltext_indexer_settings.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="connector_cache_options.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Appendix &gt; <a href="properties_settings.htm">Properties Settings</a> &gt; <a href="fulltext_indexer_settings.htm">Fulltext Indexer Settings</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Appendix &gt; <a href="properties_settings.htm">Properties Settings</a> &gt; <a href="fulltext_indexer_settings.htm">Fulltext Indexer Settings</a> 
+     <a href="fulltext_indexer_settings.htm">fulltext_indexer_settings.htm</a>&nbsp;/&nbsp;
+     custom_index_fields2.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Custom Index Fields</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>The indexer can now be customized with additional fields. Values for a defined set of attributes can be added to additional Lucene index fields and then used with the _queryIndex/10 built-in or for autocompletion.</p>
+<p class="p_Heading2"><span class="f_Heading2">Configuration</span></p>
+<p>If the full-text index engine is enabled, i.e. the parameter "FullTextIndex = on" is set in the OntoConfig.prp, OntoBroker creates an full-text index for every ontology.The fields and values can be configured with two files in the conf directory:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">fulltextindex-config.xml</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Contains the general options and the definition of the index fields.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">fulltextindex-schema.xml </span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Contains the index schema definition, i.e. field types and analyzers to be used for indexing and querying.</span><br>
+<span class="f_Instruction_Annotation">See also Apache Solr documentation <a href="http://wiki.apache.org/solr/SchemaXml" target="_blank" class="weblink">wiki.apache.org/solr/SchemaXml</a></span><br>
+<span class="f_Instruction_Annotation">In contrast to Apache Solr, the index fields are not defined in the schema definition, but in the </span><span class="f_Path">fulltextindex-config.xml</span><span class="f_Instruction_Annotation">.</span></p>
+<p>Also note that the full text index engine only works with extensional data, i.e. facts stored in the OntoBroker datamodel by import from ontology files, API insert/delete, materialization.</p>
+<p class="p_Heading2"><span class="f_Heading2">General Options</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" bgcolor="#c9c9c9" style="width:239px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">property</span></p>
+</td>
+<td valign="top" width="544" bgcolor="#c9c9c9" style="width:544px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" style="width:239px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">schema</span></p>
+</td>
+<td valign="top" width="544" style="width:544px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">path to schema definition, relative to conf directoy</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" bgcolor="#ffffff" style="width:239px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">excludedOntologies</span></p>
+</td>
+<td valign="top" width="544" bgcolor="#ffffff" style="width:544px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">set of ontologies, identified by ontologyURI, which should not be full-text indexed</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" style="width:239px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">batchSize</span></p>
+</td>
+<td valign="top" width="544" style="width:544px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">number of objects processed in one batch during index creation</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" bgcolor="#ffffff" style="width:239px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">flushSize</span></p>
+</td>
+<td valign="top" width="544" bgcolor="#ffffff" style="width:544px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">number of objects processed before flushing to disk</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" style="width:239px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">waitTime</span></p>
+</td>
+<td valign="top" width="544" style="width:544px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">waiting time before starting processing invalidated objects</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" bgcolor="#ffffff" style="width:239px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">languages</span></p>
+</td>
+<td valign="top" width="544" bgcolor="#ffffff" style="width:544px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">languages to consider for representations, synonyms and custom fields with language pattern</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" style="width:239px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">booleanQueryMaxClauseCount</span></p>
+</td>
+<td valign="top" width="544" style="width:544px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">maximum number of Lucene boolean clauses</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" bgcolor="#ffffff" style="width:239px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">defaultQueryOperator</span></p>
+</td>
+<td valign="top" width="544" bgcolor="#ffffff" style="width:544px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">default query operator if no operator is specified. Default is OR, alternative is AND, but this has a major impact on the overall behavior of the search</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="239" style="width:239px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">defaultStringMetric</span></p>
+</td>
+<td valign="top" width="544" style="width:544px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">string metric used for fuzzy search if not explicitly specified. Possible values are e.g.</span></p>
+<p class="p_TableContent"><span class="f_TableContent">Jaro, Levenstein, JaroScaled, JaroWinkler, DamerauLevenshtein, DamerauLevenshteinScaled, MaxJaroDamerauLevenshteinScaled, Jaccard, Soundex, SmithWatermna</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading2"><span class="f_Heading2">Standard index fields</span></p>
+<p>With the default configuration, there are the following index fields available for every ontology:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" bgcolor="#c9c9c9" style="width:132px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Field name</span></p>
+</td>
+<td valign="top" width="651" bgcolor="#c9c9c9" style="width:651px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" style="width:132px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">id</span></p>
+</td>
+<td valign="top" width="651" style="width:651px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">object id</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" bgcolor="#ffffff" style="width:132px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">lid</span></p>
+</td>
+<td valign="top" width="651" bgcolor="#ffffff" style="width:651px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">local name of object id</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" style="width:132px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">type</span></p>
+</td>
+<td valign="top" width="651" style="width:651px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Object type: c = Concept, i = Instance, a = Attribute, r = Relation, u = Rule, q = Query, t = Constraint</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" bgcolor="#ffffff" style="width:132px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">assertedisa</span></p>
+</td>
+<td valign="top" width="651" bgcolor="#ffffff" style="width:651px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">all concept ids, this object id (instance) has an assertedisa fact,</span></p>
+<p class="p_TableContent"><span class="f_TableContent">i.e. ?- $assertedisa(obj,?V).</span></p>
+<p class="p_TableContent"><span class="f_TableContent">i.e. extensional ?- obj:?V.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" style="width:132px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">axiomtext</span></p>
+</td>
+<td valign="top" width="651" style="width:651px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">text of rules, queries, and constraints</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" bgcolor="#ffffff" style="width:132px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">syn</span></p>
+</td>
+<td valign="top" width="651" bgcolor="#ffffff" style="width:651px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">local name, all representations and all synonyms (restricted to values of language property)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" style="width:132px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">all</span></p>
+</td>
+<td valign="top" width="651" style="width:651px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">all text values (values from fields id, lid, axiomtext, syn)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" bgcolor="#ffffff" style="width:132px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">repr_de, repr_en, ...</span></p>
+</td>
+<td valign="top" width="651" bgcolor="#ffffff" style="width:651px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">language-dependent representation,</span></p>
+<p class="p_TableContent"><span class="f_TableContent">i.e. extensional value of ?- obj[_representation(lang)-&gt;?V]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" style="width:132px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">docu_de, docu_en, ...</span></p>
+</td>
+<td valign="top" width="651" style="width:651px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">language-dependent documentation,</span></p>
+<p class="p_TableContent"><span class="f_TableContent">i.e. extensional value of ?- obj[_documentation(lang)-&gt;?V]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" bgcolor="#ffffff" style="width:132px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">syn_de, syn_en, ...</span></p>
+</td>
+<td valign="top" width="651" bgcolor="#ffffff" style="width:651px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">language-dependent synonyms, plus all language-independent synonyms</span></p>
+<p class="p_TableContent"><span class="f_TableContent">i.e. extensional value of ?- obj[_synonym(lang)-&gt;?V] OR obj[_synonym-&gt;?V]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="132" style="width:132px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">name_de, name_en, ...</span></p>
+</td>
+<td valign="top" width="651" style="width:651px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">language-dependent names: representation (or localname as fall back if representation is not defined), synonyms</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading2"><span class="f_Heading2">Custom index fields</span></p>
+<p>You can add additional fields by defining a bean of class com.ontoprise.indexer.FullTextIndexField.<br>
+FullTextIndexField has the following properties:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#c9c9c9" style="width:211px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">property name</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#c9c9c9" style="width:572px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">fieldName</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">name of the index field. Attribute 'languageAware' (boolean): If true, the fieldName is expanded if it contains the languagePattern.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">fieldType</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">name of field type as defined in fulltextindex-schema.xml</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ontobrokerInternal</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false, default=false: Flag to mark field to be important for various OntoBroker functionalities (SearchHelper, AutocompleteHelper)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">attributeNames</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">set of property names whose value should be included in this field. If an attributeName contains the value of the property languagePattern, it is replaced by a concrete language code.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">languagePattern</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">pattern to be replaced by the language values (see general options above). In this case this field definition is translated into multiple fields.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">restrictedToInstancesOf</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">set with concept ids. The field is only created for an object if it is an asserted instance of one of the given concept ids</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">indexed</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: Should field be indexed? (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">tokenized</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: Should values be tokenized? (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">stored</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: Should value be stored in index,i.e. values can be retrieved on search? (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">binary</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: is this a binary field? (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">compressed</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: should stored text field be compressed? (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">omitNorms</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: advanced option: omit norms associated with this field (changes ranking). (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">omitTermFreqAndPositions</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: omit term freq, positions and payloads from postings for this field? (overwrites value from field type)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">termVectors</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: expert field option (see Lucene documentation for details)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" style="width:211px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">termPositions</span></p>
+</td>
+<td valign="top" width="572" style="width:572px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: expert field option (see Lucene documentation for details)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="211" bgcolor="#ffffff" style="width:211px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">termOffsets</span></p>
+</td>
+<td valign="top" width="572" bgcolor="#ffffff" style="width:572px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">false: expert field option (see Lucene documentation for details)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading2"><span class="f_Heading2">Configuration example</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; ... </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;bean class="com.ontoprise.indexer.FullTextIndexField"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;&lt;property name="languagePattern" value="$LANGUAGE$" /&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;&lt;property name="fieldName" value="xname_$LANGUAGE$" /&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;&lt;property name="fieldType" value="otext" /&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;&lt;property name="stored" value="true" /&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;&lt;property name="attributeNames"&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;set&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample"> &nbsp; &nbsp;&lt;value&gt;&amp;lt;http://my.namespace#name&amp;gt;("$LANGUAGE$")&lt;/value&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">&lt;/set&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> &nbsp; &nbsp;&lt;/property&gt;</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">&lt;/bean&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; ...</span></p>
+<p>In this example, one custom index field definition with a language pattern is defined. This means that multiple index fields are created, one for each language defined in the property languages (see global options above). Assuming that the defined languages are "de" and "en", the effective index fields are "xname_de" containing the values of the attribute &lt;http://my.namespace#name&gt;("de"), and "xname_en" containing the values of the attribute &lt;http://my.namespace#name&gt;("en"). The field type used here is "otext" , this is a standard field type used by many standard index fields of OntoBroker. The values are stored in the index for retrieval (this is only needed if it is used for autocompletion or if you want to use the return() option of the _queryIndex built-in)</p>
+<p class="p_Heading2"><span class="f_Heading2">Search example</span></p>
+<p>To search in this field with _queryIndex/10, use the Lucene syntax for fields (here "xname_en:") in front of your search text.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _queryIndex(&lt;http://your.company.com#ontology&gt;, [return(xname_en)], "xname_en:Transp*", 0, 10, ?OBJ, ?TC, ?SCORE, ?ORDER, ?OPT).</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Autocomplete example</span></p>
+<p>For autocomplete you have to set the search field in the AutoComplete.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">AutocompleteHelper helper = ...</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ontology ontology = ...</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">AutocompleteHelper.Type type = ...</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">AutocompleteHelper.Options options = new AutocompleteHelper.Options(); </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">options.setSearchField("xname_en"); </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">options.set... </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">CompletionResults results = helper.getCompletion(ontology, options, type, "Transp", 0, 10);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">..</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/custom_index_fields2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:24 GMT -->
+</html>
