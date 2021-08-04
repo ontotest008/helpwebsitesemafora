@@ -1,0 +1,267 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/genetic_optimizer.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:27 GMT -->
+<head> 
+   <title> Genetic Optimizer </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index11d2.html?genetic_optimizer.htm"; }
+  else { parent.quicksync('a3.15.3.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="parallelization_settings.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="eliminateduplicates.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="configuring_ontobroker.htm">Configuring OntoBroker</a> &gt; Performance-Related Configuration Switches > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="configuring_ontobroker.htm">Configuring OntoBroker</a> &gt; Performance-Related Configuration Switches 
+     <a href="parallelization_settings.htm">parallelization_settings.htm</a>&nbsp;/&nbsp;
+     genetic_optimizer.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Genetic Optimizer</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>The genetic optimizer allows the optimization of specific queries. This optimizer is typically used before deploying ontologies on a production server. The order of the body literals can be changed/permutated and this might improve the inference speed dramatically. If you create all possible permutations, you may find the perfect result, but this would take an extremely long time. For 10 rules with 4 body literals you would have 104! possible solutions, for 100 rules with 8 body literals you would have 1008! possible solutions. The idea is, that you do not need the best result, but a result that is good enough. If you get one change that improves the query, it should be even better when combined with other positive changes. For optimizations in such high dimensional search spaces genetic algorithms are applicable. Thus the genetic optimizer optimizes the sequence of body literals in the rules using a genetic approach. In the initialization process a random population will be created. This population is a defined number of individuals with each representing exactly one permutation. These individuals together are called a generation, as it is the first one this one, is generation 0. Then the fitness of all individuals will be determined. For this, the permutations will be applied and the query will be executed. The smaller the evaluation time is, the better the fitness. The better the fitness of an individual is the better is its chance to contribute to the following creation of the individuals of the next generation. Their characteristics, the ordering of body literals, will be mixed and a new population will be created. New random changes may be made. The fittest individual survives unchanged. This continues until the wanted number of generations has been calculated. </p>
+<p class="p_Heading2"><span class="f_Heading2">Limits</span></p>
+<p>As the continuum of all possible reordering is very big, you will need many individuals to test. For complex rule scenarios several thousand individuals should be created, so that it takes a lot of time to optimize a long-running query. Another problem may be the memory demand of the query evaluation. Some permutations will need much more memory than the average. If you already operate on the limits OntoBroker can handle with the available main memory, you might encounter out of memory" errors when using genetic optimizer. </p>
+<p>NOTE: If you optimize a specific query with the genetic optimizer and you change the rules or the facts then you will need to execute the genetic optimizer again. If you only change the constants or the order of literals in a rule you do not need to optimize the query again. </p>
+<p class="p_Heading2"><span class="f_Heading2">Usage</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 19px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#c9c9c9" style="width:168px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Command</span></p>
+</td>
+<td valign="top" width="612" bgcolor="#c9c9c9" style="width:612px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">opt_genetic &lt;queryID&gt;</span></p>
+</td>
+<td valign="top" width="612" style="width:612px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Commands to send an optimized query to OntoBroker  </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">opt_genetic status</span></p>
+</td>
+<td valign="top" width="612" bgcolor="#ffffff" style="width:612px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">The return value is a string. The status of the last complete generation will be returned.</span><br>
+<span class="f_TableContent">At least one generation has to be evaluated before valid results can be delivered. </span></p>
+<p class="p_TableContent"><span class="f_TableContent">OntoBroker Return Values: The return value is a "string" without line separators. Use | as separation character. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" style="width:168px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">opt_genetic kill</span></p>
+</td>
+<td valign="top" width="612" style="width:612px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Stops a running optimization. It may take a short time, you can use the -isoptimizing command to see when it is done. The timeout window has to fit into the timeout of the socket connection, so that it may be too small for some cases. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="168" bgcolor="#ffffff" style="width:168px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">opt_genetic isoptimizing</span></p>
+</td>
+<td valign="top" width="612" bgcolor="#ffffff" style="width:612px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p>Returns if an optimization process is currently running or not. <span style="font-size: 10pt; font-family: 'Arial';"> </span></p>
+<p>OntoBroker Return Values: <span style="font-size: 10pt; font-family: 'Arial';">The return value is a "string".</span> </p>
+<p>Example: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">opt_genetic file, "test.data", rewrite, timeout, 1000, module,"&lt;http://www.NewOnto1.org/ontology&gt;", "queryID"</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading2"><span class="f_Heading2">Options</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">file filename - file name for optimisations data.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">rewrite - rewrites the file with optimisations data if exists.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">timeout value - optimisation timeout (ms).</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">kill - stops the optimisation.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">isoptimizing - checks whether the optimization is already running.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">status - returns the best result of the running optimization.</span></td></tr></table></div> 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/genetic_optimizer.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:28 GMT -->
+</html>
