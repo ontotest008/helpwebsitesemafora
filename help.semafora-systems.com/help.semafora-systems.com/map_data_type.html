@@ -1,0 +1,574 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/map_data_type.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:11 GMT -->
+<head> 
+   <title> map data type </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index97fd.html?map_data_type.htm"; }
+  else { parent.quicksync('a5.20.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="lists_tutorial.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="null_value.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>ObjectLogic Reference &gt; Terms > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     ObjectLogic Reference &gt; Terms 
+     <a href="lists_tutorial.htm">lists_tutorial.htm</a>&nbsp;/&nbsp;
+     map_data_type.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">map data type</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p class="p_Heading2"><span class="f_Heading2">Mapping between Java objects and ObjectLogic</span></p>
+<p>Example:<br>
+BLZ Service of the Deutsche Bundesbank, see<br>
+http://www.thomas-bayer.com/axis2/services/BLZService?wsdl<br>
+Generating the Java client for this web service results in (simplified here):</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span><br>
+Java</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">interface</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BLZService</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">Details</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">getDetails(String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">blz);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Details</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">bezeichnung;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">bic;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ort;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">plz;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p style="margin: 0px 0px 8px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p>A web service call from ObjectLogic could look like this:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _callWebservice("http://bundesbank/services/BLZService",</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">"getDetails", [blz-&gt;"66010075"],?Result).</span></p>
+<p style="margin: 0px 0px 8px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p>Internally the input parameters, here the single parameter “blz” is extracted from the input map and the web service is called via the generated Java client. The result is returned in a Details object. This object is mapped into a map constant term:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?Result = [bezeichnung-&gt;"Postbank Karlsruhe",</span><br>
+<span class="f_CodeExample"> &nbsp;bic-&gt;"PBNKDEFF",ort-&gt;"Karlsruhe",plz-&gt;"76127"]</span></p>
+<p class="p_Heading1"><span class="f_Heading1">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Mapping between XML and ObjectLogic</span></p>
+<p>Using both maps and lists, it would become possible to map XML directly into an ObjectLogic constant term without loosing the hierarchical structure and sequence order. This would be very similar to the mapping between XML and JSON.<br>
+Example:<br>
+XML</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; </span><span class="f_CodeExample" style="font-weight: bold;"> </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">animals</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample" style="font-weight: bold;"> </span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">id</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">1</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Rufus</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">labrador</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">id</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">2</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Marty</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">whippet</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">breed</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">dog</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">cat</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">Matilda</span><span class="f_CodeExample" style="color: #0000ff;">"/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">animals</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p style="margin: 0px 0px 8px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span><br>
+ObjectLogic</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X = [animals-&gt;[</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">[dog-&gt;[</span><br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[id-&gt;1,name-&gt;"Rufus",breed-&gt;"labrador"],</span><br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[id-&gt;2,name-&gt;"Marty",breed-&gt;"whippet"]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> ],</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> cat-&gt;[</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">[name-&gt;"Matilda"]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample"> ]</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp;]</span></p>
+<p style="margin: 0px 5px 0px 47px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Options parameter for built-ins</span></p>
+<p>Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _queryIndex(module,[return(type),return(title),includeAll,stringMetric("Jaro")],</span><br>
+<span class="f_CodeExample"> &nbsp;"searchString",0,10,?OBJ,?TC,?SCORE,?ORDER,?OPT).</span></p>
+<p style="margin: 0px 0px 8px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p>Using the map data type this becomes more readable to</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _queryIndex(module,</span><br>
+<span class="f_CodeExample"> [return-&gt;{type,title},includeAll-&gt;true,stringMetric-&gt; "Jaro")],</span><br>
+<span class="f_CodeExample"> "searchString",0,10,?OBJ,?TC,?SCORE,?ORDER,?OPT).</span></p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Result parameter for built-ins with variable content structure</span></p>
+<p>Sometime built-ins need to return variable result sets depending on the options. This has already been needed in the above web service example. Another example is here also the _queryIndex/10 built-in, where the ?OPT variable returns variable a list of functions, which is hard to pass directly in ObjectLogic.</p>
+<p>&nbsp;<br>
+For the above example, the ?OPT variable currently returns things like<br>
+<span style="width:48px">&nbsp;</span>?OPT = [type("c"),title("Reparaturanleitung")]</p>
+<p>Using the map data type, this would be instead <br>
+<span style="width:48px">&nbsp;</span>?OPT = [type-&gt;"c",title-&gt;"Reparaturanleitung"]</p>
+<p class="p_Heading2"><span class="f_Heading2">Specification Details</span></p>
+<p>The syntax is just an overloading of the list syntax. The square brackets would contain key/value pairs instead of terms. Mixing terms and key/value pairs is forbidden, also the head/tail syntax used for lists.</p>
+<p class="p_Heading2"><span class="f_Heading2">Assignments</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#c9c9c9" style="width:368px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic syntax</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#c9c9c9" style="width:259px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty list (special constant)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[-&gt;]</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty map (special constant)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[1,2,3]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">list</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[1|?Y]</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">List head / tail</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[a-&gt;1,b-&gt;2]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Map</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X=[a-&gt;{1,2,3},b-&gt;[1,2]]</span><br>
+<span class="f_TableContent">equivalent to </span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X=[a-&gt;1,a-&gt;2,a-&gt;3,b-&gt;[1,2]]</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Multi-valued map. Note the difference between the values for a and b.</span></p>
+<p class="p_TableContent"><span class="f_TableContent">a is multi-valued, but b has a list as value.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X = [1,a-&gt;b] &nbsp;// invalid</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Mixing of list terms and key value pairs is not allowed. ObjectLogic compiler must throw exception</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 8px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Facts</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="313" style="width:313px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">p([a-&gt;1,b-&gt;2]).</span></p>
+</th>
+<th valign="top" width="313" style="width:313px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Predicate p/1 with a map term as first argument</span></p>
+</th>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 8px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Rules , Queries, Built-ins</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" width="368" bgcolor="#ffffff" style="width:368px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">p([?X-&gt;?Y]) :- r(?X,?Y).</span></p>
+</th>
+<th valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">map in rule head</span></p>
+</th>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">p(?Z) :- ?Z = [?X-&gt;?Y], r(?X,?Y).</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">same as above</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- ?M = collectmap { ?X,?Y | r(?X,?Y) }.</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">translates into:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?- _aggr_collectmap([],[?X,?Y], ?X, ?Y, ?M), r(?X,?Y)).</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Aggregation collectmap to collect key/value pairs in one map</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3][_memberAt(?X)-&gt;?Y].</span><br>
+<span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span><br>
+<span class="f_TableContent">?X = a, ?Y = 1</span><br>
+<span class="f_TableContent">?X = a, ?Y = 2</span><br>
+<span class="f_TableContent">?X = b, ?Y = 3</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Extended built-in _memberAt/3 to extract keys and/or values from a map</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3,c-&gt;4][_intersection([a-&gt;1, c-&gt;5])-&gt;?X].</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X = [a-&gt;1]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _intersection/3 to create intersection of two maps</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3,c-&gt;4][_union([a-&gt;1, c-&gt;5])-&gt;?X].</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X = [a-&gt;{1,2},b-&gt;3,c-&gt;{4,5}]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _union/3 to create union of two maps</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;{1,2},b-&gt;3,c-&gt;4] [_difference([a-&gt;1, c-&gt;5])-&gt;?X].</span><br>
+<span class="f_TableContent">&nbsp;</span><br>
+<span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?X = [a-&gt;2,b-&gt;3,c-&gt;4]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _difference/2 to remove all key/value pairs of argument1 from argurment 0</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [b-&gt;1,a-&gt;4,a-&gt;2][_normalize-&gt;?X].</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span><br>
+<span class="f_TableContent">?X = [a-&gt;{2,4}, b-&gt;1]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _normalize/2 to bring map in internal order</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- _map[_toType(a,2)-&gt;?X].</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span><br>
+<span class="f_TableContent">?X = [a-&gt;2]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Extended built-in _toType/4 to generate singleton map</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- ?M = [a-&gt;[b-&gt;[1,2], c-&gt;3], d-&gt;4], _memberByPath(?M,_path(a,b),?V)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns </span></p>
+<p class="p_TableContent"><span class="f_TableContent">?V = [1,2]</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _memberByPath/3 to filter with xpath expression</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- ?M = [a-&gt;[b-&gt;[1,2], c-&gt;3], d-&gt;4], _map2table(?M,?P,?I,?V).</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns</span></p>
+<p class="p_TableContent"><span class="f_TableContent">P &nbsp; &nbsp; &nbsp;I &nbsp; &nbsp; &nbsp;V</span></p>
+<p class="p_TableContent"><span class="f_TableContent">---------------</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;0 &nbsp; &nbsp; &nbsp;1</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;1 &nbsp; &nbsp; &nbsp;2</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.c" &nbsp;0 &nbsp; &nbsp; &nbsp;3</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"d" &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;4</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">?- ?M = [a-&gt;[b-&gt;{1,2}, c-&gt;3], d-&gt;4], _map2table(?M,?P,?I,?V).</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns</span></p>
+<p class="p_TableContent"><span class="f_TableContent">P &nbsp; &nbsp; &nbsp;I &nbsp; &nbsp; &nbsp;V</span></p>
+<p class="p_TableContent"><span class="f_TableContent">---------------</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;0 &nbsp; &nbsp; &nbsp;1</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.b" &nbsp;1 &nbsp; &nbsp; &nbsp;2</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"a.c" &nbsp;0 &nbsp; &nbsp; &nbsp;3</span></p>
+<p class="p_TableContent"><span class="f_TableContent">"d" &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;4</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Built-in _map2table/4 to convert a map to flat table. Note that list values are converted to flat table too.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="368" style="width:368px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- [a-&gt;1,b-&gt;2] == [b-&gt;2,a-&gt;1].</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">returns:</span></p>
+<p class="p_TableContent"><span class="f_TableContent">true</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_equals/2 should be extended to compare maps independently from the order</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p>Side remark: Mapping ObjectLogic instances to and from maps</p>
+<p>Interestingly, you can also extract all attribute values of an ObjectLogic instance into a map. It “strips” off the instance and leaves the blank attribute map.</p>
+<p>&nbsp;</p>
+<p>Example 1 (flat):</p>
+<p class="p_CodeExample"><span class="f_CodeExample">juergen[name-&gt;"Jürgen", age-&gt;28].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?M = collectmap { ?Z | ?Z=[?X,?Y], juergen[?X-&gt;?Y] }.</span></p>
+<p>&nbsp;<br>
+results in:<br>
+<span class="f_CodeExample">?M = [name-&gt;"Jürgen", age-&gt;28]</span></p>
+<p>&nbsp;</p>
+<p>Example 2 (hierarchical):</p>
+<p class="p_CodeExample"><span class="f_CodeExample">juergen:Person[name-&gt;"Jürgen", age-&gt;28, address-&gt;ja].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ja:Address[street-&gt;"An der RaumFabrik", ort-&gt;"Durlach"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?M = collectmap { ?Z</span><br>
+<span class="f_CodeExample"> | ((?Z=[?X,?Y], NOT ?Y:?) </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp;OR (?M1 = collectmap {?Z1 | ?Z1=[?X1,?Y1], ?Y[?X1-&gt;?Y1]}, ?Y:?), ?Z=[?X,?M1]), juergen[?X-&gt;?Y] }.</span></p>
+<p>&nbsp;<br>
+results in:<br>
+<span class="f_CodeExample">?M = [name-&gt;"Jürgen", age-&gt;28,</span><br>
+<span class="f_CodeExample"> &nbsp;address-&gt;[street-&gt;"An der RaumFabrik", ort-&gt;"Durlach"]].</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Implementation</span></p>
+<p>Maps are stored as functions internally. The function symbol is $m and the arguments are a sequence of key value pairs. This implies that the key,value pairs are ordered and that a key can have multiple values. </p>
+<p>Therefore [a-&gt;b,c-&gt;d] does not unify with [c-&gt;d,a-&gt;b]. If you need to unify maps, use the normalize built-in to bring the key/value pairs in a the same order<span style="font-size: 12pt; font-family: 'Times New Roman';">.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#c9c9c9" style="width:238px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic term</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#c9c9c9" style="width:389px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Description</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#c9c9c9" style="width:259px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Internal Representation</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" style="width:238px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[]</span></p>
+</td>
+<td valign="top" width="389" style="width:389px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty list (special constant)</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#ffffff" style="width:238px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[-&gt;]</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#ffffff" style="width:389px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Empty map (special constant)</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[-&gt;]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" style="width:238px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[1,2,3]</span></p>
+</td>
+<td valign="top" width="389" style="width:389px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">list</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$l(1,$l(2,$l(3,[])))</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#ffffff" style="width:238px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[1|?Y]</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#ffffff" style="width:389px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">List head / tail</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$l(1,?Y)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" style="width:238px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[a-&gt;1,b-&gt;2]</span></p>
+</td>
+<td valign="top" width="389" style="width:389px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Map</span></p>
+</td>
+<td valign="top" width="259" style="width:259px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$m(a,1,b,2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="238" bgcolor="#ffffff" style="width:238px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[a-&gt;{1,2,3},b-&gt;[1,2]]</span></p>
+</td>
+<td valign="top" width="389" bgcolor="#ffffff" style="width:389px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Multi-valued map. Note the difference between the values for a and b. a is multi-valued, but b has a list as value.</span></p>
+</td>
+<td valign="top" width="259" bgcolor="#ffffff" style="width:259px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">$m(a,1,a,2,a,3,b,$l(1,$l(2,[])))</span></p>
+</td>
+</tr>
+</table>
+</div>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/map_data_type.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:11 GMT -->
+</html>

@@ -1,0 +1,273 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/integration_scenario.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:40 GMT -->
+<head> 
+   <title> Integration Scenario </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="inconsistencies,Integration Scenario,Ontology mappings"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index6bc7.html?integration_scenario.htm"; }
+  else { parent.quicksync('a3.6.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="data_integration.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="supported_common_datatypes.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="data_integration.htm">Data Integration</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="data_integration.htm">Data Integration</a> 
+     <a href="data_integration.htm">data_integration.htm</a>&nbsp;/&nbsp;
+     integration_scenario.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Integration Scenario</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>The scenario for this process was given by the business processes around the testing of cars. Our client has a fleet of test cars. These test cars are continuously reconfigured and then tested with this new configuration. Reconfiguration means changing the engine, changing the gear, changing the electric, i.e. changing all kinds of parts. For changing parts a lot of dependencies between these parts have to be taken into account. In many cases these dependencies are only known by certain human experts and thus require a lot of communication effort between different departments of the manufacturer, between the manufacturer and suppliers and between suppliers. Very often test cars have been configured which did not work or which hampered the measurement of the desired parameters. So, making such dependencies exploitable by computers allows for reducing the error rate in configuring test cars with a lower communication effort. The information on the car parts is stored in a considerable amount of databases filled by CAD-systems, measurement values, and so on, which have to be taken into account. These databases are fed by different tools in different departments. These databases have to be accessed during query-time to ensure the topicality of the data. During this project an ontology has been developed which serves as a communication medium between engineers, serves as a knowledge model representing these complex dependencies and serves as an integration model for different data sources. The following describes the last aspect in detail.</p>
+<p class="p_Heading2"><span class="f_Heading2">The Ontology</span></p>
+<p>The base ontology very strongly relies on parts which are arranged in a part-of hierarchy and their properties. The instances, i.e. concrete values are most often gained from the parts list in the legacy systems.Our ontologies are represented in ObjectLogic. Specific basic concepts are represented as concepts in ObjectLogic and are arranged in an isa-hierarchy. Concepts may be described by attributes and relationships to other concepts.</p>
+<p class="p_CodeExample" style="text-align: justify;"> <span class="f_CodeExample">component[</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">has_part {0:*} *=&gt; component,</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">is_part {0:*} *=&gt; component,</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">horsepower {0:1} *=&gt; _integer].</span><br>
+<span class="f_CodeExample">// instances and relations</span><br>
+<span class="f_CodeExample">tdi_engine:component.</span><br>
+<span class="f_CodeExample">valve2:component.</span><br>
+<span class="f_CodeExample">pump3:component.</span></p>
+<p class="p_CodeExample" style="text-align: justify;"><span class="f_CodeExample">tdi_engine[ &nbsp; &nbsp; &nbsp; &nbsp;</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">has_part-&gt;valve2,</span><br>
+<span style="width:48px">&nbsp;</span><span class="f_CodeExample">has_part-&gt;pump3,horsepower-&gt;340].</span></p>
+<p class="p_CodeExample" style="text-align: justify;"><span class="f_CodeExample">&nbsp;</span><br>
+<span class="f_CodeExample">//rules</span><br>
+<span class="f_CodeExample">@{isPart} ?Y[is_part-&gt;?X] :- ?X[has_part-&gt;?Y].</span></p>
+<p class="p_CodeExample" style="text-align: justify;"><span class="f_CodeExample">&nbsp;</span><br>
+<span class="f_CodeExample">//queries</span><br>
+<span class="f_CodeExample">@{allComponents} ?- ?X:component.</span></p>
+<p>In this example we have defined a component as a basic concept. A component has a relationship has_part to another component and an attribute horsepower. Then we create an instantiation of a component tdi_engine being a specific engine. Concrete instances valve2, pump3 are given for concept component. A rule is used to describe the inversity of has_part and is_part. With a query we ask for all of the components in the model. OntoBroker, our reasoning system, provides the means for efficient reasoning in ObjectLogic. OntoBroker performs a mixture of forward and backward chaining based on the dynamic filtering algorithm to compute (the smallest possible) subset of the model for answering the query. During forward chaining not only single tuples of variable instantiations but sets of such tuples are processed. It is well-known that set-oriented evaluation strategies are much more efficient than tuple oriented ones. The semantics for a set of ObjectLogic statements is then defined by a transformation process of ObjectLogic into normal logic (Horn logic with negation) and the well-founded semantics for the resulting set of facts and rules and axioms in normal logic.</p>
+<p style="text-align: justify;"><img src="clip0044_ob.png" width="918" height="648" border="0" alt="clip0044_ob"></p>
+<p>An excerpt of that ontology is shown in a part-of view in our tool OntoStudio. For example, it shows that a gear is part of a car and the switching lever is a part of the gear. For the motor some attributes such as maximum power, type, and so on are shown. An ontology without rules describes only simple relationships between concepts like a part is a part of another part, a part is connected to another part, and so on. More complex relationships have to be described by rules and constraints. </p>
+<p class="p_Heading2"><span class="f_Heading2">Data Source Integration</span></p>
+<p>Besides serving as a common communication language and representing expert knowledge in our scenario, ontologies serve as an integration means of different legacy systems. The ontology is used to reinterpret given information sources in a common language and thus provide a common and single view of different data sources. In our scenario, the components data and the configuration data is already handled comprehensively in different departments and in different information sources like CAD-, CAE- or CAT-systems or ERP/PPS-applications, databases, and so on. All of these IT systems accompany the whole PLM-process, beginning with the product design and ending with the product release. Our test configuration system, and hence our ontology system must access this live information to be up-to-date, avoid inconsistent data and avoid additional effort. An ontology could now collect these different sources and integrate them in a common logical model. This goes far beyond building just connectors between applications. The goal of integration is to consolidate distributed information intelligently, free of redundancy and provide users and applications with simple access to information without considering the underlying data structure or system. In our case we already have such a commonly accepted logical model: the automotive ontology. This ontology describes schema information and is not yet populated with instances. This means e.g. that there is a concept motor with attributes name, cylinders, type, and so on. But there is no information on concrete motors like TDI V6, with 6 cylinders, fuel type super, and so on, available. This is achieved by attaching the ontology to one or more of the existing information sources. In the following we exemplify the mapping to a relational database.</p>
+<p class="p_Heading2"><span class="f_Heading2">Database Schema Import</span></p>
+<p>The first step in connecting an ontology to a database is to import the database schema and visualize it in our ontology management environment OntoStudio. Beneath relational database schemas, OntoStudio also has import filters for other schemas like RDF or OWL. In our example we will show the attachment of a database table motor to our ontology. </p>
+<p style="text-align: justify;"><img src="clip0045_ob.png" width="693" height="199" border="0" alt="clip0045_ob"></p>
+<p>The database mapping imports the table engine as a concept, columns id, absolute_power, fuel, volume_flow and engine_type as attributes. This means that every row in the database corresponds to one object in the ontology. OntoStudio automatically creates a connection to the database by the dbaccessuser-connector (there are various connectors to information sources available). This built-in automatically creates a unique object ID. It is used in a rule which defines the access and the mapping to the ontology:</p>
+<p class="p_CodeExample" style="text-align: justify;"><span class="f_CodeExample">@{mappingRule}</span><br>
+<span class="f_CodeExample">?V_ID:Engine[ID-&gt;?V_ID, absolute_power-&gt;?V_ABSOLUTE_POWER, fuel-&gt;?V_FUEL,</span></p>
+<p class="p_CodeExample" style="text-align: justify;"><span class="f_CodeExample">volume_flow-&gt;?V_VOLUME_FLOW, engine_type-&gt;?V_FUEL_TYPE]</span><br>
+<span class="f_CodeExample">:-</span><br>
+<span class="f_CodeExample">_dbaccessuser("engine", </span><br>
+<span class="f_CodeExample">F( "id", ?V_ID, "absolute power", ?V_ABSOLUTE_POWER, "fuel", ?V_FUEL</span><br>
+<span class="f_CodeExample">"volume_flow", ?V_VOLUME_FLOW, "engine_type", ?V_ENGINE_TYPE),</span><br>
+<span class="f_CodeExample">"mydbconnection").</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Ontology Mappings</span></p>
+<p>After having imported the database schema, the result ontology can be mapped with another ontology. Below you can see how a concept-to-concept mapping connects the concept engine to the concept motor and, additionally, an attribute-to-attribute mapping from id in the database ontology to name in the new ontology. </p>
+<p style="text-align: justify;"><img src="clip0046_ob.png" width="978" height="572" border="0" alt="clip0046_ob"></p>
+<p>Another important mapping type is the mapping of attributes to concepts. This results in the attribute value being used as a unique ID for an ontology instance. For example, mapping the ID of engine to the concept motor creates an object for every different ID. </p>
+<p class="p_Heading2"><span class="f_Heading2">Querying the Integration Ontology</span></p>
+<p>Mappings can be defined to different RDBMS and also to web services at the same time. A query to the integration ontology is thus translated in real-time (via the mapping rules) into calls for appropriate access built-ins which in turn access the data sources (in case of an RDBMS via SQL queries) and translate the answers back into ObjectLogic. Hence a user or an application on top of the ontology requires only this single ontology view and with it single vocabulary to retrieve all of the necessary information. In our scenario different information sources contribute to the same ontology. For example, information on electronic parts is stored in other databases than information on mechanical parts. Information on the 3-D geometry of objects is separated from their mechanical properties, and so on.</p>
+<p class="p_Heading2"><span class="f_Heading2">How to Handle Inconsistencies</span></p>
+<p>It is clear that in practice the different information sources contain redundant or even inconsistent information. For instance, in our scenario, car types have not been represented in a unique way. The assignment of properties to car types has been described with different keys for one and the same car type. For example, keys like A3/A4 have been used to describe common properties of two car types while unique properties have been assigned to the car type by a key A3. We again use rules and thus inferencing to solve such problems. </p>
+<p class="p_CodeExample" style="text-align: justify;"><span class="f_CodeExample">?T:Car[carType-&gt;?Type, has_part-&gt;?Part]</span><br>
+<span class="f_CodeExample">:- _dbaccessuser("car", F( "id", ?T, "part", ?Part),</span><br>
+<span class="f_CodeExample">"mydbconnection") and ?Type is ?T._split("/")._memberAt(0).</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Conclusion</span></p>
+<p>In a real-life industrial project, viz. in the automotive industry at a car manufacturer, we have shown that ontologies may very well be used to enhance business processes and to integrate different information sources. In our case the ontology represents knowledge about relationships between different parts which may automatically be exploited in configuring test cars. This reduces the communication effort between the mechanical engineers, and reduces the error rate in configuring test cars. For this task the ontology is attached to the legacy systems of the manufacturer and thus accesses up-to-date information about parts and configurations. We have shown that our ontology engineering environment OntoStudio supports not only the comfortable development of ontologies but, with the integrated mapping tool OntoMap, also an easy to learn tool for attaching ontologies to different information sources. Our SemanticGuide is based on our ontology run-time environment and inference engine OntoBroker which is based on ObjectLogic. This semantic guide accelerates the configuration of test cars at our customer and hence also accelerates the development of new cars. In the end, this reduces time-to-market.</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/integration_scenario.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:42 GMT -->
+</html>

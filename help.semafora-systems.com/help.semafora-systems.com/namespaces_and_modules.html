@@ -1,0 +1,282 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/namespaces_and_modules.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:22 GMT -->
+<head> 
+   <title> Namespaces and Modules </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexf809.html?namespaces_and_modules.htm"; }
+  else { parent.quicksync('a3.13.2.6'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="progress_listener.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="ontobroker_and_web_services_so.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> 
+     <a href="progress_listener.htm">progress_listener.htm</a>&nbsp;/&nbsp;
+     namespaces_and_modules.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Namespaces and Modules</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>In ObjectLogic, there are two ways of organizing ontology elements: modules and namespaces. Both can be used concurrently and independently of each other. The difference between the two may seem subtle in some situations, yet it is important to understand and differentiate them as they are powerful constructs that are encountered frequently. This chapter will briefly clarify the differences and then explain how the two concepts are reflected in the OntoBroker API.</p>
+<p>Output from a demo program (read further for explanation):</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Printing concepts from all modules from namespace: http://example.org/animals#</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Concept &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Module &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/animals#Cobra &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://example.org/Europe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/animals#Fox &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://example.org/America &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/animals#Jaguar &nbsp; &nbsp; &nbsp; &nbsp; http://example.org/America &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/animals#Mustang &nbsp; &nbsp; &nbsp; &nbsp;http://example.org/America &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/animals#Viper &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://example.org/Europe  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Printing concepts from all modules from namespace: http://example.org/cars#</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Concept &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Module &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/cars#Cobra &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://example.org/America &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/cars#Fox &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://example.org/Europe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/cars#Jaguar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;http://example.org/Europe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/cars#Mustang &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://example.org/America &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">http://example.org/cars#Viper &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://example.org/America &nbsp;  </span> </p>
+<p class="p_Heading2"><span class="f_Heading2">The Difference Between namespaces and modules</span></p>
+<p>When working with a single ontology, it corresponds to exactly one module. The module name is normally near the top of each ontology file. Because of this one-to-one correspondence, the module name is sometimes also called the ontology name (e.g. in OntoStudio). If you recall how ontology files are loaded from the chapter on Ontology Management, you will also notice a one-to-one correspondence between ontology files and instances of the Ontology class. The terms module, ontology, and ontology file may thus be used interchangeably, as long as the notion of a physical container for ontology elements described above is meant.</p>
+<p>On the other hand, namespaces represent a logical concept which serves the purpose of naming and referring to ontology elements unambiguously. This is independent of modules: one module may contain elements from multiple namespaces and one namespace may span several modules.</p>
+<p>For illustration purposes, consider the above listing; the first half are concepts from an '...animals' namespace, looking at the individual concepts, you will notice they come from two different modules: '...Europe' and '...America'. In the second half of the listing, you will see concepts with the same local names as above with a different namespace assigned, which disambiguates them. In a nutshell, modules (Europe, America) represent a 'physical' organization, whereas namespaces (cars, animals) capture a logical organization.</p>
+<p class="p_Heading2"><span class="f_Heading2">Namespaces and modules in the OntoBroker API</span></p>
+<p>In this part, we will demonstrate how namespaces and modules are handled in the OntoBroker API. Although, the examples only cover adding concepts to existing ontologies, this should result in an intuitive understanding that can also be applied to other tasks.</p>
+<p>The examples assume the existence of two ontologies, America and Europe, whose contents are listed above. Both ontologies contain concepts from a cars namespace as well as from an animals namespace; note that the concepts above are listed according to the namespace, not the ontology (module). </p>
+<p>NOTE: There are certainly better ways to model cars and animal species than as unrelated concepts.</p>
+<p>We intend to add the taxi and police favorite Chevrolet Impala to the 'America' ontology. We already have the necessary ontology object (americaOnto). Thus, we only need to create the necessary axiom, this can be achieved using one of the axiom factory methods. We need to explicitly specify not only the 'cars' namespace to make it clear that we do not mean the antelope but also the module, otherwise an attempt to add the axiom to an ontology would fail.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// add Impala to cars in America</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// module explicit as text</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// namespace explicit as text</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Axiom ax = KAON2Manager.factory().axiom(</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">"&lt;http://example.org/cars#Impala&gt;[]@&lt;http://example.org/America&gt;.",null);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">americaOnto.addAxiom(ax);</span></p>
+<p>&nbsp;</p>
+<p>As a next step, we extend our knowledge base by adding the classic among cars, the Volkswagen Beetle, to the 'Europe' ontology. This time, we make use of a convenience method of the <span style="font-size: 10pt; font-family: 'Arial';">Ontology</span> class, that allows adding textually specified axioms directly to an ontology. By using the convenience method, it is no longer necessary to specify the module explicitly, as it is implied by the ontology (<span style="font-size: 10pt; font-family: 'Arial';">europeOnto</span>).</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// add Beetle to cars in Europe</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// module implicit (one module per ontology!)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// namespace explicit as text</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">europeOnto.addAxioms("&lt;http://example.org/cars#Beetle&gt;[].");</span></p>
+<p>&nbsp;</p>
+<p>For adding Mercury Cougar to the 'America' ontology, we follow the two-step approach again, first creating the axiom object using a factory method. Hence, the module needs to be specified explicitly. However, using a different overload of the factory method, we now pass the module and namespace as separate arguments. The module can be simply retrieved by calling the appropriate method of the <span style="font-size: 10pt; font-family: 'Arial';">Ontology</span> instance. The namespace can then be fixed using a <span style="font-size: 10pt; font-family: 'Arial';">Namespaces</span> object, which has the ability to hold multiple namespace declarations along with their respective prefixes and one default namespace.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// add Cougar to cars in America</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// module explicit as a Term</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// namespace explicit, default using a Namespaces object</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Namespaces ns = new Namespaces();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ns.setDefaultNamespace(carsNS); // "http://example.org/cars#"</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ax = KAON2Manager.factory().axiom("Cougar[].", ns, americaOnto.getModule());</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">americaOnto.addAxiom(ax);</span></p>
+<p>&nbsp;</p>
+<p>Similar to the previous example, we add the rabbit to the 'animals' ontology. Only this time we make use of a non-default namespace. Therefore, the registered namespace prefix must also appear in the textual definition of the new axiom.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// add Rabbit to animals in America</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// module explicit as a Term</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">// namespace explicit, non-default using a prefix</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ns.registerPrefix("an", animalsNS);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ax = KAON2Manager.factory().axiom("an#Rabbit[].", ns, europeOnto.getModule());</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">europeOnto.addAxiom(ax);</span></p>
+<p>The rabbit concludes our excursion to modules and namespaces in the OntoBroker API.</p>
+<p class="p_Heading2"><span class="f_Heading2">Querying modules and namespaces in ObjectLogic</span></p>
+<p>Let us finish up the section with a tip for an ObjectLogic query that may find useful when experimenting with modules and namespaces; it lists concepts from all modules and all namespaces currently loaded.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?C[]@?M AND ?C[_localName-&gt;?LN, _namespace-&gt;?NS].</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/namespaces_and_modules.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:23 GMT -->
+</html>

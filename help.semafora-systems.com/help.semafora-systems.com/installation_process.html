@@ -1,0 +1,258 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/installation_process.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:07:51 GMT -->
+<head> 
+   <title> Installation Process </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="heap size,installation,Installing,Installing JDBC-Driver,Installing OntoBroker,Installing OntoBroker under Linux,JDBC-Driver,key file,Linux,OntoBroker,System Requirements,Windows 7,Windows Vista"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index5d08.html?installation_process.htm"; }
+  else { parent.quicksync('a3.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="excel_annotation.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="ontology_languages.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 
+     <a href="excel_annotation.htm">excel_annotation.htm</a>&nbsp;/&nbsp;
+     installation_process.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Installation Process</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p><span class="f_Heading2">Installing OntoBroker under Microsoft Windows</span></p>
+<p>The installation of OntoBroker is fast and easy. After starting the installation file, the installation process is initiated. In the following, you have to confirm the prompts in the windows that appear. Before installing OntoBroker, you have to check whether your computer meets the system requirements for the recommended configuration. Before installing OntoBroker, close all of the programs and applications on the computer. The installation wizard will guide you through the further installation process. During the installation, you will be asked for the KeyFile which should be stored in the OntoBroker installation folder.</p>
+<p>NOTE: Keyfiles for different versions can be put into the same directory <span class="f_Path">ONTOPRISE_LICENSE_HOME</span>.</p>
+<p class="p_Heading2"><span class="f_Heading2">Installing OntoBroker under Linux</span></p>
+<p>Before installing OntoBroker make sure you have an appropriate Java runtime environment installed (OntoBroker requires Java 1.6). Then: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Unzip the OntoBroker distribution into a folder (e.g. /usr/shared/ontoprise/ontobroker),</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Copy the license key file (ob_prof.key.xml) into the same folder.</span></td></tr></table></div><p>The setup process is now finished. You should be able to start OntoBroker using the commandline utilities.</p>
+<p>NOTE: The installer automatically installs the correct runtime dependending on the target machine's bit-version.</p>
+<p class="p_Heading2"><span class="f_Heading2">System Requirements</span></p>
+<p>Operating systems: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Windows XP Professional</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Windows 7</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Windows Vista</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Windows Server 2003</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Linux (tested on SUSE, Debian and Ubuntu)</span></td></tr></table></div><p>Java platforms: Sun/OpenJDK Java 6 and later</p>
+<p>Hardware:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Intel or AMD processors, 32-bit or 64-bit</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Minimum: 1 core, 2 GHz and better, 1 GB RAM, 200 MB free hard disk space</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Recommended: Quad core, 2.4 GHz and better, 4 GB RAM, 400 MB free hard disk space</span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">Important Note About the Key File</span></p>
+<p>When installing the keyfile, during the installation process you must make sure that the keyfile has the original name given by ontoprise and the original extension »*.key.xml«. Otherwise the keyfile has to be renamed and copied manually to the installation directory.</p>
+<p class="p_Heading2"><span class="f_Heading2">Note about Windows Vista/Windows 7 </span></p>
+<p>OntoBroker is fully compatible with Windows Vista and later versions. This means that OntoBroker will not try to write into "Program Files" etc. We recommend that you install OntoBroker to the suggested default location of the operating system.</p>
+<p class="p_Heading2"><span class="f_Heading2">Installing JDBC-Driver</span></p>
+<p>For database schema imports, an appropriate JDBC Driver for the database may be required. While OntoBroker supports Oracle, MSSQL Server and DB2 out of the box, other drivers, such as MySQL may not be redistributed. If you have purchased a valid license for the driver, you may configure OntoBroker in the following way:</p>
+<p>Copy the database driver to [OntoBroker]/lib (e.g. mysql-connector-java-5.1.5-bin.jar)</p>
+<p>Afterwards write the settings to OntoConfig.prp:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">ExternalDB.OtherDatabase.Driver = com.mysql.jdbc.Driver</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ExternalDB.OtherDatabase.ConnectionURL = jdbc:mysql://$host$/$name$</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Installing MySQL Drivers</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Change </span><span class="f_Path">OntoConfig.prp</span><span class="f_Instruction">.</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Add the following two lines to the configuration file:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ExternalDB.OtherDatabase.Driver = com.mysql.jdbc.Driver</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ExternalDB.OtherDatabase.ConnectionURL = jdbc:mysql://$host$/$name$</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Get the MySQL JDBC driver.</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Download a recent version of the JDBC driver (e.g. mysql-connector-java-5.1.10-bin.jar).</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Convert to OSGi Bundle.</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Download </span><span class="f_Path">bnd.jar</span><span class="f_Instruction_Annotation"> (Bnd can be downloaded here: <a href="http://www.aqute.biz/Code/Download" target="_blank" class="weblink">http://www.aqute.biz/Code/Download</a>).</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Courier New'; color: #000000;">a)</span></td><td><span class="f_Instruction_Subinstruction">Run from the command line:</span><span class="f_Path"> java -jar bnd.jar wrap mysql-connector-java-5.1.10-bin.jar</span></td></tr></table></div><p class="p_Instruction_Subinstruction_Result"><span class="f_Instruction_Subinstruction_Result">As output you get </span><span class="f_Path">mysql-connector-java-5.1.10-bin.bar</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Courier New'; color: #000000;">b)</span></td><td><span class="f_Instruction_Subinstruction">Rename </span><span class="f_Path">.mysql-connector-java-5.1.10-bin.bar</span><span class="f_Instruction_Subinstruction"> to </span><span class="f_Path">mysql-connector-java-5.1.10-bin.jar</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">For more information, see:</span></p>
+<p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation"><a href="jonas.ow2.org/JONAS_5_2_0_M1/doc/doc-en/pdf/howto_install_jdbc_driver.html" target="_blank" class="weblink">jonas.ow2.org/JONAS_5_2_0_M1/doc/doc-en/pdf/howto_install_jdbc_driver.pdf</a></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span class="f_Instruction">Copy to Extensions Directory</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Copy the OSGi bundle, generated in the last step to the </span><span class="f_Path">extensions</span><span class="f_Instruction_Annotation"> directory of your OntoBroker or OntoStudio installation.</span></p>
+<p class="p_Instruction_Annotation"><span class="f_Path">extensions/mysql-connector-java-5.1.10-bin.jar</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Start OntoBroker</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Finally start OntoBroker or OntoStudio.</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/installation_process.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:07:52 GMT -->
+</html>

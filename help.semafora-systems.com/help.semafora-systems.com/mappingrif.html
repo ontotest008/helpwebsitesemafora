@@ -1,0 +1,535 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/mappingrif.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:01 GMT -->
+<head> 
+   <title> Mapping </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexdf50.html?mappingrif.htm"; }
+  else { parent.quicksync('a3.10.2.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="overview.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="annotations_and_formula_ids.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="rif.htm">RIF</a> &gt; ObjectLogic -&gt; RIF > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="rif.htm">RIF</a> &gt; ObjectLogic -&gt; RIF 
+     <a href="overview.htm">overview.htm</a>&nbsp;/&nbsp;
+     mappingrif.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Mapping</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>The following table shows a (partial) mapping T from ObjectLogic constructs to their RIF/XML representations.The XML entity "rif" refers to the RIF namespace "http://www.w3.org/2007/rif#" and the XML entity and namespace prefix "obld" refer to the namespace "<a href="http://www.ontoprise.com/2009/03/rif/obld#%22" target="_blank" class="weblink">http://www.ontoprise.com/2009/03/rif/obld#"</a>.</p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#c9c9c9" style="width:310px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#c9c9c9" style="width:987px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">RIF/XML</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">instance:class</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Member&gt;</span><br>
+<span class="f_Path">  &nbsp; &lt;instance&gt;T(instance)&lt;/instance&gt;</span><br>
+<span class="f_Path">  &nbsp; &lt;class&gt;T(class)&lt;/class&gt;</span><br>
+<span class="f_Path">&lt;/Member&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">object[]</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Frame&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;object&gt;T(object)&lt;/object&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Frame&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">object[property-&gt;value]</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Frame&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;object&gt;T(object)&lt;/object&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;slot ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(property)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(value)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/slot&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Frame&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">object[property]</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Frame&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;object&gt;T(object)&lt;/object&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;slot ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(property)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;Const type="&amp;rif;iri"&gt;&amp;obld;boolean&lt;/Const&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/slot&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Frame&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">subclass::superclass</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Subclass&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;sub&gt;T(subclass)&lt;/sub&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;super&gt;T(superclass)&lt;/super&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Subclass&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">subclass&lt;&lt;superclass</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;obld:Subproperty&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:sub&gt;T(subclass)&lt;/obld:sub&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:super&gt;T(superclass)&lt;/obld:super&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/obld:Subproperty&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class[property{min:max}*=&gt;()]</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;propertyCardinality&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(class)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(property)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(min)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(max)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Atom&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class[property*=&gt;range]</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;propertyRange&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(class)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(property)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(range)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Atom&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class[property=&gt;range]</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;nonInheritablePropertyRange&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(class)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(property)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(range)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Atom&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class[property{inverseOf(inverseProperty)}*=&gt;inverseDomain]</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;propertyInverseOf&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(class)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(property)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(inverseProperty)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(inverseDomain)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Atom&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class[property{characteristic}*=&gt;()]</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;obld:PropertyCharacteristic&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:object&gt;T(class)&lt;/obld:object&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:property&gt;T(property)&lt;/obld:property&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:characteristic&gt;&lt;Const type="&amp;rif;iri"&gt;obl:reserved:characteristic&lt;/Const&gt;&lt;/obld:characteristic&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/obld:PropertyCharacteristic&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">F AND G</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;And&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(F)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(G)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;And&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">F OR G</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Or&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(F)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(G)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;Or&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">NOT F</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Naf&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(F)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;Naf&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">EXIST v1, ..., vN F</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Exists&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;declare&gt;T(v1)&lt;/declare&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;declare&gt;T(vN)&lt;/declare&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(F)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Exists&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">FORALL v1, ..., vN F</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Forall&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;declare&gt;T(v1)&lt;/declare&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; ...</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;declare&gt;T(vN)&lt;/declare&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;formula&gt;T(F)&lt;/formula&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Forall&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">F :- G</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;if&gt;T(G)&lt;/if&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;then&gt;T(F)&lt;/then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Implies&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">F &lt;-- G</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;if&gt;T(G)&lt;/if&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;then&gt;T(F)&lt;/then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Implies&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">F --&gt; G</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;if&gt;T(F)&lt;/if&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;then&gt;T(G)&lt;/then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Implies&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">F &lt;--&gt; G</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;obld:Equivalent&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:formula1&gt;T(F)&lt;/obld:formula1&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;obld:formula2&gt;T(G)&lt;/obld:formula2&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/obld:Equivalent&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?- F</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;if&gt;T(F)&lt;/if&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;query/arity&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(id)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(v1)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(vN)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;/Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; where id is the id of "?- F" (or some placeholder </span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; constant if the formula has no id), v1,..., vN are </span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; the free variables in F and arity is N + 1. Query options </span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; are serialized as annotations (not presented here).</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">!- F</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;if&gt;T(F)&lt;/if&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;constraint/arity&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(id)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(v1)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(vN)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;/Atom&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/then&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Implies&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; where id is the id of "!- F" </span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; (or some placeholder constant if the </span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; formula has no id), v1,..., vN are the free variables in F and arity is N + 1.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">?X</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Var&gt;X&lt;/Var&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"lexicalValue"^^&lt;datatypeURI&gt;</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Const type="datatypeURI"&gt;lexicalValue&lt;/Const&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" style="width:310px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[t1, t2, ..., tN]</span></p>
+</td>
+<td valign="top" width="987" style="width:987px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;list/2&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T(t1)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;list/2&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(t2)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;list/2&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T(tN)</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;Const type="&amp;rif;iri"&gt;&amp;obld;list/0&lt;/Const&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; &lt;/Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Expr&gt;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="310" bgcolor="#ffffff" style="width:310px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">[t1-&gt;v1, t2-&gt;v2, ..., tN-&gt;vN]</span></p>
+</td>
+<td valign="top" width="987" bgcolor="#ffffff" style="width:987px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_Path">&lt;Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;op&gt;&lt;Const type="&amp;rif;iri"&gt;&amp;obld;map/1&lt;/Const&gt;&lt;/op&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;args ordered="yes"&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &nbsp; &nbsp; T([t1,v1_1,...,t1,v1_M1,t2,v2_1,...,t2,v2_M2,...,tN,vN_1,...,vN_MN])</span></p>
+<p class="p_TableContent"><span class="f_Path">  &nbsp; &lt;/args&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path">&lt;/Expr&gt;</span></p>
+<p class="p_TableContent"><span class="f_Path"> &nbsp; where {vi_j | j=1,...,Mi}, i = 1,...,N, is the set of values for key ti</span></p>
+</td>
+</tr>
+</table>
+</div>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/mappingrif.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:01 GMT -->
+</html>

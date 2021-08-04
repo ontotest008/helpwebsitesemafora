@@ -1,0 +1,294 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/mapping.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:07:22 GMT -->
+<head> 
+   <title> Mapping Ontologies </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="ontology mappings,OntoMap"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index2a7e.html?mapping.htm"; }
+  else { parent.quicksync('a2.7.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="export_uml.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="excel_annotation.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoStudio 3.1 &gt; Integration > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoStudio 3.1 &gt; Integration 
+     <a href="export_uml.htm">export_uml.htm</a>&nbsp;/&nbsp;
+     mapping.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Mapping Ontologies</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>OntoMap is a plug-in for the ontology-management platform OntoStudio. You can create and manage ontology mappings using a graphical interface:</p>
+<p><img src="clip0373.png" width="759" height="576" border="0" alt="clip0373"></p>
+<p>Mappings can be specified based on graphical representation, using a schema-view of the respective ontologies. You just have to understand the semantics of the graphical representation (e.g. an arrow connecting two classes), you do not have to worry about the logical representation of mappings. You are supported with the help of drag-and-drop functionality and simple consistency checks on property-mappings (automatic suggestion of necessary class-mappings). </p>
+<p>&nbsp;</p>
+<p><span style="font-weight: bold;">Consider this before starting a mapping:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoMap allows the creation of different "Mapping" types (class to class, property to class, property to property).</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Before you can map properties to the target ontology, there must be an attribute-class or a class-class "Mapping", which specifies the identifier for the mapped instances within the Target ontology.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Filters can be specified for "class-to-class"- and "attribute-to-class"-mappings with which you can limit those mapped instances based on their property values.</span></td></tr></table></div><p>&nbsp;</p>
+<p>Action Buttons for Mapping:</p>
+<p> <img src="clip0372.png" width="144" height="60" border="0" alt="clip0372"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table class="legend" width="400" cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="25" bgcolor="#ffffff" style="width:25px; background-color:#ffffff; border: solid 1px #000000;"><p class="p_TableContent"><span class="f_TableContent">1</span></p>
+</td>
+<td valign="top" width="363" bgcolor="#ffffff" style="width:363px; background-color:#ffffff; border: solid 1px #000000;"><p class="p_TableContent"><span class="f_TableContent">Shows/hides all of the properties of the ontologies</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="25" style="width:25px; border: solid 1px #000000;"><p class="p_TableContent"><span class="f_TableContent">2</span></p>
+</td>
+<td valign="top" width="363" style="width:363px; border: solid 1px #000000;"><p class="p_TableContent"><span class="f_TableContent">Opens a dialog for selecting target ontologies</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="25" style="width:25px; border: solid 1px #000000;"><p class="p_TableContent"><span class="f_TableContent">3</span></p>
+</td>
+<td valign="top" width="363" style="width:363px; border: solid 1px #000000;"><p class="p_TableContent"><span class="f_TableContent">Opens a dialog for selecting source ontologies</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p class="p_Instruction_Precondition_Heading"><span class="f_Instruction_Precondition_Heading">Precondition:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Instruction_Precondition">The Integration perspective is active (</span><img src="clip558.png" width="23" height="22" border="0" alt="clip558">-&gt; <span class="f__ScreenName">Other...</span> -&gt; <span class="f__ScreenName">Integration</span>)<span class="f_Instruction_Precondition">.</span></td></tr></table></div><p class="p_Instruction_Precondition"><img src="clip563.png" width="415" height="336" border="0" alt="clip563"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Drag&amp;Drop your source ontology to the top left-hand box of the Mapping window:</span></td></tr></table></div><p><img src="clip0374.png" width="537" height="210" border="0" alt="clip0374"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">The class hierarchy of the ontology appears in this top left-hand box:</span></p>
+<p class="p_Instruction_Result"><img src="clip565.png" width="269" height="134" border="0" alt="clip565"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">When selecting a class its properties are shown within the class detail tree.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Drag&amp;Drop your target ontology to the top right-hand box of the Mapping window.</span></td></tr></table></div><p><img src="clip0375.png" width="772" height="185" border="0" alt="clip0375"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">The class hierarchy of the ontology appears in this top right-hand box.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Drag&amp;Drop a class from the source ontology (left-hand side) onto a class from the target ontology (right-hand side):</span></td></tr></table></div><p class="p_Instruction"><img src="clip0376.png" width="761" height="534" border="0" alt="clip0376"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">A mapping between the two classes is created and represented by an arrow.</span></p>
+<p>Another way to create mappings is to use a mapping pattern. Mapping patterns are suggested in the mapping pane. Depending on the actual selection within the source and target ontology, different templates are suggested. When choosing a template the system guides you through the mapping definition process. In this process you can fill out all of the necessary parameters needed for creating the mapping.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span class="f_Instruction">You can create a filter within the mapping pane: Fill out the fields in the Filters pane and click on </span><span class="f__ScreenName">Add</span><span class="f_Instruction">:</span></td></tr></table></div><p><img src="clip0378.png" width="400" height="192" border="0" alt="clip0378"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">Only instances matching the given filter criteria are returned as results.</span></p>
+<p>An icon visualizes that a filter has been created:</p>
+<p><img src="clip0379.png" width="762" height="528" border="0" alt="clip0379"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Drag&amp;Drop the properties to be mapped from the source to the target property.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">You see an arrow between the mapped properties:</span></p>
+<p><img src="clip0380.png" width="761" height="531" border="0" alt="clip0380"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">6.</span></td><td><span class="f_Instruction">Define a transformation.</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">For property mappings it is possible to define functional transformations during the mapping process. Therefore a transformation editor for the actual selected property mappings can be chosen within the mapping pane.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">a.</span></td><td><span class="f_Instruction_Subinstruction">In the Transformations pane select a transformation type and click on </span><span class="f__ScreenName">Next</span><span class="f_Instruction_Subinstruction">. </span></td></tr></table></div><p><img src="clip0382.png" width="378" height="148" border="0" alt="clip0382"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">b.</span></td><td><span class="f_Instruction_Subinstruction">Write the transformation and click on </span><span class="f__ScreenName">save transformation</span><span class="f_Instruction_Subinstruction">.</span></td></tr></table></div><p><img src="clip0383.png" width="379" height="291" border="0" alt="clip0383"></p>
+<p>There are 2 different types of transformations: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Mathematical transformations</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">These can be useful for numerical properties. Imagine that you have an attribute like "priceIn€" and you want to map it to "priceIn$". In that case you can convert the €-value into a $-value using a mathematical function by multiplying the input with the current dollar exchange rate. You can use the source attribute as a variable by pressing the appropriate button.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">String transformations</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">String transformations can be applied to alphanumerical properties to modify the outcome of the target attribute values. Imagine that you want to add a suffix to every attribute value derived by this mapping. (For example, the ID of the source ontology so that you can distinguish where the resulting value comes from). To do this, just continue typing the suffix after the attribute ID (which is pre-filled in the text-area).</span></p>
+<p><span style="width:48px">&nbsp;</span></p>
+<p>Suggesting Mapping Patterns:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Depending on the selected classes and properties within the Mapping View matching Mapping Patterns are suggested.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">The information required for a pattern is requested by a template:</span></td></tr></table></div><p> &nbsp;  <img src="clip0390.png" width="757" height="525" border="0" alt="clip0390"></p>
+<p>&nbsp;</p>
+<p><span class="f_ImageCaption"> &nbsp; &nbsp; <img src="clip0391.png" width="754" height="346" border="0" alt="clip0391"> </span></p>
+<p>&nbsp;</p>
+<p>Relation-Shortcut-Pattern:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">The 'Relation-Shortcut-Pattern' maps two source classes with related intermediate classes to two target classes related directly.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List"> For example, within the target ontology ‘analyst’ has a direct relation ‘worksinProject’ to the class ‘Project’ whereas the relation between ‘analyst' and ‘Project’ in the source ontology is expressed by an intermediate class ‘takepartTeam’.</span></td></tr></table></div><p class="p_ImageCaption"><span class="f_ImageCaption">Source:</span></p>
+<p> &nbsp; &nbsp; <img src="clip0386.png" width="253" height="370" border="0" alt="clip0386"></p>
+<p><span class="f_ImageCaption">Target:</span></p>
+<p><span class="f_ImageCaption"> &nbsp; &nbsp;  <img src="clip0387.png" width="229" height="370" border="0" alt="clip0387"></span></p>
+<p>&nbsp;</p>
+<p>Attribute-To-Relation-Instance-Pattern:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">The 'Attribute-To-Relation-Instance-Pattern' maps an attribute value to a relation by creating an instance of the target relation range with a corresponding attribute value.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">For example, the values for the source attribute ‘Project_releasedate’ are mapped as instances of ‘Project’ and values of the target attribute ‘type’ and the relation ‘hasReleaseDate’ for the target class ‘Project’.</span></td></tr></table></div><p><span class="f_ImageCaption"> &nbsp; &nbsp;  <img src="clip0388.png" width="228" height="361" border="0" alt="clip0388"></span></p>
+<p><span class="f_ImageCaption"> &nbsp; &nbsp;  <img src="clip0389.png" width="254" height="360" border="0" alt="clip0389"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">7.</span></td><td><span class="f_Instruction">To display the instances of the selected class within the Instances area, click on the </span><span class="f__ScreenName">Link Instances with class tree </span><span class="f_Instruction">button or on the </span><span class="f__ScreenName">Refresh Instances</span><span class="f_Instruction"> button.</span></td></tr></table></div><p class="p_Instruction"><img src="clip566.png" width="259" height="191" border="0" alt="clip566"></p>
+<p>NOTE: Important for the work with the collaboration server:<br>
+Mappings created within one client are not visible within other clients until a refresh has been done on the Ontology Navigator. This is only true for the Collaboration Server.</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/mapping.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:07:41 GMT -->
+</html>

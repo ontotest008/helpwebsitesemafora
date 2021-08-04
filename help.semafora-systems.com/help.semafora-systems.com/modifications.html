@@ -1,0 +1,275 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/modifications.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:19 GMT -->
+<head> 
+   <title> Modifications </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index1e63.html?modifications.htm"; }
+  else { parent.quicksync('a3.13.2.2.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="concept_hierarchy.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="datamodel_listener.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> &gt; Data Manipulation > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> &gt; Data Manipulation 
+     <a href="concept_hierarchy.htm">concept_hierarchy.htm</a>&nbsp;/&nbsp;
+     modifications.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Modifications</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Ontology contents can be modified in two ways; by adding and removing axioms. These activities are closely related to Requests (please remember that requests retrieve asserted facts, i.e. explicitly stated knowledge base elements). Removing axioms, for example, would typically be preceded by placing a request. There is an alternative approach to modifying ontology contents using so-called bulk operations as demonstrated below.</p>
+<p class="p_Heading2"><span class="f_Heading2">Simple Add or Remove</span></p>
+<p>Individual or multiple axioms can be added or removed by calling the appropriate method of the Ontology class. In the code snippet below, an axiom is created using the KAON2Factory and subsequently added to an ontology:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Axiom axComp = factory.fclassMember(</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">factory.constantIRI(namespaces, "Heidelberg"),</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">factory.constantIRI(namespaces, "City"));</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">geographyOnto.addAxiom(axComp); &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p>NOTE: the use of the namespaces object that frees us from having to write out the fully qualified object names. </p>
+<p>An equivalent axiom can be created directly from ObjectLogic code as the next code snippet illustrates:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Axiom axText = factory.axiom("Heidelberg:City.", namespaces, geographyOnto.getModule());</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Adding or Removing Multiple Axioms</span></p>
+<p>Multiple axioms can be added or removed equally easily:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">String axiomText = "Offenburg:City[hasName-&gt;\"Offenburg\" hasPopulation-&gt;59171, partOfFederalState-&gt;BW].";</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">List&lt;Axiom&gt; axioms = factory.axioms(axiomText, namespaces, geographyOnto.getModule());</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">geographyOnto.addAxioms(axioms);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">...</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">geographyOnto.removeAxioms(axioms);</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Bulk Operations</span></p>
+<p>As mentioned in the introduction, it is also possible to add or remove multiple axioms at once without having to specify each one of them individually. The described functionality is available in the form of the two methods bulkAddFacts and bulkRemoveFacts of an Ontology object. They both work in a similar fashion; one parameter specifies a pattern against which existing axioms are to be matched. The matching works very much like evaluating a request, i.e. no reasoning is performed and available axioms are simply compared with the provided prescription; this prescription (or pattern) also introduces variables that are used in the second parameter to describe the changes to be carried out in a generic way.</p>
+<p>The meaning of the second parameter is different for the two bulk operations. The second parameter of the bulkAdd operation specifies facts that should be asserted true after the execution of the operation. That is, if the facts from the second parameter do not already exist for a matching variable assignment, they will be added to the knowledge base. On the other hand, the bulkRemove operation asserts the facts from the second parameter false, i.e. if for a variable assignment (from the first parameter) facts of the form specified by the second parameter exist, they will be removed from the knowledge base.</p>
+<p>To demonstrate this functionality assume that there is an ontology containing German cities along with the federal state they belong to. Cities are expressed as instances of a concept called City and related to the respective states by a property called partOfFederalState. For the sake of the example, assume that we introduce a new concept called BavarianCity as a subconcept of City and intend to make all of the existing cities located in Bavaria instances of this new concept, rather than of the generic city.</p>
+<p>The condition or pattern for matching cities in Bavaria is composed of two axioms. The first axiom, formulaPartOfBayern, states that a variable C is assigned to an instance called Bayern by the means of a property called partOfFederalState:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Term var = factory.variable("C");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Term partOf = factory.constantIRI(ns, "partOfFederalState");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Term bayern = factory.constantIRI(ns, "Bayern");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">FactFormula formulaPartOfBayern = factory.fpropertyMember(var, partOf, bayern);</span></p>
+<p>&nbsp;</p>
+<p>The second axiom, formulaIsCity, states that the same variable is an instance of a concept called City;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Term city = factory.constantIRI(ns, "City");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">FactFormula formulaIsCity = factory.fclassMember(var, city);</span></p>
+<p>&nbsp;</p>
+<p>These two axiom form the complete condition, or pattern for matching existing facts:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">List&lt;FactFormula&gt; queryList = new ArrayList&lt;FactFormula&gt;();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">queryList.add(formulaPartOfBayern);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">queryList.add(formulaIsCity);</span></p>
+<p>&nbsp;</p>
+<p>Now, we need to express the changes that need to be made. Let us first of all focus on assigning the matching instances to the new concept BavarianCity. Upon execution, the matching instances should be assigned to the new concept. This is done by using the same variable to describe the state after execution.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Term bavCity = factory.constantIRI(ns, "BavarianCity");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">FactFormula formulaIsBavCity = factory.fclassMember(var, bavCity); &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">List&lt;FactFormula&gt; addList = new ArrayList&lt;FactFormula&gt;();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">addList.add(formulaIsBavCity);</span></p>
+<p>&nbsp;</p>
+<p>Having prepared both arguments, we can now perform the bulkAdd operation:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">geographyOnto.bulkAddFacts(queryList, addList);</span></p>
+<p>&nbsp;</p>
+<p>At this point the Bavarian cities are explicitly assigned to both concepts, <span style="font-size: 10pt; font-family: 'Arial';">City</span> and <span style="font-size: 10pt; font-family: 'Arial';">BavarianCity. T</span>o remove this possible source of inconsistencies, we will use the bulkRemove operation to remove the Bavarian cities from the regular <span style="font-size: 10pt; font-family: 'Arial';">City</span> concept. This is easily done as we already have a pattern to match against that we can reuse:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">List&lt;FactFormula&gt; removeList = new ArrayList&lt;FactFormula&gt;();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">removeList.add(formulaIsCity);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">geographyOnto.bulkRemoveFacts(queryList, removeList);</span></p>
+<p>&nbsp;</p>
+<p>The bulk operations offer a high-performance alternative, especially in the case of changes involving large numbers of axioms. </p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/modifications.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:20 GMT -->
+</html>
