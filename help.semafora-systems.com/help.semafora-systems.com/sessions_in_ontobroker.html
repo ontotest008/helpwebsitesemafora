@@ -1,0 +1,348 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/sessions_in_ontobroker.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:03 GMT -->
+<head> 
+   <title> Sessions in OntoBroker </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index443f.html?sessions_in_ontobroker.htm"; }
+  else { parent.quicksync('a3.20.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="delete_rule.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="execute_groovy_scripts.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; OntoBroker Server > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; OntoBroker Server 
+     <a href="delete_rule.htm">delete_rule.htm</a>&nbsp;/&nbsp;
+     sessions_in_ontobroker.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Sessions in OntoBroker</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>As of version 6.1, OntoBroker now supports sessions with private session facts. This means that the session user can add facts to any already existing modules, but nobody but him/her can see these additional facts. On querying, OntoBroker does not differentiate between static facts and session facts, so evaluation of rules works on both static and session facts. Besides storing facts, a session can also store additional session settings such as the default module, default namespace and additional namespace prefix definitions.</p>
+<p>An OntoBroker session can be started using various interfaces</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">Socket client</span><span class="f_List">: A new session starts automatically on opening an OntoBrokerConnection, &nbsp;by calling the method.</span><br>
+<span class="f_List">&nbsp;</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">OntoBrokerConnectionManager.getConnection(…)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">OntoBroker Web service: </span>Calls the operation startSession(…)</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span style="font-weight: bold;">OntoBroker API:</span> If your code runs in the same VM as OntoBroker, call the method startSession(…) &nbsp;of the SessionManager from the OntoBroker API<br>
+&nbsp;<br>
+<span style="font-size: 10pt; font-family: 'Arial';">import org.semanticweb.kaon2.api.OntologyManager;</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">import org.semanticweb.kaon2.api.SessionManager;</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">import org.semanticweb.kaon2.api.SessionFacade;</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">&nbsp;</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">OntologyManager om = …;</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">SessionManager sm = om.getSessionManager();</span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">SessionFacade sf = sm.createSession(…);</span></td></tr></table></div><p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: In OntoBroker 6.1 the sessions of the Collaboration server are a different kind of session and cannot be used in the way described above.</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Using Sessions with OntoBroker API</span></p>
+<p>Sessions have two main interfaces in the OntoBroker API. The SessionManager interface is used to create new sessions or to retrieve existing sessions by the session id.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic; font-weight: bold;">// create new session</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">SessionFacade</span><span class="f_CodeExample" style="font-weight: bold; color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">sf1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample">sm.createSession(user,password,params);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic; font-weight: bold;">// retrieve existing session by id</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">SessionFacade</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">sf2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">sm.getSession(sessionId);</span></p>
+<p>The SessionFacade interface provides all session functionalities:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Adding and removing facts to/from the session</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Running queries within the session</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Executing commands within the session</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Closing sessions</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Getting/setting session attributes like default module, default namespace and namespace prefixes</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Information about the session like session id, session user, host, last access timestamp, creation timestamp</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Checking session validity</span></td></tr></table></div><p>See JavaDoc for <span style="font-size: 10pt; font-family: 'Arial';">org.semanticweb.kaon2.api.SessionFacade, </span>for details about its methods. The SessionFacade interface is not the session itself, i.e. there can be multiple SessionFacade objects referencing the same session.</p>
+<p class="p_Heading2"><span class="f_Heading2">Commands</span></p>
+<p>Several commands have been extended for usage with sessions. The INSERT, DELETE and MODIFY commands can now optionally work on the session facts by adding a "INTO SESSION" or "FROM SESSION" to the command.</p>
+<p>Examples:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">INSERT INTO SESSION</span><span class="f_CodeExample"> { alice:Person[age-&gt;18]. }</span><br>
+<span class="f_CodeExample" style="font-weight: bold;">DELETE FROM SESSION</span><span class="f_CodeExample"> { alice:Person[age-&gt;18]. }</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold;">MODIFY DELETE FROM SESSION</span><span class="f_CodeExample"> { ?P[age-&gt;?X0]. }</span><br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">  </span><span class="f_CodeExample" style="font-weight: bold;">INSERT INTO SESSION </span><span class="f_CodeExample">{ ?P[age-&gt;?X1]. }</span><br>
+<span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">  </span><span class="f_CodeExample" style="font-weight: bold;">WHERE</span><span class="f_CodeExample"> { ?- ?P[age-&gt;?X0], ?X1 = ?X0 + 1. } </span></p>
+<p>Variants of modify can also be used for moving data between session and static storage</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">MODIFY DELETE</span><span class="f_CodeExample"> {...} </span><span class="f_CodeExample" style="font-weight: bold;">INSERT INTO SESSION</span><span class="f_CodeExample"> {...} </span><span class="f_CodeExample" style="font-weight: bold;">WHERE</span><span class="f_CodeExample"> {...}</span><br>
+<span class="f_CodeExample" style="font-weight: bold;">MODIFY DELETE FROM SESSION</span><span class="f_CodeExample"> {...} </span><span class="f_CodeExample" style="font-weight: bold;">INSERT</span><span class="f_CodeExample"> {...} </span><span class="f_CodeExample" style="font-weight: bold;">WHERE</span><span class="f_CodeExample"> {...}</span></p>
+<p>For setting sessions attribute there is a new SET command:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">set default prefix</span><span class="f_CodeExample"> = "http://ontoprise.de/".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">set prefix</span><span class="f_CodeExample"> a = "http://ontoprise.de/sg#".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">set default module</span><span class="f_CodeExample"> = inferencelayer.</span></p>
+<p>These default namespace, namespace prefix and default module attributes can be used in subsequent commands and queries without needing to state them again.</p>
+<p class="p_Heading2"><span class="f_Heading2">New Query Options</span></p>
+<p>When running queries within a session, there are three "data sources" for facts:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Static facts (i.e. the storage EDB defined by the storage parameter in the OntoConfig.prp)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Session facts (i.e. the session EDB)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Temporary facts (facts and rules provided together with the query)</span></td></tr></table></div><p>In some situations queries should exclude one of these data sources. For this purpose there are now two new query options:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">ignoreSession</span><span class="f_List"> - ignore all session facts</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Example</span><br>
+<span class="f_CodeExample">@{options[ignoreSession]} ?- ?P:Person.</span><br>
+<span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List" style="font-weight: bold;">ignoreStorage</span><span class="f_List"> - ignore all facts from the storage EDB </span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Example</span><br>
+<span class="f_Instruction_Annotation">@{options[ignoreStorage]} ?- ?P:Person.</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Built-ins</span></p>
+<p>There are two built-ins to deal with sessions: _activeSessions/4 and _sessionInfo/1</p>
+<p class="p_Heading2"><span class="f_Heading3">_activeSessions/4</span></p>
+<p>This built-in returns all OntoBroker and Collaboration server sessions.</p>
+<p>Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _activeSessions(?Id,?Type,?User,?Host).</span></p>
+<p>&nbsp;</p>
+<p>The variables are bound as follows:</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">?Id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>- session id</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">?Type &nbsp; &nbsp; &nbsp; &nbsp;</span>- "session" or "collab"</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">?User &nbsp; &nbsp; &nbsp; &nbsp;</span>- user name (may be null if user is unknown)</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">?Host &nbsp; &nbsp; &nbsp; &nbsp;</span>- host the client is connected from (may be null if host is unknown)</p>
+<p class="p_Heading3"><span class="f_Heading3">_sessionInfo/1</span></p>
+<p>This built-in returns information on the current session, like the default module, default namespace and other namespace prefixes, and number of facts in the session EDB.</p>
+<p>Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _sessionInfo(?InfoMap)</span>.</p>
+<p>The built-in returns a map with following key value pairs:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" bgcolor="#c9c9c9" style="width:135px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Key</span></p>
+</td>
+<td valign="top" width="293" bgcolor="#c9c9c9" style="width:293px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Value</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" style="width:135px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"id"</span></p>
+</td>
+<td valign="top" width="293" style="width:293px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">session id</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" bgcolor="#ffffff" style="width:135px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"user"</span></p>
+</td>
+<td valign="top" width="293" bgcolor="#ffffff" style="width:293px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">user name</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" style="width:135px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"host"</span></p>
+</td>
+<td valign="top" width="293" style="width:293px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">host</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" bgcolor="#ffffff" style="width:135px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"startTimestamp"</span></p>
+</td>
+<td valign="top" width="293" bgcolor="#ffffff" style="width:293px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">start timestamp of session</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" style="width:135px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"defaultModule"</span></p>
+</td>
+<td valign="top" width="293" style="width:293px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">default module </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" bgcolor="#ffffff" style="width:135px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"namespaces"</span></p>
+</td>
+<td valign="top" width="293" bgcolor="#ffffff" style="width:293px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">map with namespace prefixes</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="135" style="width:135px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"facts"</span></p>
+</td>
+<td valign="top" width="293" style="width:293px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">number of facts stored in this session</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">_loginUser/2</span></p>
+<p>This built-in is not new, but if the user name was provided on session creation, it returns user name and host.</p>
+<p>Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _loginUser(?User, ?Host).</span></p>
+<p>&nbsp;</p>
+<p>The variables are bound as follows:</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">?User &nbsp; &nbsp; &nbsp; &nbsp;</span>- user name of the current session (may be null if the user is unknown)</p>
+<p><span style="font-size: 10pt; font-family: 'Arial';">?Host &nbsp; &nbsp; &nbsp; &nbsp;</span>- host of the client of the current session (may be null if the host is unknown)</p>
+<p class="p_Heading2"><span class="f_Heading2">Limitations</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Sessions can only store facts, i.e. it cannot store rules, queries or constraints.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">It is only possible to delete facts of the session, but not to hide static facts. i.e. if a fact is stored in the static storage of OntoBroker, deleting it from the session has no effect.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Sessions can only store facts in existing modules, i.e. at least one fact or rule must exist in this module in the static storage of OntoBroker.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Persistence of sessions is not supported in OntoBroker 6.1, i.e. session facts are only held in the memory.</span></td></tr></table></div> 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/sessions_in_ontobroker.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:03 GMT -->
+</html>

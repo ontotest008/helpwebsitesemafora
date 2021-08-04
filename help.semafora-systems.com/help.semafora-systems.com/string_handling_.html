@@ -1,0 +1,253 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/string_handling_.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:57 GMT -->
+<head> 
+   <title> String handling&nbsp; </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexeb3a.html?string_handling_.htm"; }
+  else { parent.quicksync('a4.4.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="numbers__comparisons_and_arith.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="aggregations_.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>ObjectLogic Tutorial &gt; <a href="built_in_features_.htm">Built-in Features</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     ObjectLogic Tutorial &gt; <a href="built_in_features_.htm">Built-in Features</a> 
+     <a href="numbers__comparisons_and_arith.htm">numbers__comparisons_and_arith.htm</a>&nbsp;/&nbsp;
+     string_handling_.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">String Handling </span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Analogously to numbers, there are several predefined operations for strings. These built-in predicates all have a fixed arity and (as for all built-in predicates) must not be used in the head of rule.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_isTypeOf(_string, &lt;arg&gt;) </span></p>
+<p>is true, if &lt;arg&gt; is a string.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_concat(&lt;string 1&gt; , &lt;string 2&gt; , &lt;string 3&gt;)</span></p>
+<p>succeeds if &lt;string 3&gt; is the concatenation of &lt;string 1&gt; and &lt;string 2&gt;, e.g.,</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _concat("a","b",?X). </span></p>
+<p>returns the binding ?X = "ab" whereas</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _concat("a",?Y,"ab")</span><span style="font-size: 8pt; font-family: 'Courier'; color: #808080;">.</span></p>
+<p>leads to ?Y = "b"</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_cut(&lt;string&gt;,&lt;n&gt;,&lt;variable&gt;)</span></p>
+<p>cuts the last n characters from &lt;string&gt;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_tokenize(&lt;string&gt;,&lt;delimiters&gt;,&lt;variable&gt;)</span></p>
+<p>breaks the string into tokens at the delimiters</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_tokenizen(&lt;string&gt;, &lt;n&gt;,&lt;delimiters&gt;,&lt;variable&gt;)</span></p>
+<p>breaks the string into maximal n tokens at the delimiter</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_tolower(&lt;string&gt;,&lt;variable&gt;)</span></p>
+<p>transforms all characters into lower characters</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_toupper(&lt;string&gt;,&lt;variable&gt;)</span></p>
+<p>transforms all characters into upper characters</p>
+<p class="p_CodeExample"><span class="f_CodeExample">_regexp("&lt;regular expression&gt;",&lt;string1&gt;,&lt;string2&gt;)</span></p>
+<p>Regular expressions may be used to search in strings with this predicate. The first parameter defines the search string as aregular expression. Regular expressions are defined as PERL regular expressions. The second parameter defines the string to search in, and the last parameter defines the resulting string, i.e. the region that matched the pattern, e.g. </p>
+<p class="p_CodeExample"><span class="f_CodeExample">married("peter").  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">married("tom"). </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">married("mary").</span></p>
+<p>The query "search for all married people with a "p" or "t" in their name":</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- married(?X) and _regexp("[pt]",?X,?Y).</span></p>
+<p>delivers </p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X = "peter", ?Y = "p"</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X = "peter", ?Y = "t" </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X = "tom", ?Y="t"</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/string_handling_.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:57 GMT -->
+</html>

@@ -1,0 +1,246 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/strong_unfolder.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:45 GMT -->
+<head> 
+   <title> Rule Unfolding </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="Strong Unfolder"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index9e6c.html?strong_unfolder.htm"; }
+  else { parent.quicksync('a3.16.2.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="propagate_constraints.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="equal_unify_rewriter.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="ontobroker_performance_tuning.htm">OntoBroker Performance Tuning</a> &gt; <a href="optimizers.htm">Optimizers</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="ontobroker_performance_tuning.htm">OntoBroker Performance Tuning</a> &gt; <a href="optimizers.htm">Optimizers</a> 
+     <a href="propagate_constraints.htm">propagate_constraints.htm</a>&nbsp;/&nbsp;
+     strong_unfolder.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Rule Unfolding</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Rule unfolding means substitution of rule heads by rule bodies in other rules. Lets look for a simple example. Given the following rule and query:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">p(?X) :- q(?X,?Y) AND r(?Y).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- p(?Z) AND t(?Z).</span></p>
+<p>Then unfolding substitutes the literal p(Z) in the query by the body of the rule and deletes the rule:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- q(?Z,?Y) AND r(?Y) AND t(?Z).</span></p>
+<p>This unfolding has some advantages:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">If q and r and t are extensional predicates (there are no rules with q,r,t in the head) then the cost-based dynamic reordering of the rule literals provides better results. As q,r,t are extensional predicates, their extensions are directly known (they are not derived) and thus statistics on these extensions help to reorder the rule body literals in an optimal way. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Indices must not be created dynamically during query evaluation for intensional predicates but are created once and are retained for all extensional predicates (they are not derived by rules) for future query evaluations. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">If the storage model is persistent, i.e. the H2 relational database of the SQL rewriter creates SQL expressions out of the body literals. This works for extensional predicates only. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">For integration scenarios with external databases rules are also directly rewritten into sql-statements which access the external databases. Because the performance is strongly improved if a lot of external database accesses are combined to a few sql-statements, the use of the StrongUnfolder is very often a very effective option.</span></td></tr></table></div><p>In contrast to a weaker version of unfolding, the StrongUnfolder also unfolds body literals for which several rules exist. This is shown in the following example</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- q(?X) AND r(?X).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">q(?X) :- t(?X).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">q(?X) :- s(?X).</span></p>
+<p>This set of rules is unfolded to the following set of queries:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- s(?X) AND r(?X).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- t(?X) AND r(?X).</span></p>
+<p>Unfortunately the interplay of different rules together with the StrongUnfolder sometimes leads to an explosion of rules. In these cases generation of the resulting rules and the evaluation of these rules may take a lot of time. It is hardly predictable when this effect occurs. Therefore the StrongUnfolder is switched off by default, but it is strongly recommended to try it especially in integration scenarios.</p>
+<p class="p_Heading2"><span class="f_Heading2">Simple Unfolder</span></p>
+<p>Given the following rule and query:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">p(?X) :- q(?X,?Y) AND r(?Y).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- p(?Z) AND t(?Z).</span></p>
+<p>Then unfolding substitutes the literal p(Z) in the query by the body of the rule and deletes the rule:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- q(?Z,?Y) AND r(?Y) AND t(?Z).</span></p>
+<p>The switch</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Rewriter.SimpleUnfolder = on</span></p>
+<p>is per default set to "on". In most cases this option should never be set to "off".</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/strong_unfolder.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:46 GMT -->
+</html>

@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/server_commands.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:58 GMT -->
+<head> 
+   <title> Server Commands </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index8a81.html?server_commands.htm"; }
+  else { parent.quicksync('a3.20.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="use_the_ontobroker_server_from.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="basic_commands.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; OntoBroker Server > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; OntoBroker Server 
+     <a href="use_the_ontobroker_server_from.htm">use_the_ontobroker_server_from.htm</a>&nbsp;/&nbsp;
+     server_commands.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Server Commands</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>You can use the "command.sh" or "command.cmd" script to execute OntoBroker server commands.</p>
+<p class="p_Heading2"><span class="f_Heading2">Command Client (command.cmd/command.sh)</span></p>
+<p>The command client provides an additional option for specifying a command file:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">command.cmd -cf myCommandFile.txt</span></p>
+<p>The file is loaded and the command is executed.</p>
+<p class="p_Heading2"><span class="f_Heading2">Writing Your Own Commands</span></p>
+<p>External commands can now be added as extension plugins to OntoBroker. Java classes implementing the SimpleAPICommand interface are packaged in a plugin exporting a CommandProvider service and can be used with OntoBroker by deploying the jar file to the extensions directory.</p>
+<p>Command class</p>
+<p>An external command is implemented as a Java class implementing the interface <span class="f_Path">com.ontoprise.api.command.SimpleAPICommand</span>.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">interface</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">SimpleAPICommand</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">getCommandName();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">Object</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">execute(OntologyManager</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ontologyManager,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Term[]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">args)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">throws</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">KAON2Exception,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">InterruptedException;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p>The comma separated argument list is provided as term array. Typically, a command returns a String, but it can theoretically return any kind of Java object. However, there some restrictions to consider:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">If using the method OntologyManager.execute from a collab server client, the returned class must be known to the Collabserver marshaller. This effectively means that only basic Java data types and collections and classes generated by the KAON2Factory can be used in this case.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">If the command is executed by the socket protocol or OntoBroker web service the result is always translated into a string by calling toString().</span></td></tr></table></div><p class="p_Heading3"><span class="f_Heading3">CommandProvider</span></p>
+<p>In additionally to the command class itself you need a CommandProvider service, which announces the command(s) to OntoBroker. Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">CommandProviderImpl</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">implements</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">CommandProvider</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">@Override</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Collection&lt;Class&lt;?</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">extends</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">APICommand&gt;&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">getCommands()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">ArrayList&lt;Class&lt;?</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">extends</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">APICommand&gt;&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">list</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ArrayList&lt;Class&lt;?</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">extends</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">APICommand&gt;&gt;();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">list.add(MyCommand.</span><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample">);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">list;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>This provider must be registered as an OSGi service, e.g. defining a Declarative service. Add to the OSGI-INF directory of your plugin a file commands-provider.xml:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&lt;?xml version="1.0"?&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">component</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="com.ontoprise.ontobroker.examples.api</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">.commands</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">implementation</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">class</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">com.yourcompany.x.y.CommandProviderImpl</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">service</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">provide</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">interface</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">com.ontoprise.api.command.CommandProvider</span><span class="f_CodeExample" style="color: #0000ff;">"/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">service</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">component</span><span style="font-size: 11pt; font-family: 'Courier';">&gt;</span></p>
+<p>The package of the command class must be exported from META-INF/manifest.mf of the plug-in and the service component must also be added to the manifest, e.g.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Service-Component: OSGI-INF/commands-provider.xml</span></p>
+<p class="p_Heading2"><span class="f_Heading2">-runscript command line option</span></p>
+<p>OntoBroker now supports a -runscript command line option for executing a command or command list from a file during launching. </p>
+<p>NOTE: This option is not supported for OWL</p>
+<p>Syntax</p>
+<p class="p_CodeExample"><span class="f_CodeExample">-runscript &lt;filename&gt;</span></p>
+<p>Example</p>
+<p>This example shows how to insert some facts, export the module, and exit OntoBroker automatically.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">ontobroker32.exe -runscript sample.oblcmd</span></p>
+<p>sample.oblcmd</p>
+<p class="p_CodeExample"><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">default</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">prefix</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"http://yourcompany.com#".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:-</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">module</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">m1.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">// try block to ensure execution of final shutdown command</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">try</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-style: italic;">// first insert some facts</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">insert</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">Person[name</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{0:1}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">*=&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">_string,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">age</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{0:1}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">*=&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">_int].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">p1:Person[name-&gt;"Susan",age-&gt;11].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">p2:Person[name-&gt;"Mike",age-&gt;12].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample" style="font-style: italic;">// save Ontology &lt;http://yourcompany.com#m1&gt; to the file m1.obl</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;">  </span><span class="f_CodeExample">save</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">m1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">to</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"m1.obl".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">// shutdown OntoBroker</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">shutdown</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/server_commands.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:59 GMT -->
+</html>

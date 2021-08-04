@@ -1,0 +1,396 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/the_multiply_example_built_in.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:04 GMT -->
+<head> 
+   <title> The Multiply Example Built-in </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index439e.html?the_multiply_example_built_in.htm"; }
+  else { parent.quicksync('a3.13.5.1.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="the_isnumber_example_built_in.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="a_connector_built_in.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="using_the_extension_api_to_dev.htm">Using the Extension API to Develop OntoBroker Extensions</a> &gt; Developing Your Own Built-ins > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="using_the_extension_api_to_dev.htm">Using the Extension API to Develop OntoBroker Extensions</a> &gt; Developing Your Own Built-ins 
+     <a href="the_isnumber_example_built_in.htm">the_isnumber_example_built_in.htm</a>&nbsp;/&nbsp;
+     the_multiply_example_built_in.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">The Multiply Example Built-in</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>The ternary built-in multiply takes two numbers (the first two arguments) multiplies them and returns the result in the third argument. In addition to the other examples a new resulting atom must be generated which returns the result. This built-in has three arguments and has the string representation &lt;multiply&gt; in ObjectLogic programs:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">package</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.functionalbuiltin;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">java.util.BitSet;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">org.apache.log4j.Logger;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">org.semanticweb.kaon2.api.KAON2Exception;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">org.semanticweb.kaon2.api.KAON2Manager;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">org.semanticweb.kaon2.api.OntologyLanguage;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">org.semanticweb.kaon2.api.logic.Term;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.BuiltinContext;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.BuiltinSpec;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.Grounds;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.builtin.BuiltinServices;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.interfaces.IFunctionalBuiltin;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.builtin.interfaces.IGrounds;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.util.OntopriseConstants;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> * Example built-in which multiplies two numbers.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> *</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">MultiplyDemoBuiltin</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">implements</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IFunctionalBuiltin</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">protected</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">static</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Logger</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">_log</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Logger.getLogger(OntopriseConstants.CORE_LOG);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * Provide a no-argument constructor which needs nothing to do for this built-in.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">MultiplyDemoBuiltin()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// Empty as nothing is to do for this built-in</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * This method is called during the evaluation. We must first check which of our four possible signatures applies and then either calculate the result or</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * check if a result is valid</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param tuple the tuple which must be checked</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws InterruptedException if the process was interrupted</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws KAON2Exception if an error occurs</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">@Override</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">boolean</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">evaluate(Term[]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">input,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IGrounds</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">grounds)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">throws</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">KAON2Exception,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">InterruptedException</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">try</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">switch</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(grounds.getInt())</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IGrounds.FIRSTSECONDTHIRD:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// All three positions are ground. This means we must check if "position 0" multiplied with "position 1"</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// equals the "position 2" value. If this is true we send away the received tuple.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">double</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[0]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">double</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[1]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">double</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">result</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[2]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">if</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(op1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">*</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">==</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">result)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// return true to signal there is a result in the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">break</span><span class="f_CodeExample">;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IGrounds.FIRSTSECOND:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// First and second position is ground. We must multiply the first with the second position</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// and send away the result tuple.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">op1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[0]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[1]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// third argument must be filled with the result</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">result</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">*</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op2;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// Create and send away the new tuple.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">input[2]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">KAON2Manager.factory().constantDouble(result);</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// write the result into the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// return true to signal there is a result in the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IGrounds.FIRSTTHIRD:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// First and third position is ground. First position multiplied with second position</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// must be equal to the third position. We need to calculate the second position.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">op1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[0]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[2]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// third argument must be filled with the result</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">result</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">/</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op1;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// Create and send away the new tuple.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">input[1]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">KAON2Manager.factory().constantDouble(result);</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// write the result into the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// return true to signal there is a result in the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IGrounds.SECONDTHIRD:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// Second and third position is ground. We must calculate the first position.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">op1</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[1]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinServices.getNumber(input[2]);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// third argument must be filled with the result</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">result</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op2</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">/</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">op1;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// Create and send away the new tuple.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">input[0]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">KAON2Manager.factory().constantDouble(result);</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// write the result into the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// return true to signal there is a result in the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">catch</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(Exception</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">e)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">_log.error("Invalid input",</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">e);</span><span class="f_CodeExample" style="font-style: italic;">// catch exception for wrong input values. This is logical handled as false.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">false</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// return false to signal there no valid result in the buffer</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * This method will be called after evaluation for cleanup purposes.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * NOTE: It is possible that this operator will be used again when the same query object is openened again.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * init() won't be called a second time.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws KAON2Exception Is thrown on Error</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws InterruptedException Is thrown on Interruption</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">evaluationFinished()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">throws</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">KAON2Exception,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">InterruptedException</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// This built-in has just one state, no need to set it back.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// It is used to set a built-in to the post-init() state.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * Method to get informations about this built-in. This method has to deliver a valid BuiltinSpec object</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * after the constructor finishes, before init() has be called.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @return BuiltinSpec object with informations about this built-in.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinSpec</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">getInfo()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">BuiltinSpec.Builder</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">builder</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinSpec.Builder(</span><span class="f_CodeExample" style="font-weight: bold;">this</span><span class="f_CodeExample">,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"multiplydemo",</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">3);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">builder.setAllowedOntologyLanguages(OntologyLanguage.F_LOGIC);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">builder.setDescription("multiplydemo");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">builder.setParameters("first parameter",</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"second parameter",</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">"result");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">builder.build();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * Initialisation of this built-in. This is done for the instance before evaluation.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param context Contains additional Informations needed for some built-ins</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param args Term[] that contains the literal arguments.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws KAON2Exception Is thrown on Error</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws InterruptedException Is thrown on Interruption</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">init(BuiltinContext</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">context,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Term[]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">args)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">throws</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">KAON2Exception,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">InterruptedException</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// Nothing to do, as this built-in does not need any initialization.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * Method to determine if a certain grounds configuration is evaluable.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * This method has to be usable context free, init() is called in an other instance as</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * isEvaluable will be called. All needed information should be provided by the current</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * method arguments.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param grounds Object with grounding informations.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param variableInstantiations This BitSets has the instantiation of all variables that occurs. Needed especially if partial-ground functions are used.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param builtinContext BuiltinContext with additional context informations</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @param args Literal arguments</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @return if this grounds are evaluable or not.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; * @throws KAON2Exception Is thrown on Error</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> &nbsp; &nbsp; */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">boolean</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">isEvaluable(IGrounds</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">grounds,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BitSet</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">variableInstantiations,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinContext</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">builtinContext,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Term[]</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">args)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">throws</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">KAON2Exception</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// There are four different signatures that can be evaluated by this built-in.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// It is just necessary that at least three of the arguments are ground.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// This method has not to check the input type, just the grounds.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">switch</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(grounds.getInt())</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Grounds.FIRSTSECONDTHIRD:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// all arguments are ground</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Grounds.FIRSTSECOND:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// the third argument is not ground</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Grounds.FIRSTTHIRD:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// the second argument is not ground</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">case</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Grounds.SECONDTHIRD:</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">true</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// the first argument is not ground</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">default</span><span class="f_CodeExample">:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">false</span><span class="f_CodeExample">;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-style: italic;">// cannot be evaluated</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span><span class="f_CodeExample" style="color: #ffffff;"> </span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/the_multiply_example_built_in.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:04 GMT -->
+</html>
