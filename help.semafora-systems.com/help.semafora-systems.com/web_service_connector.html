@@ -1,0 +1,255 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/web_service_connector.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:42 GMT -->
+<head> 
+   <title> Web Service Connector </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index39be.html?web_service_connector.htm"; }
+  else { parent.quicksync('a3.6.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="supported_common_datatypes.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="sparql_connectors.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="data_integration.htm">Data Integration</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="data_integration.htm">Data Integration</a> 
+     <a href="supported_common_datatypes.htm">supported_common_datatypes.htm</a>&nbsp;/&nbsp;
+     web_service_connector.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Web Service Connector</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p class="p_Heading2"><span class="f_Heading2">Builtin:</span></p>
+<p>_webserviceInfo/4 retrieves information for web service</p>
+<p class="p_Heading3"><span class="f_Heading3">Usage:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">_webserviceInfo(webservice input map, service, method, method info map);</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Keys in Webservice input map:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[_wsdl -&gt;"url of wsdl",_service -&gt;”service name”,_method-&gt;"method name",_port-&gt;"port"]</span></p>
+<p>The _service, _method and _port key/value pairs in this map are optional and can be left out, if the WSDL contains only one item of them. </p>
+<p>The service, method and method info map arguments must not be bound.</p>
+<p class="p_Heading3"><span class="f_Heading3">Example:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _webserviceInfo([_wsdl -&gt;"http://weatherservicename/WeatherForecastSoap?wsdl"], ?</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">X, ?Y, ?Z</span>)</p>
+<p>The web service connector supports access on web services.</p>
+<p class="p_Heading2"><span class="f_Heading2">Builtin:</span></p>
+<p>_webserviceAccess/3 calls a web service</p>
+<p><span class="f_Heading3">Usage:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">_webserviceAccess(webservice input map, input parameter map, output map)</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Webservice input map:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[_wsdl -&gt;"wsdl string",_service -&gt;_service,_method-&gt;"method name",_port-&gt;"port", _user-&gt;”username”, _password-&gt;”password”]</span></p>
+<p>The _service, _method and _port key/value pairs in this map are optional and can be left out, if the WSDL contains only one item of them. If they are needed, you should use on of the values &nbsp;returned from the _webserviceInfo built-in.</p>
+<p>If the web service is protected with Basic authentication, you need to provide the _user, and _password key/value pairs. The &nbsp;values for the _user and _password &nbsp;parameters must be filled with user name and the password. Please note that the WSDL must be accessible freely. If this is not the case, download the WSDL manually and provide a file URL to it, e.g. "file:///C:/temp/service-to-access.wsdl"</p>
+<p class="p_Heading3"><span class="f_Heading3">Input parameter map:</span></p>
+<p>The concrete input parameter values are depending on the webservice.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">["Parameter name"-&gt;"value"]</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Output map</span></p>
+<p>This map contains the results of the web service call. The concrete structure depends on the web service. Use built-ins like _memberByPath/3 or _map2Table/4 to extract values.</p>
+<p> For further information about map data type click here .</p>
+<p class="p_Heading3"><span class="f_Heading3">Example:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _webserviceAccess([_wsdl -&gt;"http://weatherservicename/WeatherForecastSoap?wsdl",</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">_method-&gt;"GetWeatherByPlaceName"], ["PlaceName"-&gt;"Karlsruhe"],?Z).</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Example for BASIC authentication:</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _webserviceAccess([_wsdl-&gt;”file:///C:/temp/protectedService.wsdl”, _user-&gt;"scott", _password-&gt;"tiger"], [...], [...], ?Result).</span></p>
+<p>&nbsp;</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/web_service_connector.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:43 GMT -->
+</html>

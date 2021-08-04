@@ -1,0 +1,381 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/writing_a_built_in_for_ontobro.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:33 GMT -->
+<head> 
+   <title> Writing a Built-in for OntoBroker 6 </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexe17f.html?writing_a_built_in_for_ontobro.htm"; }
+  else { parent.quicksync('a3.13.5.1.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="extensions_directory_to_deploy.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="the_isnumber_example_built_in.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="using_the_extension_api_to_dev.htm">Using the Extension API to Develop OntoBroker Extensions</a> &gt; Developing Your Own Built-ins > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="using_the_extension_api_to_dev.htm">Using the Extension API to Develop OntoBroker Extensions</a> &gt; Developing Your Own Built-ins 
+     <a href="extensions_directory_to_deploy.htm">extensions_directory_to_deploy.htm</a>&nbsp;/&nbsp;
+     writing_a_built_in_for_ontobro.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Writing a Built-in for OntoBroker 6</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>External builtins for OntoBroker must be packaged as an OSGi bundle. The bundle has to provide a BuiltinProvider service to announce its built-ins. After setting up the &nbsp;environment in Eclipse, you create your own built-in project in the following way:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Eclipse Main menu </span><span class="f__ScreenName">File</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">New</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Other…</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Plugin-Project</span><span class="f_Instruction">.</span></td></tr></table></div><p><img src="0001.png" width="525" height="636" border="0" alt="0001"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Ensure to check </span><span class="f__ScreenName">an OSGi framework</span><span class="f_Instruction"> in the Target Platform group.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Press </span><span class="f__ScreenName">Next</span><span class="f_Instruction">.</span></td></tr></table></div><p><img src="0002.png" width="525" height="636" border="0" alt="0002"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span class="f_Instruction">Deactivate </span><span class="f__ScreenName">Generate an activator</span><span class="f_Instruction">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Press </span><span class="f__ScreenName">Next</span><span class="f_Instruction">.</span></td></tr></table></div><p><img src="0003.png" width="525" height="636" border="0" alt="0003"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">6.</span></td><td><span class="f_Instruction">Deactivate the checkbox </span><span class="f__ScreenName">Create a plug-in using one of the templates</span><span class="f_Instruction">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">7.</span></td><td><span class="f_Instruction">Press </span><span class="f__ScreenName">Finish</span><span class="f_Instruction">.</span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">Now add OntoBroker dependencies.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">8.</span></td><td><span class="f_Instruction">Select </span><span class="f__ScreenName">META-INF/MANIFEST.MF</span><span class="f_Instruction"> and double-click to open the editor.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">9.</span></td><td><span class="f_Instruction">Switch to tab </span><span class="f__ScreenName">Dependencies</span><span class="f_Instruction">.</span></td></tr></table></div><p><img src="0004.png" width="1024" height="768" border="0" alt="0004"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">10.</span></td><td><span class="f_Instruction">Press the </span><span class="f__ScreenName">Add…</span><span class="f_Instruction"> button of the required plug-ins and add </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">com.ontoprise.ontobroker.base </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Path">com.ontoprise.ontobroker.datamodel</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">11.</span></td><td><span class="f_Instruction">Press the </span><span class="f__ScreenName">Add…</span><span class="f_Instruction"> button of Imported Packages and add </span><span class="f_Path">org.apache.log4j</span>.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">12.</span></td><td><span class="f_Instruction">Save the changes.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">13.</span></td><td><span class="f_Instruction">Add the following classes: </span><span class="f_Path">com.acme.sample.ConcatBuiltin.java</span>.</td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">package</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.acme.sample;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> java.util.BitSet;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> org.semanticweb.kaon2.api.KAON2Exception;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> org.semanticweb.kaon2.api.KAON2Manager;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> org.semanticweb.kaon2.api.OntologyLanguage;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> org.semanticweb.kaon2.api.logic.Term;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.ontoprise.ontobroker.api.extension.builtin.IBuiltinContext;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.ontoprise.ontobroker.api.extension.builtin.IFunctionalBuiltin;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.ontoprise.ontobroker.api.extension.builtin.IGrounds;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.ontoprise.ontobroker.apibase.extension.builtin.BuiltinSpec;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.ontoprise.util.OntopriseConstants;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">import</span><span style="font-size: 10pt; font-family: 'Courier New';"> com.ontoprise.util.TermUtilities2;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">/**</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> * Example built</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #7f7f9f;">-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">in which </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">concats</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> two strings.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> */</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">public</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">class</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; background-color: #c0c0c0;">ConcatBuiltin</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">implements</span><span style="font-size: 10pt; font-family: 'Courier New';"> IFunctionalBuiltin {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">/**</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * This method is called during the evaluation. We must first check which of our four possible signatures applies and then either calculate the result or</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * check if a result is valid</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> tuple the tuple which must be checked</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> InterruptedException if the process was interrupted</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> KAON2Exception if an error occurs</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; */</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #646464;">@Override</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">public</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">boolean</span><span style="font-size: 10pt; font-family: 'Courier New';"> evaluate(Term[] input, IGrounds grounds) </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">throws</span><span style="font-size: 10pt; font-family: 'Courier New';"> KAON2Exception, InterruptedException {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;String str1 = TermUtilities2.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic;">getConstantValueAsString</span><span style="font-size: 10pt; font-family: 'Courier New';">(input[0]);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;String str2 = TermUtilities2.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic;">getConstantValueAsString</span><span style="font-size: 10pt; font-family: 'Courier New';">(input[1]);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;System.out.println(</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">"str1="</span><span style="font-size: 10pt; font-family: 'Courier New';"> + str1 + </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">", str2="</span><span style="font-size: 10pt; font-family: 'Courier New';"> + str2);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">if</span><span style="font-size: 10pt; font-family: 'Courier New';"> (str1 == </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">null</span><span style="font-size: 10pt; font-family: 'Courier New';"> || str2 == </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">null</span><span style="font-size: 10pt; font-family: 'Courier New';">)</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">false</span><span style="font-size: 10pt; font-family: 'Courier New';">; </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// input parameters cannot be converted to strings</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;String s = str1 + str2;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;Term result = KAON2Manager.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic;">factory</span><span style="font-size: 10pt; font-family: 'Courier New';">().constantString(s);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">switch</span><span style="font-size: 10pt; font-family: 'Courier New';"> (grounds.getInt()) {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">case</span><span style="font-size: 10pt; font-family: 'Courier New';"> IGrounds.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic; color: #0000c0;">FIRSTSECONDTHIRD</span><span style="font-size: 10pt; font-family: 'Courier New';">:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> result == input[2]; </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// unify calculated and given result?</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">case</span><span style="font-size: 10pt; font-family: 'Courier New';"> IGrounds.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic; color: #0000c0;">FIRSTSECOND</span><span style="font-size: 10pt; font-family: 'Courier New';">:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;input[2] = result;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">true</span><span style="font-size: 10pt; font-family: 'Courier New';">;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">default</span><span style="font-size: 10pt; font-family: 'Courier New';">:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">false</span><span style="font-size: 10pt; font-family: 'Courier New';">; </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// should never be reached because of </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f; text-decoration: underline;">behaviour</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;"> of isEvaluable</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">/**</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * This method will be called after evaluation for cleanup purposes.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * NOTE: It is possible that this operator will be used again when the same query object is </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">openened</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> again.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">init</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">() won't be called a second time.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> KAON2Exception Is thrown on Error</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> InterruptedException Is thrown on Interruption</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; */</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">public</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">void</span><span style="font-size: 10pt; font-family: 'Courier New';"> evaluationFinished() </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">throws</span><span style="font-size: 10pt; font-family: 'Courier New';"> KAON2Exception, InterruptedException {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// This built-in has just one state, no need to set it back.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// It is used to set a built-in to the post-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f; text-decoration: underline;">init</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">() state.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">/**</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * Method to get informations about this built</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #7f7f9f;">-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">in. This method has to deliver a valid BuiltinSpec object</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * after the constructor finishes, before </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">init</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">() has be called.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@return</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> BuiltinSpec object with informations about this built</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #7f7f9f;">-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">in.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; */</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">public</span><span style="font-size: 10pt; font-family: 'Courier New';"> BuiltinSpec getInfo() {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;BuiltinSpec.Builder builder = </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">new</span><span style="font-size: 10pt; font-family: 'Courier New';"> BuiltinSpec.Builder(</span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">this</span><span style="font-size: 10pt; font-family: 'Courier New';">, </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">"obl:reserved:myconcat"</span><span style="font-size: 10pt; font-family: 'Courier New';">, 3);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;builder.setAllowedOntologyLanguages(OntologyLanguage.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic; color: #0000c0;">OBJECTLOGIC</span><span style="font-size: 10pt; font-family: 'Courier New';">);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;builder.setDescription(</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">"Concats two strings"</span><span style="font-size: 10pt; font-family: 'Courier New';">);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;builder.setParameters(</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">"first string"</span><span style="font-size: 10pt; font-family: 'Courier New';">, </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">"second string"</span><span style="font-size: 10pt; font-family: 'Courier New';">, </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #2a00ff;">"result"</span><span style="font-size: 10pt; font-family: 'Courier New';">);</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> builder.build();</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">/**</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">Initialisation</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> of this built</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #7f7f9f;">-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">in. This is done for the instance before evaluation.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> context Contains additional Informations needed for some built</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #7f7f9f;">-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">ins</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> args Term[] that contains the literal arguments.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> KAON2Exception Is thrown on Error</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> InterruptedException Is thrown on Interruption</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; */</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">public</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">void</span><span style="font-size: 10pt; font-family: 'Courier New';"> init(IBuiltinContext context, Term[] args) </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">throws</span><span style="font-size: 10pt; font-family: 'Courier New';"> KAON2Exception, InterruptedException {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// Nothing to do, as this built-in does not need any initialization.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">/**</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * Method to determine if a certain grounds configuration is </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">evaluable</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * This method has to be usable context free, </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">init</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">() is called in an other instance as</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * isEvaluable will be called. All needed information should be provided by the current</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * method arguments.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> grounds Object with grounding informations.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> variableInstantiations This BitSets has the instantiation of all variables that occurs. Needed especially if partial</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #7f7f9f;">-</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;">ground functions are used.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> builtinContext BuiltinContext with additional context informations</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@param</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> args Literal arguments</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@return</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> if this grounds are </span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf; text-decoration: underline;">evaluable</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> or not.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; * </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f9fbf;">@throws</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> KAON2Exception Is thrown on Error</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f5fbf;"> &nbsp; &nbsp; */</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">public</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">boolean</span><span style="font-size: 10pt; font-family: 'Courier New';"> isEvaluable(IGrounds grounds, BitSet variableInstantiations, IBuiltinContext builtinContext, Term[] args) </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">throws</span><span style="font-size: 10pt; font-family: 'Courier New';"> KAON2Exception {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 10pt; font-family: 'Courier New'; color: #3f7f5f;">// first and second argument must be ground</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">switch</span><span style="font-size: 10pt; font-family: 'Courier New';"> (grounds.getInt()) {</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">case</span><span style="font-size: 10pt; font-family: 'Courier New';"> IGrounds.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic; color: #0000c0;">FIRSTSECONDTHIRD</span><span style="font-size: 10pt; font-family: 'Courier New';">:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">case</span><span style="font-size: 10pt; font-family: 'Courier New';"> IGrounds.</span><span style="font-size: 10pt; font-family: 'Courier New'; font-style: italic; color: #0000c0;">FIRSTSECOND</span><span style="font-size: 10pt; font-family: 'Courier New';">:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">true</span><span style="font-size: 10pt; font-family: 'Courier New';">;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">default</span><span style="font-size: 10pt; font-family: 'Courier New';">:</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">return</span><span style="font-size: 10pt; font-family: 'Courier New';"> </span><span style="font-size: 10pt; font-family: 'Courier New'; font-weight: bold; color: #7f0055;">false</span><span style="font-size: 10pt; font-family: 'Courier New';">;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Courier New';">}</span></p>
+<p class="p_Instruction"><span class="f_Path">com.acme.sample.BuiltinsProviderImpl.java</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">package</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.acme.sample;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">java.util.ArrayList;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">java.util.Collection;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.ontobroker.api.extension.builtin.IBuiltin;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">import</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">com.ontoprise.ontobroker.kernel.builtinsystem.BuiltinProvider;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;">/**</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> * Provider for sample builtins</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic;"> */</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinsProviderImpl</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">implements</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">BuiltinProvider</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">@Override</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Collection&lt;Class&lt;?</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">extends</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IBuiltin&gt;&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">getBuiltins()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">ArrayList&lt;Class&lt;?</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">extends</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IBuiltin&gt;&gt;</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">list</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ArrayList&lt;Class&lt;?</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">extends</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">IBuiltin&gt;&gt;();</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-style: italic;">// this bundle has only one built-in</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">list.add(ConcatBuiltin.</span><span class="f_CodeExample" style="font-weight: bold;">class</span><span class="f_CodeExample">);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">list;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp;  </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Declare the service</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Add the folder "OSGI-INF" to the project.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Select the folder and choose from the context menu </span><span class="f__ScreenName">New</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Component Definition</span><span class="f_Instruction">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Fill the wizard.</span></td></tr></table></div><p><img src="0005.png" width="525" height="652" border="0" alt="0005"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Courier New'; color: #000000;">4.</span></td><td><span class="f_Instruction">Select the tab </span><span class="f__ScreenName">Services</span><span class="f_Instruction"> and add to Provided Services: </span><span class="f_Path">com.ontoprise.ontobroker.kernel.builtinsystem.BuiltinProvider</span></td></tr></table></div><p><img src="0006.png" width="1036" height="768" border="0" alt="0006"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Export the Jar file by selecting the sample-builtin project and choose </span><span class="f__ScreenName">Export</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Deployable plug-ins and fragments</span><span class="f_Instruction">.</span></td></tr></table></div><p><img src="0007.png" width="525" height="604" border="0" alt="0007"></p>
+<p>Now you have the sample_builtins_1.0.0.xxxx.jar in the directory D:\TEMP\plugins</p>
+<p class="p_Heading2"><span class="f_Heading2">Use the built-in</span></p>
+<p>Copy this jar file to the OntoBroker extensions directory to use the built-in.</p>
+<p>On adding the jar file to the extensions directory you should see following message in the log:</p>
+<p>INFO &nbsp;[CONFIG] Builtin added: obl:reserved:myconcat/3</p>
+<p>Run following query:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _myconcat("ab", "cd", ?X).</span></p>
+<p>You should get as result: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">?X = "abcd"</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/writing_a_built_in_for_ontobro.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:03 GMT -->
+</html>

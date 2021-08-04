@@ -1,0 +1,247 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/webservices.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:04:40 GMT -->
+<head> 
+   <title> Querying Web Services </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="Webservices"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index1d69.html?webservices.htm"; }
+  else { parent.quicksync('a2.2.11'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="collaboration.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="graphical_rule_editor.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoStudio 3.1 &gt; <a href="f_logic_perspective.htm">Modeling</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoStudio 3.1 &gt; <a href="f_logic_perspective.htm">Modeling</a> 
+     <a href="collaboration.htm">collaboration.htm</a>&nbsp;/&nbsp;
+     webservices.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Querying Web Services</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>You can make queries in OntoStudio accessible as a Web service. You can define properties as input and output parameters and deploy the query as a Web service to the underlying OntoBroker instance. For a detailed description of OntoBroker Web services see the chapter "OntoBroker and Web Services (SOAP/WSDL)" of the OntoBroker manual. The interface used to work with those deployed services is the "<a href="http://www.eclipse.org/webtools/initial-contribution/IBM/evalGuides/WebServicesToolsEval.html" target="_blank" class="weblink" title="Click here to visit a tutorial about the Eclipse Webservices Explorer">Eclipse Webservices Explorer</a>". </p>
+<p class="p_Instruction_Precondition_Heading"><span class="f_Instruction_Precondition_Heading">Prerequisite: </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_Instruction_Precondition">Define the Input and Output Parameters for the Query: Input parameters are defined by flagging the Show checkbox on the query property page. Output parameters are defined using the syntax seen below: (Just use some variable name preceded and followed by a $)</span></td></tr></table></div><p class="p_Heading1"><span class="f_ImageCaption"> &nbsp; &nbsp; <img src="clip0541.png" width="815" height="713" border="0" alt="clip0541"></span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Select a query in the Ontology Navigator and make a right click on it.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Select </span><span class="f__ScreenName">Web Services</span><span class="f_Instruction"> and </span><span class="f__ScreenName">Create and Test WebService in External Browser</span><span class="f_Instruction">.</span></td></tr></table></div><p><img src="clip0321.png" width="717" height="564" border="0" alt="clip0321"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">You are asked for permission to open the system browser.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Click on </span><span class="f__ScreenName">Yes</span><span class="f_Instruction">.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The default browser opens automatically, displaying the resulting Web service.</span></p>
+<p class="p_Instruction_Result">The following happens in the background:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">A Web archive file containing the Web service definition (WSDL) is created and published to a certain URL.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">An internal Web server is started, and the Webservice Explorer application is launched. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Either the default system browser or an internal browser embedded in OntoStudio is opened, pointing to the running application with the generated service URL.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">4.</span></td><td><span class="f_Instruction">Click on </span><span class="f__ScreenName">query</span><span class="f_Instruction">.</span></td></tr></table></div><p class="p_Instruction"><img src="clip0325.png" width="893" height="570" border="0" alt="clip0325"></p>
+<p>The query can now be executed from within the browser.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">5.</span></td><td><span class="f_Instruction">Click on </span><span class="f__ScreenName">Go</span><span class="f_Instruction">.</span><br>
+<span class="f_Instruction">&nbsp;</span><br>
+<span class="f_ImageCaption"> &nbsp; <img src="clip0326.png" width="727" height="414" border="0" alt="clip0326"></span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The result is displayed (see below).</span></p>
+<p><span class="f_ImageCaption"> &nbsp; <img src="clip0327.png" width="743" height="498" border="0" alt="clip0327"></span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">If input parameters where defined (as described above), a form is displayed.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">6.</span></td><td><span class="f_Instruction">Enter values for those parameters.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The resulting object tree depends on the output parameters previously defined. For every attribute that was defined as an output parameter a row should be displayed, showing the result. Relations are visualized by child elements. </span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">You can switch between this tree-like visualization, or the "Source View", which shows the raw SOAP response in XML syntax. This can be especially important if something goes wrong. Then an error message will be displayed in the "Source View" only, so remember to switch here in case problems arise. </span></p>
+<p><span class="f_ImageCaption"> &nbsp; <img src="clip0328.png" width="744" height="495" border="0" alt="clip0328"></span></p>
+<p>&nbsp;</p>
+<p><span class="f_ImageCaption"> &nbsp; <img src="clip0329.png" width="742" height="499" border="0" alt="clip0329"></span></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">When a query is deployed as a Web service a check is made to see if there are services deployed from other projects. In that case those services are removed via deleteDynamicSvc command (you will be asked for confirmation). For more information on Web services, see the OntoBroker documentation.</span></p>
+<p>&nbsp;</p>
+<p>NOTE: Additonal Information about WSDL:<br>
+WSDL is an XML format for describing network services as a set of endpoints operating on messages that contain either document-oriented or procedure-oriented information. The operations and messages are described in an abstract way and then bound to a concrete network protocol and a message format to define an endpoint. Related concrete endpoints are combined into abstract endpoints (services). WSDL is extensible to allow describing of the endpoints and their messages regardless of what message formats or network protocols are used to communicate. However, the only bindings described in this document describe how to use WSDL in conjunction with SOAP 1.1, HTTP GET/POST and MIME.<br>
+For more Information visit the W3C Website.</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/webservices.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:04:48 GMT -->
+</html>
