@@ -1,0 +1,252 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/ontology_management.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:17 GMT -->
+<head> 
+   <title> Ontology Management </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexd64b.html?ontology_management.htm"; }
+  else { parent.quicksync('a3.13.2.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="ontobroker_java_api.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="retrieval.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> 
+     <a href="ontobroker_java_api.htm">ontobroker_java_api.htm</a>&nbsp;/&nbsp;
+     ontology_management.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Ontology Management</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Prior to working with a knowledge base, the necessary ontologies have to be loaded or created. After modifying a file-based ontology, it has to be saved in order to preserve the changes. This topic deals with ontology management.</p>
+<p class="p_Heading2"><span class="f_Heading2">Opening an Existing Ontology from a File Location</span></p>
+<p>If we intend to access an existing ontology stored in a file, we first of all need to import it. OntologyManager contains multiple overloads of the importOntology() method for doing this.</p>
+<p>Using a File parameter is convenient as this lets us easily specify both relative and absolute paths on the local host. Please note that local host means the computer where your Java application is running. This is not necessarily the same as the host on which OntoBroker is running.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// open an ontology from a file</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">File ontologyFile = new File("resources/ontology.obl");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ontology ontology = OntologyManager.importOntology(ontoFile, null);</span></p>
+<p>Another alternative is to use one of the physical URI overloads; this is especially suitable for importing ontologies located on a Web server, although the 'file://' pseudoprotocol can be used to specify paths on the local file system.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// open an ontology from a web url</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">String ontologyPhysicalUri = "http://example.org/ontology.obl";</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ontology ontology = OntologyManager.importOntology(ontologyPhysicalUri, null);</span></p>
+<p>For importing multiple ontology files at once, overloads exist for both parameter types. There is also one additional parameter in all the overloads, the <span style="font-size: 10pt; font-family: 'Arial';">ProgressListener</span>; this allows for progress notifications of the client code, see <a href="progress_listener.html">Progress Listener</a> for more information.</p>
+<p class="p_Heading2"><span class="f_Heading2">Creating a New Ontology</span></p>
+<p>Having initialized an OntologyManager instance, it can be used to create a new ontology. Only the ontologyURI must be passed to the method, null is allowed in place of the additional options parameter:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// create a new ontology</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ontology ontology = manager.createOntology("http://www.example.org/MyOnto", null);</span></p>
+<p>Note that the ontology URI is a purely logical concept and although it may resemble a web URL, it does not in any way determine the file name or physical location upon saving. Also recall how the (logical) URI is different from the concept of a namespace. While a namespace can span multiple ontology files, there must be a one-to-one correspondence between ontology files and URIs. A (logical) URI corresponds to what is referred to as a module in F-Logic.</p>
+<p class="p_Heading2"><span class="f_Heading2">Saving an Ontology to a File</span></p>
+<p>Whether you created a new ontology, or modified an existing one, it has to be saved to a file to preserve the changes. Saving an ontology to a file with the method saveOntology is straightforward; besides the file format, only the target must be provided. However, it is advisable to explicitly specify the text encoding to prevent problems with accented or national characters in a multi-platform setting.</p>
+<p>Overloaded versions of the method also exist allowing writing an ontology to a an OutputStream or a Writer.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// save ontology to a file</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">File targetFile = new File("MyOntoFile.obl");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ontology.saveOntology(OntoBrokerOntologyFileFormat.OBJECTLOGIC,</span></p>
+<p class="p_CodeExample"><span style="width:48px">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CodeExample">targetFile, SerializationConstants.ENCODING_UTF);</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Deleting an Ontology</span></p>
+<p>When an ontology is no longer needed, it can be deleted. Deleting removes the ontology from the manager making it unavailable until it is re-imported again. This does not, however, modify the file system, should the ontology be originally imported from a file or not.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">// delete an ontology</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ontology ontology = manager.getOntology("http://www.example.org/MyOnto");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">manager.deleteOntology(ontology);</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/ontology_management.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:17 GMT -->
+</html>

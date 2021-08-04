@@ -1,0 +1,345 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/query_options_tut.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:02 GMT -->
+<head> 
+   <title> Query Options </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index1d52.html?query_options_tut.htm"; }
+  else { parent.quicksync('a5.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="transitivity_of_subclass_relat.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="property.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>ObjectLogic Reference > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     ObjectLogic Reference 
+     <a href="transitivity_of_subclass_relat.htm">transitivity_of_subclass_relat.htm</a>&nbsp;/&nbsp;
+     query_options_tut.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Query Options</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Query options control the execution and output of a query.</p>
+<p>Syntactically they are provided as annotations to the query. Annotations are written in front of the query with the syntax @{&lt;queryName&gt;,options[&lt;option1&gt;,&lt;option2&gt;]}.</p>
+<p class="p_Heading2"><span class="f_Heading2">Example: query without id and options</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Example: query with id "subconcepts"</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{subconcepts} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Example: query with options "inferOff" and "profile"</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{options[inferOff,profile]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Sorting</span></p>
+<p>This query option allows sorting of the result of a query. Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[sort(asc(?X),desc(?Y)]} ?- ?X::?Y. </span></p>
+<p>This example will sort the query results in the ascending order of bindings for ?X and in descending order of bindings for ?Y. It is also possible to write:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[sort(?X,desc(?Y)]} ?- ?X::?Y. </span></p>
+<p>The ?X will be be interpreted as asc(?X), so you can just leave out the asc(..).</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Sequence and restriction of the result variables (output ordering)</span></p>
+<p>If you want to specify the sequence of the output variables, you can use the "outorder" query option. E.g. with the facts</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Man::Person.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Woman::Person.</span></p>
+<p>&nbsp;</p>
+<p>the output of the query</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[outorder(?X,?Y)]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p>will be</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Man,Person</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Woman,Person</span></p>
+<p>&nbsp;</p>
+<p>With</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[outorder(?Y,?X)]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p>the output will be</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Person,Man</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Person,Woman</span></p>
+<p>&nbsp;</p>
+<p>The "outorder" option can also be used for skipping some variable bindings in the result: with</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[outorder(?X)]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p>the output will be</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Man</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Woman</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Limiting the number of answers</span></p>
+<p>If you want to limit the number of answers, you can use the "limit" option:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[limit(1),outorder(?Y,?X)]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p>In this example, only one answer will be given. Note that limiting the number of answers does not necessarily mean that the performance will improve.</p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Answer offset</span></p>
+<p>If you want to skip some answers, then you can use the "offset" option:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[offset(10),limit(5),sort(?Y,?Y),outorder(?Y,?X)]} ?- ?X::?Y. </span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Verdana';">In this example five answers will be given, starting with answers then. Using offset only makes sense if the answer order is specified. Otherwise it is not assured that the answers are returned in the same order.</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Skip sendings answers</span></p>
+<p>Using the option "skipSendingAnswers", you can execute a query without receiving the results. This can be useful for benchmarking, if the time for sending the answers to the client complicates time measurements.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[skipSendingAnswers]} ?- ?X::?Y. </span></p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Tracing</span></p>
+<p>OntoBroker will log trace information about the query execution if you use the query option "trace".</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[trace]} ?- ?X::?Y.</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Profiling</span></p>
+<p>The logging of the performance characteristics can be enabled with the query options "profile" and &nbsp;"profileAll". The profileAll executes the query with full profiling (including execution plans etc.)</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[profile]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[profileAll]} ?- ?X::?Y. </span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Turning off inferencing</span></p>
+<p>You may tell OntoBroker not to do inferencing for query answering. This will prohibit the evaluation of all rules and you will only get the given facts matching your query.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[inferOff]} ?- ?X::?Y.</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Turning off user rules</span></p>
+<p>You may tell the OntoBroker to disable all user rules, i.e. all rules explicitly defined in any module. Internal axiom rules (like e.g. subclass and property hierarchy) are not influenced by this option,</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1, options[userRulesOff]} ?- ?X::?Y. </span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Turning off imports</span></p>
+<p>If module A imports module B, all facts of B are included on querying facts from module A. Using the "ignoreImports" query option you can query for facts only stored explictly in module A.</p>
+<p>&nbsp;</p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Verdana';">Module A</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module A.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- importmodule B.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">John:person.</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Verdana';">Module B</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">:- module B.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Ann:person.</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1} ?- ?X:person@A. &nbsp;// returns John and Ann </span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1,options[ignoreImports]} ?- ?X:person@A. &nbsp;// returns only John </span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Working with null values</span></p>
+<p>If a property is not set in ObjectLogic, it is just not there, i.e. querying for the property value returns no result.</p>
+<p>Under some circumstances, it is useful to get null values in these cases instead. In this case you can use the query option "fillNull".</p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Verdana';">Assume you have following facts</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">John[name-&gt;"John"].</span></p>
+<p>&nbsp;</p>
+<p>Then</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1} ?- John[age-&gt;?X]. // no results</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1,options[fillNull]} ?- John[age-&gt;?X]. // returns ?X = null</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Explain</span></p>
+<p>This option is used to generate explanations for the query. See chapter Explanations in OntoBroker manual for details.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1,options[explain]} ?- ?X::?Y.</span></p>
+<p>&nbsp;</p>
+<p><span class="f_Heading2">EvaluationMethod</span></p>
+<p>This is an advanced option. To change the evaluation method for a single query, you can use the "EvaluationMethod" option. It takes one argument. The values for the argument are the same as in the OntoConfig.prp.</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1,options[EvaluationMethod(BottomUp)]} ?- ?X::?Y.</span></p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">BottomUpEvaluator</span></p>
+<p>This is an advanced option. To change the bottom up evaluation method for a single query, you can use the "BottomUpEvaluator" option. It takes one argument. The values for the argument are the same as in the OntoConfig.</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{q1,options[BottmUpEvaluator(BottomUp)]} ?- ?X::?Y.</span></p>
+<p>&nbsp;</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/query_options_tut.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:12:02 GMT -->
+</html>

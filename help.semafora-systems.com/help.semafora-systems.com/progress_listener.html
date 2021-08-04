@@ -1,0 +1,259 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/progress_listener.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:21 GMT -->
+<head> 
+   <title> Progress Listener </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index5dd0.html?progress_listener.htm"; }
+  else { parent.quicksync('a3.13.2.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="autocomplete.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="namespaces_and_modules.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="interfaces_to_ontobroker.htm">Interfaces to OntoBroker</a> &gt; <a href="ontobroker_java_api.htm">OntoBroker Java API</a> 
+     <a href="autocomplete.htm">autocomplete.htm</a>&nbsp;/&nbsp;
+     progress_listener.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Progress Listener</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Selected methods with potentially lengthy execution take an optional argument of type <span style="font-size: 10pt; font-family: 'Arial';">ProgressListener</span>. <span style="font-size: 10pt; font-family: 'Arial';">ProgressListener</span> specifies an interface, through which these long running operations can provide feedback to the client code.</p>
+<p><img src="clip002_ob_api_progress.png" width="470" height="191" border="0" alt="clip002_ob_api_progress"></p>
+<p>Operation execution is split into phases, whose beginning and end are reported; besides, operation progress &nbsp;is reported in units of work. This allows the developer to provide feedback to the user in case of interactive applications, or to log or otherwise record progress and results of a long-running operation.</p>
+<p><span class="f_Heading2">ProgressListenerDemo</span></p>
+<p>The Demo project is a simple interactive application that imports the selected ontology file into OntoBroker. Importing the 2MB ontology file bundled with the project makes the lag already apparent.</p>
+<p><span class="f_Heading2">Worker Thread</span></p>
+<p>In order to keep the GUI responsive so that we can display operation progress and let the user cancel the running operation, the long running operation must execute in another thread (different from the GUI thread). The demo application uses the convenient SwingWorker class to do this.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">SwingWorker&lt;Void,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Void&gt;()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample" style="font-weight: bold;">protected</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">doInBackground()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">throws</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Exception</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">try</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample">loader.importExistingOntology(f,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">listener);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">catch</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(Exception</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">ignore)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="font-weight: bold;">return</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">null</span><span class="f_CodeExample">;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}.execute();</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Implementing the </span><span class="f_Heading2" style="font-family: 'Courier New';">ProgressListener</span><span class="f_Heading2"> Interface</span></p>
+<p>For reasons of simplicity, the class representing the main application frame directly implements the ProgressListener interface. The methods simply display text messages about operation progress in a text area. Additionally, method calls indicating operation termination change the form state to indicate the import operation is no longer executing.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">workUnitCompleted(</span><span class="f_CodeExample" style="font-weight: bold;">int</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">workUnitsCompleted,</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">int</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">totalWorkUnits)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">outputText("Completed "</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">+</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">workUnitsCompleted);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">operationCompleted()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">outputText("op completed");</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">setGuiState(</span><span class="f_CodeExample" style="font-weight: bold;">false</span><span class="f_CodeExample">);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}</span></p>
+<p>&nbsp;</p>
+<p>When implementing the interface methods, consider that they will be called from another thread. Therefore, any calls from within these methods must be thread-safe or guaranteed to execute on the right thread.</p>
+<p>This code snippet shows how the demo application makes sure it is only modifying state of GUI components from within the GUI thread.</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">private</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">setGuiState(</span><span class="f_CodeExample" style="font-weight: bold;">final</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">boolean</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">isImporting)</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample" style="font-weight: bold;">if</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">(SwingUtilities.isEventDispatchThread())</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">...</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">buttonCancel.setVisible(isImporting);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; </span><span class="f_CodeExample">}</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">else</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp;  </span><span class="f_CodeExample">SwingUtilities.invokeLater(</span><span class="f_CodeExample" style="font-weight: bold;">new</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">Runnable()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="font-weight: bold;">public</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample" style="font-weight: bold;">void</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">run()</span><span class="f_CodeExample" style="color: #ffffff;"> </span><span class="f_CodeExample">{</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #ffffff;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample">setGuiState(isImporting);</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">}});}}</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/progress_listener.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:09:22 GMT -->
+</html>

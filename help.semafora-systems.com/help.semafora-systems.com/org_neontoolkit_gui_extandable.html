@@ -1,0 +1,324 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/org_neontoolkit_gui_extandable.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:02:42 GMT -->
+<head> 
+   <title> Schema of ExtandableTreeProvider </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index2710.html?org_neontoolkit_gui_extandable.htm"; }
+  else { parent.quicksync('a2.1.8.2.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="entityproperties_extension.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="org_neontoolkit_gui_extandabl2.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoStudio 3.1 &gt; General &gt; <a href="ontostudio_extension_points.htm">Extending Functions by Extension Points</a> &gt; Configuring Extension Points > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoStudio 3.1 &gt; General &gt; <a href="ontostudio_extension_points.htm">Extending Functions by Extension Points</a> &gt; Configuring Extension Points 
+     <a href="entityproperties_extension.htm">entityproperties_extension.htm</a>&nbsp;/&nbsp;
+     org_neontoolkit_gui_extandable.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Schema of ExtandableTreeProvider</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p class="p_CodeExample"><span class="f_CodeExample"> &lt;!ELEMENT extension (provider*)&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;!ATTLIST extension</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">point CDATA #REQUIRED </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">id &nbsp; &nbsp;CDATA #IMPLIED </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">name &nbsp;CDATA #IMPLIED&gt;</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">point - a fully qualified identifier of the target extension point </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">id - an optional identifier of the extension instance </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">name - an optional name of the extension instance </span></td></tr></table></div><p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;&lt;!ELEMENT provider (viewContribution*)&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;!ATTLIST provider</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CDATA #REQUIRED</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">class &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CDATA #REQUIRED </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">sub-provider-of CDATA #IMPLIED&gt;</span></p>
+<p> &nbsp; </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">id - a unique identifier used to reference this content provider. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">class - the fully qualified name of the class that implements org.neontoolkit.gui.navigator.ITreeDataProvider. </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">sub-provider-of - The unique identifier of the parent provider in the provider hierarchy. This attribute is optional, providers located on the root level of the tree have no parent providers. </span></td></tr></table></div><p class="p_List2"><span class="f_List2">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;&lt;!ELEMENT viewContribution &gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;!ATTLIST viewContribution</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">id &nbsp; &nbsp;CDATA #IMPLIED</span></p>
+<p>  </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 3px 26px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List2">id - a unique identifier used to reference the component which should display the contents of this extension. </span></td></tr></table></div><p>&nbsp;</p>
+<p>The interface of <span style="font-size: 10pt; font-family: 'Arial';">ITreeDataProvider</span> must be implemented and provides the following methods:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<th valign="top" bgcolor="#c9c9c9" style="background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Method</span></p>
+</th>
+<th valign="top" bgcolor="#c9c9c9" style="background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Descripton</span></p>
+</th>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">void dispose()</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">This method is invoked, when the object is disposed. Clean up operations can be done here </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">int getChildCount(ITreeElement parentElement)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">The number of child elements depending on the passed parent element parentElement should be returned </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ITreeElement[] getChildren(ITreeElement parentElement, int topIndex, int amount)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Should return the subset of amount children of parentElement, beginning at index topIndex.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ITreeElement[] getElements(ITreeElement parentElement, int topIndex, int amount)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">This method should return the given amount of root elements of this provider beginning at index topIndex. The passed parentElement is an element of the parent provider or null if none</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">String getId()</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Returns the id of this provider. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Image getImage(ITreeElement element)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Should return the image of the tree element (which was provided by this provider) to be displayed in the UI. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">TreeElementPath[] getPathElements(ITreeElement element)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">This method is required for searching in the tree. If the passed element is provided by this provider or by a subprovider of this provider, this method should return a TreeElementPath containing only the elements of the path from the element to the root of the tree which are provided by this provider. If elements appear multiple times in the tree, multiple paths are possible, so an array has to be returned. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">String getText(ITreeElement element)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Should return the text of the tree element (which was provided by this provider) to be displayed in the UI. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">void setId(String id)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Sets the identifier of this provider. This method is invoked from the framework to set the id specified in the plugin.xml. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">void setViewer(ComplexTreeViewer viewer)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Passes the reference to the TreeViewer that displays the content of this provider. The reference is used to perform refresh operations</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">boolean isDragSupported()</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">The developer can define the general behavior of the elements provided by this provider. If true is returned, the elements can generally be dragged, if a handler for this kind of drag is registered. If false is returned, these elements cannot be dragged at all.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">boolean isDropSupported()</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">The developer can define the general drop policy on elements provided by this provider. If true is returned, it is possible to drop elements on the elements of this provider (if a dropHandler is registered for this kind of drop). If false is returned, these elements do not support any drop operation at all. </span></p>
+</td>
+</tr>
+</table>
+</div>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/org_neontoolkit_gui_extandable.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:02:43 GMT -->
+</html>

@@ -1,0 +1,280 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/prepared_queries2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:00 GMT -->
+<head> 
+   <title> Prepared Queries </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="Prepared Queries"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index1eb6.html?prepared_queries2.htm"; }
+  else { parent.quicksync('a3.20.3.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="basic_commands.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="optimizer_commands.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; OntoBroker Server &gt; <a href="server_commands.htm">Server Commands</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; OntoBroker Server &gt; <a href="server_commands.htm">Server Commands</a> 
+     <a href="basic_commands.htm">basic_commands.htm</a>&nbsp;/&nbsp;
+     prepared_queries2.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Prepared Queries</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>For complex queries the preparation of the rules and the optimization of the evaluation strategy may take a lot of time (up to 60% of the whole answering process was reported in some cases). To improve the performance of query preparation, the query answering has been divided into two steps: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">The preparation phase and </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">The execution phase</span></td></tr></table></div><p>This allows the re-usage of prepared programs when querying the same or a similar query. Similar means in terms of given value restrictions that can be changed before the execution takes place. </p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: Prepared queries are not supported when access control (role-based security) is enabled. </span></p>
+<p class="p_Heading2"><span class="f_Heading2">Usage</span></p>
+<p>Prepared queries can be maintained with the following commands: </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">preparequery </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">removepreparedquery </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">preparedquerylist </span></td></tr></table></div><p>Their syntax and semantics will be described in the following sections.</p>
+<p class="p_Heading3"><span class="f_Heading3">Prepare a Query</span></p>
+<p>Syntax:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">preparequery [temporary facts] &lt;objectlogic-query&gt; [fillnull]</span></p>
+<p>where</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;objectlogic-query&gt; := QUERY &lt;queryname&gt;: &lt;objectlogic&gt;</span></p>
+<p>and</p>
+<p class="p_CodeExample"><span class="f_CodeExample">&lt;objectlogic&gt; := any valid objectlogic query that may contain constants _ti which supply placeholders</span></p>
+<p class="p_Instruction"><span class="f_Instruction">Semantics:</span></p>
+<p>This command sends the given query to the server. The name will be used to identify the query for further usage in commands. When it is expected to execute the query with temporary facts a sample set of these temporary facts should also be supplied for the preparation process. The preparation of the query depends on the characteristics of the facts in the EDB. If the characteristics change between the preparation and the execution of a query, the server delivers an error and it is necessary to recompile the query. As temporary facts may change these characteristics, we recommend that you send a sample set of these facts. </p>
+<p class="p_Heading3"><span class="f_Heading3">Execute a prepared query</span></p>
+<p>A prepared query is executed like a normal query, but a special syntax is used. </p>
+<p>Query Syntax:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">[temporary facts]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">[substitute(&lt;substitutions&gt;)@pq.]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- &lt;vars&gt; &lt;- PREPARED_QUERY(&lt;queryname&gt;,&lt;vars&gt;). [&lt;query options&gt;]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- ?X:?Y.</span></p>
+<p>Semantics:</p>
+<p>Executes a query with the given name. If no prepared query is available an error is reported. Temporary facts are added to the EDB for this query if given. Appended query options (orderedby etc.) work as defined. If the prepared query contains substitutions, the values for these placeholders are provided by the special temporary fact with the predicate "substitute". This allows special constants to be replaced as defined in (1) with concrete values for a given execution. </p>
+<p>For example, if there are two substitution placeholders, i.e. _t1 and _t2, the substitution facts must look like this:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">substitute(&lt;value for _t1&gt;,&lt;value for _t2&gt;)@pq.</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Remove a prepared query</span></p>
+<p>Syntax:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">removepreparedquery &lt;queryname&gt;</span></p>
+<p>Semantics:</p>
+<p>Removes a prepared query with the given name. If no query exists no error is reported.</p>
+<p class="p_Heading3"><span class="f_Heading3">Get a list of all prepared queries</span></p>
+<p>Syntax:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">preparedquerylist</span></p>
+<p>Semantics:</p>
+<p>Returns a list of names of all prepared queries in the server. If no queries exist an empty list is returned.</p>
+<p>Sample</p>
+<p>Prepare a query by executing the following command:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">preparequery QUERY myQuery: - p(?X) AND ?X &lt; "_t1".</span></p>
+<p>Show list of prepared queries by executing the command:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">preparedquerylist</span></p>
+<p>Run the prepared query using any interface available to run a normal query:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">p(1).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">p(2).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">p(3).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">substitute(2.5)@pq.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- PREPARED_QUERY("myQuery",?X).</span></p>
+<p>Remove the prepared query by executing the command:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">removepreparedquery myQuery</span></p>
+<p class="p_Heading2"><span class="f_Heading2">preparequery</span></p>
+<p>This command sends the given query to the server. The name will be used to identify the query for further usage in commands. </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: preparequery {temporary facts{ {flogic-query{ [fillnull] </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: Program prepared for query: &lt;queryname&gt; </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">preparedquerylist</span></p>
+<p>Returns a list of names of all prepared queries in the server. If no queries exist an empty list is returned. </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: preparedquerylist </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: [&lt;list-of-prepared-query-names&gt;] </span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">Removepreparedquery</span></p>
+<p>Removes a prepared query with the given name. If no query exists no error is reported. </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">syntax: removepreparedquery &lt;queryname&gt; </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">OntoBroker Return Values: PreparedQuery &lt;queryname&gt; removed from server </span></td></tr></table></div><p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: Prepared queries are currently not supported when access control is enabled. </span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/prepared_queries2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:00 GMT -->
+</html>

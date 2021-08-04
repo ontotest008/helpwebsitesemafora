@@ -1,0 +1,349 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/ontobroker_tools.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:05 GMT -->
+<head> 
+   <title> OntoBroker Tools </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="OntoBroker Tools"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index839e.html?ontobroker_tools.htm"; }
+  else { parent.quicksync('a3.21'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="query_tool.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="ontology_transformation.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 
+     <a href="query_tool.htm">query_tool.htm</a>&nbsp;/&nbsp;
+     ontobroker_tools.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">OntoBroker Tools</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>You can find all of the tool scripts in the "tools" subdirectory of your OntoBroker installation.</p>
+<p class="p_Heading2"><span class="f_Heading2">Tool for Performance Benchmarks: (benchmark cmd / sh)</span></p>
+<p>OntoBroker has a built-in tool for measuring query times, which is an important task when designing or optimizing an application. A typical use-case is to find the best configuration for your application by comparing different query evaluation methods. Or you might want to discover regression problems in your application. In this case you can execute the benchmarks regularly and compare them with each other. &nbsp;The results of a benchmark run can be viewed in a graphical report or in a textual output file. Below there is an example of a graphical report with some suites in different configurations. <br>
+&nbsp;<br>
+<img src="clip0059_ob.png" width="587" height="600" border="0" alt="clip0059_ob"></p>
+<p>Benchmark reports are created in sub directories of benchmark.xml</p>
+<p class="p_Heading3"><span class="f_Heading3">1. &nbsp;Configure your benchmarks</span></p>
+<p>Create a benchmark configuration file with the XML structure shown below. You might reuse the provided example file benchmark/benchmark.xml.<br>
+If using relative paths, these paths must be in relation to the startup directory from where the benchmark is run.</p>
+<p>Example:</p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">ontobrokerBenchmark</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">property</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">benchmarksuite.config.dir</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">value</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">resources/testfiles/performancetest/testsuites/benchmarksuite/configurations</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">property</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">benchmark_files.dir</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">value</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">resources/testfiles/performancetest/testsuites/benchmarksuite/benchmarks/benchmark_files</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;!--</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> ====================================================</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> &nbsp; &nbsp; &nbsp; Format since OntoBroker 6.1 </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> &nbsp; &nbsp; &nbsp; ==================================================== </span><span class="f_CodeExample" style="color: #0000ff;">--&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">suite</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">Graph1M</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">arguments</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">-obl ${bigfiles.base.dir}/gptInterfaceTest/graph1000000.obl</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">arguments</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;!--</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> New: Inline query file! </span><span class="f_CodeExample" style="color: #0000ff;">--&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">queryfile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">@{options[skipSendingAnswers]} ?- closure(?X,?Y,?Z).</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">queryfile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configurations</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;!--</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> New: Use attribute "name" and "file" instead of xml element "configName" and "configFile" </span><span class="f_CodeExample" style="color: #0000ff;">--&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">BU/BU2</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">${benchmarksuite.config.dir}/BU_BU2.prp</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">BU/DBBU</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">${benchmarksuite.config.dir}/BU_DBBU.prp</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">BU/BU3</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">file</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">${benchmarksuite.config.dir}/BU_BU3.prp</span><span class="f_CodeExample" style="color: #0000ff;">"</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">/&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;!--</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> New: Inline config file! </span><span class="f_CodeExample" style="color: #0000ff;">--&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">="</span><span class="f_CodeExample" style="font-weight: bold; color: #000080;">DF2</span><span class="f_CodeExample" style="color: #0000ff;">"&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">OntologyLanguage = ObjectLogic</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">Storage=RAM.AVL.Packed</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">EvaluationMethod=DynamicFiltering2</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configurations</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">suite</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;!--</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> ====================================================</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> &nbsp; &nbsp; &nbsp; Format before OntoBroker 6.1 - still valid! </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #808080;"> &nbsp; &nbsp; &nbsp; ==================================================== </span><span class="f_CodeExample" style="color: #0000ff;">--&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">suite</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">Graph1M_nofunc</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">name</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">arguments</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">-obl ${bigfiles.base.dir}/gptInterfaceTest/graph1000000nofunctions.obl</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">arguments</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">queryfile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">${benchmark_files.dir}/GPT.queries.obl</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">queryfile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configurations</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">BU/BU2</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">${benchmarksuite.config.dir}/BU_BU2.prp</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">BU/DBBU</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">${benchmarksuite.config.dir}/BU_DBBU.prp</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">BU/BU3</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">${benchmarksuite.config.dir}/BU_BU3.prp</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">DF2</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configName</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">${benchmarksuite.config.dir}/DF2.prp</span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configFile</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp; &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configuration</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;"> &nbsp;  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">configurations</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="font-weight: bold;">  </span><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">suite</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample" style="color: #0000ff;">&lt;/</span><span class="f_CodeExample" style="font-weight: bold; color: #800000;">ontobrokerBenchmark</span><span class="f_CodeExample" style="color: #0000ff;">&gt;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>The suite's name tag must be unique for the benchmark configuration </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>The arguments tag must contain the loaded ontologies (e.g. -flo ...), other startup parameters are allowed </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>The queryfile tag must contain the path to a text file which contains the queries; within this query file the queries must be written one per line </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>The configName tag must be unique within the &lt;suite&gt; part but can be reused in different suites </td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td>The configFile tag must contain the path to a OntoBroker configuration file</td></tr></table></div><p class="p_Heading3"><span class="f_Heading3">2. &nbsp;Execute your benchmarks</span></p>
+<p>The startup script "benchmark.cmd" (resp. "benchmark.sh" for Linux/Unix) - located at [Ontobroker_HOME\tools] - executes the benchmarks and stores the results in a given output directory. The following arguments are allowed:<br>
+benchmark.cmd &lt;benchmarksuiteFileName&gt; : stores the results at default output directory &lt;benchmarksuiteFileName&gt;_output\ <br>
+&nbsp;<br>
+<span style="font-size: 10pt; font-family: 'Arial';">benchmark.cmd &lt;benchmarksuiteFileName&gt; &lt;benchmarksuiteOutputDir&gt;</span> : stores the results at the given output directory <br>
+&nbsp;<br>
+<span style="font-size: 10pt; font-family: 'Arial';">benchmark.cmd &lt;benchmarksuiteFileName&gt; -clean</span> : deletes the default output directory (&lt;benchmarksuiteFileName&gt;_output\) <br>
+&nbsp;<br>
+<span style="font-size: 10pt; font-family: 'Arial';">benchmark.cmd &lt;benchmarksuiteFileName&gt; -clean &lt;benchmarksuiteOutputDir&gt; </span>: deletes the given output directory<br>
+&nbsp;<br>
+The provided example benchmark can be run via this command:</p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">tools/benchmark.cmd benchmark/benchmark.xml</span></p>
+<p>&nbsp;<br>
+<span class="f_Heading3">3. &nbsp;Look at the benchmark results</span></p>
+<p>The benchmark results can be found in the given output directory: As a simple text file results.txt or as a graphical report benchmark_report.rptdesign (in conjunction with a results database that contains the results of all benchmark runs for historical comparisons.) <br>
+To view the graphical report you may use the eclipse IDE with BIRT (<a href="http://www.eclipse.org/birt/" target="_blank" class="weblink">http://www.eclipse.org/birt/</a>) extension or install a BIRT Report Viewer. Note that a JDBC driver for H2 databases is also required. </p>
+<p>Script location:</p>
+<p>Windows: tools\benchmark.cmd<br>
+Linux: tools/benchmark.sh</p>
+<p class="p_Heading2"><span class="f_Heading2">Tool to convert files</span></p>
+<p>This commandline tool allows files to be converted from one ontology format to another. Conversions from and to ObjectLogic, OWL and RDF(S) are supported. The options are:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">convert [-fenc &lt;ENCODING&gt;] [-all] &lt;inputFile&gt; &lt;outputFile&gt;</span></p>
+<p>Converting a file from ObjectLogic to OWL can be done via </p>
+<p class="p_CodeExample"><span class="f_CodeExample">tools\convert.cmd -fenc UTF-8 examples/objectlogic/travel.obl travel.owl</span></p>
+<p>or</p>
+<p class="p_CodeExample"><span class="f_CodeExample">convert.cmd -fenc UTF-8 ../examples/objectlogic/travel.obl travel.owl</span></p>
+<p>NOTE: The output format is given by the target filename. </p>
+<p>Script location:</p>
+<p>Windows: tools\convert.cmd<br>
+Linux: tools/convert.sh</p>
+<p class="p_Heading2"><span class="f_Heading2">Tool for checking NamesGround compliance</span></p>
+<p>This tool loads an ontology and checks various properties of the rules (if all rules are bottomup evaluable, the number of rules, and so on). It also checks if you can safely use the configuration options "ConceptNamesGround", "AttributeNamesGround", or "ModuleNamesGround". Usage: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">checkontology &lt;file&gt;</span></p>
+<p>You should always execute this tool after you have changed the rules. This helps to detect possible problems as early as possible. </p>
+<p>Script location:</p>
+<p>Windows: tools\checkfornamesgroundsafety.cmd<br>
+Linux: tools/checkfornamesgroundsafety.sh</p>
+<p class="p_Heading2"><span class="f_Heading2">Tool to dump list with built-ins</span></p>
+<p>This tool dumps all built-ins available in OntoBroker for the current configuration. </p>
+<p>Script location:</p>
+<p>Windows: tools\logbuiltins.cmd<br>
+Linux: tools/logbuiltins.sh</p>
+<p class="p_Heading2"><span class="f_Heading2">Tool to compact H term store</span></p>
+<p>If you use H2 as storage, you can use this tool to remove unused, i.e. no longer used terms from the datamodel. </p>
+<p>NOTE: This will not result in a smaller database file. To shrink the H2 database file, an explicit database compaction has to be performed. See <a href="http://www.h2database.com/html/features.html#compacting" target="_blank" class="weblink">H2 database website</a> for details. </p>
+<p>Tool to execute commands<br>
+Use this script to execute commands directly from the command line. <br>
+Windows: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">command.cmd [-h &lt;host&gt;] [-p &lt;port&gt;] &lt;command&gt;</span></p>
+<p>Linux: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">./command.sh [-h &lt;host&gt;] [-p &lt;port&gt;] &lt;command&gt;</span></p>
+<p>Example: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">command.cmd "commands"</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Tool to execute queries</span></p>
+<p>Use this script to execute queries directly from the command line. <br>
+Windows: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">query.cmd [-p &lt;port&gt;] &lt;querytext&gt;</span></p>
+<p>Linux: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">./query.sh [-p &lt;port&gt;] &lt;querytext&gt;</span></p>
+<p>Example: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">query.cmd "?- $module(?M)."</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/ontobroker_tools.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:05 GMT -->
+</html>

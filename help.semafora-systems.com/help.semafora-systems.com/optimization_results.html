@@ -1,0 +1,250 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/optimization_results.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:06:08 GMT -->
+<head> 
+   <title> Optimization Methods Overview </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="External database,Genetic Optimizer,Hill &nbsp;Climbing Optimizer,Optimization Results,time statistic"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index9222.html?optimization_results.htm"; }
+  else { parent.quicksync('a2.4.8.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="genetic_optimize.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="import_function.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoStudio 3.1 &gt; Handling Queries &gt; <a href="genetic_optimize.htm">Optimizing Queries</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoStudio 3.1 &gt; Handling Queries &gt; <a href="genetic_optimize.htm">Optimizing Queries</a> 
+     <a href="genetic_optimize.htm">genetic_optimize.htm</a>&nbsp;/&nbsp;
+     optimization_results.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Optimization Methods Overview</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p style="text-align: justify;">OntoStudio supports multiple optimizers. Most of them just rewrite a set of rules into an optimized set of rules. If you run an optimization, choose an optimization method that suits your scenario to get the best results. For example, if you are trying to optimize a query that does not access a database then the database optimizers are not a good choice. This chapter describes the different optimization methods which can be chosen from the <span style="font-weight: bold;">Optimization</span> dialog box and their results.</p>
+<p class="p_Heading2"><span class="f_Heading2">Quick Configuration Optimization</span></p>
+<p>This optimization works without the generation of time statistics. All of the configurations are tested but only the fastest configuration is displayed:</p>
+<p><img src="opt_result.png" width="776" height="716" border="0" alt="opt_result"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Query</span><span class="f_List">: The name of the optimized query.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Evaluation method</span><span class="f_List">: The name of the evaluation method.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Bottomup evaluator</span><span class="f_List">: The name of the evaluator.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Total time</span><span class="f_List">: The time the query needs to execute with optimization.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Speedup factor</span><span class="f_List">: The speedup factor of the optimized query.</span></td></tr></table></div><p class="p_Heading2"><span class="f_Heading2">Configuration Optimization with Time Statistics</span></p>
+<p>Configuration optimization with time generation of time statistics. All configurations are tested. The execution time and the speed up factor for all configurations are displayed.</p>
+<p><img src="clip0174.png" width="772" height="716" border="0" alt="clip0174"></p>
+<p class="p_Heading2"><span class="f_Heading2">External Database Access Optimization</span></p>
+<p>Quick configuration optimization for external database access. Only configurations with the minimum number of dbaccessuser will be tested. For more information see the OntoBroker Enterprise Manual.</p>
+<p><img src="clip0492.png" width="774" height="714" border="0" alt="clip0492"></p>
+<p class="p_Heading2"><span class="f_Heading2">Genetic Optimizer</span></p>
+<p>Genetic algorithms (GAs) are evolutionary algorithms<span style="font-weight: bold;"> </span>that use the principle of natural selection to develop a set of solutions towards the optimum solution. GAs are not only quite powerful, but they are also very easy to use as most of the work can be encapsulated into a single component. It would be necessary to define a fitness function that determines how "good" a particular solution is in comparison with others. For more information, see the OntoBroker Enterprise Manual.</p>
+<p><img src="clip0525.png" width="772" height="714" border="0" alt="clip0525"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Folder and Save as</span><span class="f_List">: Here you can select the file name and the directory where an optimized query will be saved.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Restrictions</span><span class="f_List">: If the Timeout option is activated you can insert a timeout. When this time expires the optimization results will be shown, otherwise the timeout is deactivated</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f__ScreenName">Optimization method</span><span class="f_List">: Here you can select the optimization method, execution time or memory</span></td></tr></table></div><p><span style="font-weight: bold;">Additional information about the Genetic Optimizer:</span></p>
+<p>Consider the following query: <span style="font-size: 10pt; font-family: 'Arial';">?- p(?X)@_defaultModule AND _unify(?X,"a").</span></p>
+<p>These facts are within the edb: <span style="font-size: 10pt; font-family: 'Arial';">p(a).\n p(b).\n [...] p(z).\n</span></p>
+<p>If you calculate this query from left to right, you will first have to get all 26 facts, throwing away 25 of them after the joining <span style="font-size: 10pt; font-family: 'Arial';">AND.</span> </p>
+<p>Now consider this query: <span style="font-size: 10pt; font-family: 'Arial';">?- _unify(?X,"a") AND p(?X)@_defaultModule. </span></p>
+<p>If evaluated from left to right, you just have to get the fact p(a), as the value of the variable X is bound to a. Swapping the rules might speed up the evaluations. </p>
+<p>There might be some cases where these heuristics fail. The genetic optimizer is a tool which guesses the permutations of rules and evaluates them afterwards. The shorter the time compared with the other queries, the bigger the chances that parts of this rule will be taken as blueprints for the next generation of rules. As the search space is very big, this is very time-consuming. </p>
+<p>This scenario is for structures of queries that just exchange their constants and where the ontology stays stable. If you optimize it for a query for my ancestors, it should also match a query asking for your ancestors. In a way, it is a kind of an alternative for materializing parts of the ontology. </p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; font-weight: bold;">Where it should not be used: </span><br>
+<span style="font-size: 10pt; font-family: 'Arial';">Queries that have very short running times or ontologies that are often changed (as after each change it could be necessary to run optimization again), ontologies with no defined query structure, where most queries are used just once. </span></p>
+<p class="p_Heading2"><span class="f_Heading2">Hill Climbing Optimizer</span></p>
+<p>Hill climbing can be used to solve problems that have many solutions, some of which are better than others. It starts with a random (potentially poor) solution, and iteratively makes small changes to the solution, each time improving it a little. When the algorithm cannot see any improvement anymore, it terminates. Ideally, at that point the current solution is close to optimal, but it is not guaranteed that hill climbing will ever come close to the optimal solution. For more information see the OntoBroker Enterprise Manual.</p>
+<p><img src="clip0526.png" width="775" height="716" border="0" alt="clip0526"></p>
+<p>For more information see the OntoBroker Enterprise Manual.</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/optimization_results.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:06:14 GMT -->
+</html>

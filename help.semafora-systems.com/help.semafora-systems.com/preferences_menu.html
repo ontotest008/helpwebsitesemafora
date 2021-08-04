@@ -1,0 +1,276 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/preferences_menu.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:02:27 GMT -->
+<head> 
+   <title> Setting Preferences </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="Language Preferences,Large Ontologies,Meta Concept,Preferences,Query Tool Preference,Validator,Visualizer,Web Service"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexfdaa.html?preferences_menu.htm"; }
+  else { parent.quicksync('a2.1.6'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="aditional_information.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="adding_comments_and_labels.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoStudio 3.1 &gt; General > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoStudio 3.1 &gt; General 
+     <a href="aditional_information.htm">aditional_information.htm</a>&nbsp;/&nbsp;
+     preferences_menu.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Setting Preferences</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">Select </span><span class="f__ScreenName">Window</span><span class="f_Instruction"> -&gt; </span><span class="f__ScreenName">Preferences</span><span class="f_Instruction">:</span></td></tr></table></div><p><img src="clip0544.png" width="224" height="251" border="0" alt="clip0544"></p>
+<p class="p_Instruction_Result"><span class="f_Instruction_Result">The following form appears:</span></p>
+<p><img src="clip0034.png" width="632" height="551" border="0" alt="clip0034"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction">Browse through the Preferences dialog pages by looking through all of the titles in the left pane or searching a smaller set of titles using the filter field at the top of the left pane. </span></td></tr></table></div><p class="p_Instruction_Annotation"><span class="f_Instruction_Annotation">The results returned by the filter match both Preference page titles and keywords such as "Template" or "Data" (just examples). </span></p>
+<p>Most of the settings are quite self-explanatory, so only the most important settings are described below.</p>
+<p class="p_Heading2"><span class="f_Heading2">General</span></p>
+<p><img src="clip0546.png" width="405" height="232" border="0" alt="clip0546"></p>
+<p>The General options are self-explanatory. For more information on the standard <span style="font-style: italic;">Eclipse</span> preferences (General Settings), see the Eclipse documentation at <a href="http://eclipse.org/" target="_blank" class="weblink">eclipse.org</a>.</p>
+<p class="p_Heading2"><span class="f_Heading2">Graph Generation</span></p>
+<p><img src="clip0468.png" width="400" height="300" border="0" alt="clip0468"></p>
+<p>You can specify different configuration parameters (margins and directories) for printing a graph with the Graphviz tool.</p>
+<p class="p_Heading2"><span class="f_Heading2">Graphical Rule Editor</span></p>
+<p><img src="clip0036.png" width="532" height="227" border="0" alt="clip0036"></p>
+<p>You can formulate rules in a graphical way.</p>
+<p class="p_Heading2"><span class="f_Heading2">Language Preferences</span></p>
+<p><img src="clip0038.png" width="486" height="337" border="0" alt="clip0038"></p>
+<p>Here you can specify the languages for which you want to develop your ontology. The chosen languages are shown on the user interface for <a href="adding_comments_and_labels.html">Adding Comments and Labels</a>.</p>
+<p class="p_Heading2"><span class="f_Heading2">Large Ontologies</span></p>
+<p><img src="clip0496.png" width="400" height="258" border="0" alt="clip0496"></p>
+<p>If there are ontologies with so many classes or instances on the same level that scrolling would take a lot of time, you can group them to simplify the view<span class="f_List">.</span></p>
+<p><span style="font-style: italic;">For example: 10 entities should be grouped:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">1.</span></td><td><span class="f_Instruction">In the entry field </span><span class="f__ScreenName">Number of Entities to be grouped </span><span class="f_Instruction">type in the number 10.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 10pt; font-family: 'Calibri'; color: #000000;">2.</span></td><td><span class="f_Instruction" style="font-size: 10pt;">Click on </span><span class="f_Instruction" style="font-size: 10pt; font-weight: bold;">Apply</span><span class="f_Instruction" style="font-size: 10pt;"> and then on </span><span class="f_Instruction" style="font-size: 10pt; font-weight: bold;">OK</span><span class="f_Instruction" style="font-size: 10pt;">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 10pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Select an element (for example, a class) with more than 10 subclasses in the tree menu of the OntologyNavigator.</span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The following warning message appears:</span></p>
+<p><img src="clip0499.png" width="517" height="260" border="0" alt="clip0499"></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 6px 0px 3px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Calibri'; color: #000000;">3.</span></td><td><span class="f_Instruction">Click on </span><span class="f__ScreenName">OK</span><span class="f_Instruction">. </span></td></tr></table></div><p class="p_Instruction_Result"><span class="f_Instruction_Result">The entities are displayed in the following format:</span><span class="f_Path"> [Subclass1,.......SubclassN]-(Number of entities to be grouped)</span><span class="f_Instruction_Result">. A new icon notifies you that the elements are grouped. </span></p>
+<p><img src="clip0500.png" width="387" height="220" border="0" alt="clip0500"><span class="f_ImageCaption" style="font-size: 10pt; font-weight: normal;"> </span></p>
+<p>The procedure to group instances is the same like the one described above.</p>
+<p>You can also choose a set of classes which should only be displayed. This can be seen as a kind of filter</p>
+<p class="p_Heading2"><span class="f_Heading2">Mapping Preferences</span></p>
+<p><img src="clip0039.png" width="463" height="312" border="0" alt="clip0039"></p>
+<p>As you might get a large number of facts within your <a href="mapping.html">mapping</a> scenario we recommend that you define the maximum number of fetched instances and the values that are shown in the preview. This improves the performance of the mapping components.</p>
+<p class="p_Heading2"><span class="f_Heading2">ObjectLogic Editor</span></p>
+<p><img src="clip0035.png" width="420" height="251" border="0" alt="clip0035"></p>
+<p>It shows the content of an ontology as ObjectLogic in a text editor. Specify whether you want to use the syntax highlighting (recommended) and whether you will have to set a check mark (confirm dialog) when opening an ontology in the ObjectLogic editor. </p>
+<p>Use the <span class="f__ScreenName">Colors</span> and <span class="f__ScreenName">Templates</span> options to set the appearance of the ObjectLogic textual editor.</p>
+<p><img src="clip0484.png" width="506" height="471" border="0" alt="clip0484"></p>
+<p>&nbsp;</p>
+<p><img src="clip0485.png" width="509" height="471" border="0" alt="clip0485"></p>
+<p class="p_Heading2"><span class="f_Heading2">Query Tool</span></p>
+<p><img src="clip0045.png" width="457" height="310" border="0" alt="clip0045"></p>
+<p>By default, the queries you create and run in OntoStudio are executed against the embedded OntoBroker. If you have an OntoBroker instance running somewhere, you can also use OntoStudio to send queries to the running OntoBroker. To do this you only have to select the "External Server" option and then provide the connection details.</p>
+<p style="margin: 0px 0px 0px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">NOTE: Queries against the external OntoBroker should be fully qualified. If you select the "External Server" option, all OntoStudio queries are sent to the external server. If you want to run queries on your local ontologies again, you have to switch back to the "Internal Server" mode.</span> </p>
+<p class="p_Heading2"><span class="f_Heading2">Report Design</span></p>
+<p><img src="clip0046.png" width="176" height="231" border="0" alt="clip0046"></p>
+<p>These preferences are equal to standard BIRT preferences. The documentation of the BIRT report plug-ins can be found at the BIRT project page (<a href="http://www.eclipse.org/birt/" target="_blank" class="weblink">http://www.eclipse.org/birt/</a>).</p>
+<p class="p_Heading2"><span class="f_Heading2">Validator</span></p>
+<p><img src="clip0047.png" width="427" height="461" border="0" alt="clip0047"></p>
+<p>Here you can specify sets of constraints (which are displayed in the <span class="f__ScreenName">Constraint</span> sets frame). The different constraints of the selected constraint set are displayed in the <span class="f__ScreenName">Constraints</span> frame. </p>
+<p>To create a new set of constraints, click on <span style="font-weight: bold;">Add...</span> next to the <span style="font-weight: bold;">Constraint</span> sets frame. Choose a name for the new set and click on <span style="font-weight: bold;">OK</span>. You can see the new set in the <span style="font-weight: bold;">Constraint</span> sets frame.</p>
+<p>To add a constraint to a set, select the name of the set and click on <span style="font-weight: bold;">Add...</span> next to the <span style="font-weight: bold;">Constraints</span> frame. Use the newly opened window to write the description of the constraint in the <span style="font-weight: bold;">Description</span> frame and the constraint itself in the <span style="font-weight: bold;">Constraints</span> frame. Then click on <span style="font-weight: bold;">OK</span> and you see the new constraint in the <span style="font-weight: bold;">Constraints</span> frame.</p>
+<p>You can delete or edit a created constraint/set of constraints by selecting it and clicking on <span class="f__ScreenName">Delete</span> or <span class="f__ScreenName">Edit...</span> respectively.</p>
+<p class="p_Heading2"><span class="f_Heading2">Visualizer</span></p>
+<p><img src="clip0043.png" width="420" height="215" border="0" alt="clip0043"></p>
+<p>This view displays the ontology and all of the hierarchy elements (classes, relations, properties, instances) in a graph. As your ontology might have a large number of Properties, it is better not to set the checkmarks.</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/preferences_menu.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:02:39 GMT -->
+</html>

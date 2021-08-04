@@ -1,0 +1,1594 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/ontology_transformation.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:05 GMT -->
+<head> 
+   <title> Ontology Transformation </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index946b.html?ontology_transformation.htm"; }
+  else { parent.quicksync('a3.22.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="ontobroker_tools.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="throughput_benchmark.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Appendix > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Appendix 
+     <a href="ontobroker_tools.htm">ontobroker_tools.htm</a>&nbsp;/&nbsp;
+     ontology_transformation.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Ontology Transformation</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>Transforming <span style="font-weight: bold;">ObjectLogic into RDF</span> Schema is in most cases straightforward. Basically every ObjectLogic fact is represented as one (or more) RDF triple. Whenever a functional term occurs, it is mapped to an IRI using the predefined namespace 'obl:term#':</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &lt;myns:myFunction&gt;(arguments) &nbsp; &lt;=&gt; &nbsp; &lt;obl:term#%3Cmyns:myFunction%3E(arguments)&gt;</span></p>
+<p>While ObjectLogic allows constants of every type as object identifiers, RDF imposes several restrictions on the structure of statements. For example, anonymous nodes are not allowed as a predicate in RDF statements. All of the ObjectLogic facts not conforming to this restriction are discarded.</p>
+<p>For every transformation a summary log is provided. It shows potential transformation problems like axioms not supported in the target ontology language.</p>
+<p class="p_Heading3"><span class="f_Heading3">Schema</span></p>
+<p>ObjectLogic concept and property hierarchies are directly transformed into the RDF Schema class hierarchy. For attribute and relation definitions, the RDF Schema elements domain and range are used. This intentional break with the RDF Schema semantics interpreting domain and range as constraints favors a more "information preserving" instead of a semantically correct transformation.</p>
+<p>The global definition of properties in RDF, in contrast to concept-bound in ObjectLogic, implies that attributes/relation using the same identifier will be merged during the transformation, i.e. they share the same domain and range definitions.</p>
+<p>Finally, properties of attributes/relations like cardinality restrictions, transitivity, symmetry, and inverse-of definitions are not supported by the RDF Schema. If this information needs to be taken into account, an transformation to OWL should be considered. For the RDF Schema only the declaration of the attribute/relation itself is stored.</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; :Person a rdfs:Class.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person::Human. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; :Person rdfs:subClassOf :Human.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> loves&lt;&lt;knows. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; :loves rdfs:subPropertyOf :knows.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[name{1:2}*=&gt;_string]. &nbsp; &nbsp;=&gt; &nbsp; :name rdfs:domain :Person; rdfs:range xsd:string.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[p{symmetric}*=&gt;()]. &nbsp; &nbsp; &nbsp;=&gt; &nbsp; :p a rdf:Property.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[p{transitive}*=&gt;()]. &nbsp; &nbsp; =&gt; &nbsp; :p a rdf:Property.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[p{transitive}*=&gt;()]. &nbsp; &nbsp; =&gt; &nbsp; :p a rdf:Property.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[p{inverseOf(q)}*=&gt;()]. &nbsp; =&gt; &nbsp; :p a rdf:Property. :q a rdf:Property.</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Instances</span></p>
+<p>Assertions, both for instances and concepts, are transformed preserving the datatype.</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve:Person. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; :eve a :Person.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[name-&gt;"Eve"]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; :eve :name "Eve"^^xsd:string.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[name-&gt;"Eve@"^^_PlainLiteral]. &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; :eve :name "Eve".</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[name-&gt;"Evita@es"^^_PlainLiteral]. &nbsp; &lt;=&gt; &nbsp; :eve :name "Evita"@es.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[p-&gt;true]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; :eve :p "true"^^xsd:boolean.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[p-&gt;1]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; :eve :p "1"^^xsd:int.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[p-&gt;2.3]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; :eve :p 2.3e0 .</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[p-&gt;"4.0"^^_decimal]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; :eve :p 4.0 .</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> eve[p-&gt;"11:55:32"^^_time]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; :eve :p "11:55:32"^^xsd:time.</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Rules and Queries</span></p>
+<p>Rules, queries, and constraints are not supported by the RDF Schema.</p>
+<p class="p_Heading2"><span class="f_Heading2">RDF Schema to ObjectLogic</span></p>
+<p>Transforming the RDF Schema into ObjectLogic is, in most cases, analogous to the inverse transformation. IRIs using the reserved namespace 'obl:term#' are mapped to the encoded ObjectLogic term:</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &lt;obl:term#%3Cmyns:myFunction%3E(arguments)&gt; &nbsp; &lt;=&gt; &nbsp; &lt;myns:myFunction&gt;(arguments)</span></p>
+<p>If a term cannot be encoded due to invalid ObjectLogic syntax the IRI is kept.</p>
+<p>A summary log is provided for every transformation. It shows potential transformation problems like issues related to domain/range ambiguity.</p>
+<p class="p_Heading3"><span class="f_Heading3">Schema</span></p>
+<p>Class and property declarations and concept and property hierarchies are transformed into ObjectLogic equivalent facts.</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :Person a rdfs:Class. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; Person[].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :Person rdfs:subClassOf :Human. &nbsp; &nbsp; &lt;=&gt; &nbsp; Person::Human.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :knows a rdf:Property. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; _property(knows).</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :loves rdfs:subPropertyOf :knows. &nbsp; &lt;=&gt; &nbsp; loves&lt;&lt;knows.</span></p>
+<p>The transformation of domain and range definitions is slightly more complex. All of the related domain/range information is collected for every RDF property. Properties not contained in at least one domain and in one range definition statement are ignored. All other properties are interpreted as schema restrictions, which is semantically not correct, however the best trade-off in terms of round-tripping. </p>
+<p>For example, the triples</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :age rdfs:domain :Person.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :age rdfs:domain :Building.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :age rdfs:range xsd:double.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :name rdfs:range xsd:string.</span></p>
+<p>will be transformed into ObjectLogic</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Person[age*=&gt;_double].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> Building[age*=&gt;_double].</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Instances</span></p>
+<p>Instance declarations and general assertions are transformed preserving the datatype.</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve a :Person. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; eve:Person.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :name "Eve"^^xsd:string. &nbsp; &lt;=&gt; &nbsp; eve[name-&gt;"Eve"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :name "Eve". &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; eve[name-&gt;"Eve@"^^_PlainLiteral].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :name "Evita"@es. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;=&gt; &nbsp; eve[name-&gt;"Evita@es"^^_PlainLiteral].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :p "true"^^xsd:boolean. &nbsp; &nbsp;&lt;=&gt; &nbsp; eve[p-&gt;true].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :p 1 . &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; eve[p-&gt;1].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :p 2.3e0 . &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; eve[p-&gt;2.3].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :p 4.0 . &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;=&gt; &nbsp; eve[p-&gt;"4.0"^^_decimal].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :p "11:55:32"^^xsd:time. &nbsp; &lt;=&gt; &nbsp; eve[p-&gt;"11:55:32"^^_time].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> :eve :p "foo"^^my:type. &nbsp; &nbsp; &nbsp; &nbsp; ==&gt; &nbsp; eve[p-&gt;"foo"].</span></p>
+<p class="p_Heading2"><span class="f_Heading2">ObjectLogic to OWL</span></p>
+<p>The transformation translates ObjectLogic facts to OWL axioms. P-atoms (literals), queries and constraints are not supported. Axioms which are unsupported or contain unsupported parts are ignored. Rules are are not supported.</p>
+<p class="p_Heading3"><span class="f_Heading3">Transforming Concepts, Properties and Individuals</span></p>
+<p>ObjectLogic does not explicitly differ between concepts, properties and individuals. Any term can be used as one of these entity types.</p>
+<p>On the other hand, OWL strictly typifies entities within axioms; entities are identified by URIs. The axioms to be created can thereby depend on the entity type, e.g. if a domain is specified for a property, it needs to be an ObjectPropertyDomain if the entity is an object property, but a DataPropertyDomain if the property is a data property.</p>
+<p>Since ObjectLogic does not explicitly mark the used terms with an entity type, there are ambiguities, e.g. in 'a[p-&gt;b]' it is not clear if 'b' is meant to be an individual or a constant, thereby it is not clear if this fact should be translated to an ObjectPropertyAssertion or a DataPropertyAssertion.</p>
+<p>The transformation tries to detect the property types for terms and translates the facts accordingly. For example, if the ontology contains a schema fact 'A[p*=&gt;B]' where B does not identify a standard datatype, it assumes that 'p' is an object property. If instead 'A[p*=&gt;_string]' is contained in the ontology, the transformation assumes that 'p' is a data property. If both schema facts are included, there is a conflict and the transformation handles the type of 'p' according to the context.</p>
+<p class="p_Heading3"><span class="f_Heading3">Transforming ObjectLogic Terms to OWL Entities</span></p>
+<p>A given ObjectLogic term is transformed to an OWL entity as follows:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">If the term is an rif:iri constant, the iri is used as entity URI.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="26"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_List">Otherwise, the term is formatted as ObjectLogic string L and the URI for the entity is obl:term#E, where E is the URL-encoded version of L.</span></td></tr></table></div><p class="p_Heading3"><span class="f_Heading3">Constraints versus deriving Knowledge</span></p>
+<p>In ObjectLogic most of the schema facts are handled as constraints and will thereby not affect the derived facts but may just make the ontology inconsistent. E.g. 'A[p{1:1}*=&gt;B]' together with 'a:A', 'a[p-&gt;b]' and 'a[p-&gt;c]' form an inconsistent ontology, but do not derive that 'b' and 'c' need to be the same.</p>
+<p>In OWL on the other hand, from 'SubClassOf(A ObjectExactCardinality(1 p B))' together with 'ClassAssertion(A a)', 'ObjectPropertyAssertion(p a b)' and 'ObjectPropertyAssertion(p a c)' it follows that 'b' and 'c' must be the same individual.</p>
+<p>The semantic difference between constraints on the one hand and derived knowledge on the other hand is ignored by the transformation, i.e. the transformation handles the ObjectLogic schema facts as if they would actually add to the knowledge rather than just building constraints.</p>
+<p class="p_Heading3"><span class="f_Heading3">Property Attributes</span></p>
+<p>ObjectLogic binds property attributes to some concepts, e.g. 'A[p{symmetric}*=&gt;()]' binds 'p' to 'A'. In OWL this is not (directly) possible and the transformation skips the information about the concept, i.e. will just declare 'p' to be symmetric, so 'A' is a domain for 'p' (ObjectPropertyDomain(p A).</p>
+<p class="p_Heading3"><span class="f_Heading3">Inheritance</span></p>
+<p>Basically A[p=&gt;B] is ignored. Certainly it is asked to appropriate the type of 'p'. In this case 'p' is declared as an ObjectProperty.</p>
+<p class="p_Heading2"><span class="f_Heading2">Basic Transformations</span></p>
+<p>The following table shows the basic transformation under 'natural' assumptions, ignoring several special cases. For schema facts which contains properties, property domain and property range facts might be created.</p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;a:A. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; ClassAssertion(A a)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;a[p-&gt;b]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; ObjectPropertyAssertion(p a b) respectively DataPropertyAssertion(p a b) respectively AnnotationAssertion(p a b)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;a[_comment-&gt;"text"{en}]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; AnnotationAssertion(rdfs:comment a "text"@en)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;a[_representation -&gt;"text"{en}]. =&gt; &nbsp; AnnotationAssertion(rdfs:label a "text"@en)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;a[_synonym("en")-&gt;"text"]. &nbsp; &nbsp; &nbsp; =&gt; &nbsp; AnnotationAssertion(&lt;obl:reserved:synonym&gt; a "text"@en)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; Declaration(Class(A))</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;B::A. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; SubClassOf(B A)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;p&lt;&lt;q. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; SubPropertyOf(p q)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p{inverseOf(q)}*=&gt;B]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; InverseObjectProperties(p q)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p{symmetric}*=&gt;()]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; SymmetricObjectProperty(p)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p{transitive}*=&gt;()]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; TransitiveObjectProperty(p)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p{</span><span class="f_CodeExample" style="font-style: italic;">n</span><span class="f_CodeExample">:*}*=&gt;()]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; SubClassOf(A ObjectMinCardinality(</span><span class="f_CodeExample" style="font-style: italic;">n</span><span class="f_CodeExample"> p)) respectively SubClassOf(A DataMinCardinality(</span><span class="f_CodeExample" style="font-style: italic;">n</span><span class="f_CodeExample"> p))</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p{0:</span><span class="f_CodeExample" style="font-style: italic;">n</span><span class="f_CodeExample">}*=&gt;()]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; SubClassOf(A ObjectMaxCardinality(</span><span class="f_CodeExample" style="font-style: italic;">n</span><span class="f_CodeExample"> p)) respectively SubClassOf(A DataMaxCardinality(</span><span class="f_CodeExample" style="font-style: italic;">n</span><span class="f_CodeExample"> p))</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for </span><span class="f_CodeExample" style="font-style: italic;">n </span><span class="f_CodeExample">≠ 1</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; FunctionalObjectProperty(p) respectively FunctionalDataProperty(p)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for </span><span class="f_CodeExample" style="font-style: italic;">n =</span><span class="f_CodeExample"> 1</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> </span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p*=&gt;B]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; ObjectPropertyDomain(p A), ObjectPropertyRange(p B)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp;A[p*=&gt;_string]. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; DataPropertyDomain(p A), DataPropertyRange(p xsd:string)</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Domain and Range</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 15px 0px 5px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#c9c9c9" style="background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">&nbsp;</span></p>
+</td>
+<td valign="top" bgcolor="#c9c9c9" style="background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL</span></p>
+</td>
+<td valign="top" bgcolor="#c9c9c9" style="background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL-in-ObjectLogic</span></p>
+</td>
+<td valign="top" bgcolor="#c9c9c9" style="background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Local Range Specification</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SubClassOf(:Person </span><br>
+<span class="f_TableContent"> &nbsp; ObjectAllValuesFrom(:hasMother :Woman))</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Person::_AllValuesFrom(hasMother, Woman)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Person[hasMother*=&gt;Woman]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Comparing Property Type Declarations</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">SubClassOf(:Person </span><br>
+<span class="f_TableContent"> &nbsp; ObjectAllValuesFrom(:hasMother :Woman))</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Property type declaration by each use</span></td></tr></table></div></td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Person::_AllValuesFrom(hasMother, Woman)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">_Declaration(hasMother, owl#ObjectProperty)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Property type declaration per ontology</span></td></tr></table></div></td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Person[hasMother*=&gt;Woman]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Implicit property type declaration by range only</span></td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Global Range Specification</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person),</span><br>
+<span class="f_TableContent">ObjectPropertyRange(:hasMother :Woman)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person),</span><br>
+<span class="f_TableContent">ObjectPropertyRange(:hasMother :Woman)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Person[hasMother*=&gt;Woman]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Implicit property type declaration by range only</span></td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">One Domain, no Range</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: Person</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: anything</span></td></tr></table></div></td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Person[hasMother*=&gt;rdfs#Resource]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: Person</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: filler rdfs#Resource (without any special meaning)</span></td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">No Domain, one Range</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">ObjectPropertyRange(:hasMother :Woman)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: anything</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: Woman</span></td></tr></table></div></td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">owl#Thing[hasMother*=&gt;Woman]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: filler owl#Thing (without any special meaning)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: Woman</span></td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">One Domain, one Range</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person),</span><br>
+<span class="f_TableContent">ObjectPropertyRange(:hasMother :Woman)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Person[hasMother*=&gt;Woman]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">One Domain, multiple Ranges</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person),ObjectPropertyRange(:hasMother :Woman),ObjectPropertyRange(:hasMother :Mother)</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Person[hasMother*=&gt;Woman],</span><br>
+<span class="f_TableContent">Person[hasMother*=&gt;Mother]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Union of Domains, one Range</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(:hasMother</span><br>
+<span class="f_TableContent"> &nbsp;ObjectUnionOf(:Man :Woman)),</span><br>
+<span class="f_TableContent">ObjectPropertyRange(:hasMother :Woman)</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Man[hasMother*=&gt;Woman],</span><br>
+<span class="f_TableContent">Woman[hasMother*=&gt;Woman]</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Union of Domains, different local Ranges</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(:hasMother</span><br>
+<span class="f_TableContent"> &nbsp;ObjectUnionOf(:Man :Woman)),</span><br>
+<span class="f_TableContent">SubClassOf(:Man</span><br>
+<span class="f_TableContent"> &nbsp;ObjectAllValuesFrom(:hasMother :Woman)),</span><br>
+<span class="f_TableContent">SubClassOf(:Woman</span><br>
+<span class="f_TableContent"> &nbsp;ObjectAllValuesFrom(:hasMother :Mother))</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Man[hasMother*=&gt;Woman],</span><br>
+<span class="f_TableContent">Woman[hasMother*=&gt;Mother]</span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Multiple Domains, one Range</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Creature),</span><br>
+<span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person),</span><br>
+<span class="f_TableContent">ObjectPropertyRange(:hasMother :Woman)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: intersection of Creature and Person</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: Woman</span></td></tr></table></div></td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" bgcolor="#ffffff" style="background-color:#ffffff; border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Creature[hasMother*=&gt;Woman],</span><br>
+<span class="f_TableContent">Person[hasMother*=&gt;Woman]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: union of Creature and Person</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: Woman</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Retransformed like ‘Union of Domains, one Range‘</span></td></tr></table></div></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Multiple Domains, multiple Ranges</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">ObjectPropertyDomain(:hasMother :Creature),</span><br>
+<span class="f_TableContent">ObjectPropertyDomain(:hasMother :Person),ObjectPropertyRange(:hasMother :Woman),ObjectPropertyRange(:hasMother :´Mother)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: intersection of Creature and Person</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: intersection of Woman and Mother</span></td></tr></table></div></td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+<td valign="top" style="border: solid 1px #c9c9c9;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Creature[hasMother*=&gt;Woman],</span><br>
+<span class="f_TableContent">Creature[hasMother*=&gt;Mother], </span><br>
+<span class="f_TableContent">Person[hasMother*=&gt;Woman],</span><br>
+<span class="f_TableContent">Person[hasMother*=&gt;Mother]</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Domain: union of Creature and Person</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Range: intersection of Woman and Mother</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 3px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 9pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #000000;">&#8226;</span></td><td><span class="f_TableContent">Retransformed like ‘Union of Domains, different local Ranges‘</span></td></tr></table></div></td>
+</tr>
+</table>
+</div>
+<p class="p_Heading2"><span class="f_Heading2">OWL to ObjectLogic</span></p>
+<p>The transformation translates OWL axioms to ObjectLogic facts. SWRL rules are not supported at all. Axioms which are unsupported or contain unsupported parts are ignored. </p>
+<p class="p_Heading3"><span class="f_Heading3">Transforming named OWL Entities to ObjectLogic Terms </span></p>
+<p>A named OWL entity is translated to an ObjectLogic term by creating a constant of type rif:iri which consists of the URI of the entity. There is one exception: if the URI of the entity starts with 'obl:term#' then the local part of the URI is assumed to be the (URL-encoded) ObjectLogic serialization of a term which will be parsed and used instead of a rif:iri constant. </p>
+<p class="p_Heading3"><span class="f_Heading3">Object Property Expressions </span></p>
+<p>The inverse object property expression is unsupported. </p>
+<p class="p_Heading3"><span class="f_Heading3">Data Ranges </span></p>
+<p>Data ranges besides plain datatypes are unsupported. </p>
+<p class="p_Heading2"><span class="f_Heading2">Complex Class Expressions </span></p>
+<p>A subset of complex class expressions is supported if used as a super description within a sub class axiom, but no where else. Recursive complex class expressions are unsupported. </p>
+<p class="p_Heading3"><span class="f_Heading3">Basic Transformations </span></p>
+<p>The following table shows the basic transformation under 'natural' assumptions, ignoring several special cases. Axioms not listed here are unsupported. </p>
+<p>The transformation requires that A has been detected as an object property domain for the object property p and B as object property domain of the object property r. Unsupported axioms are skipped by the transformation.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">ClassAssertion(A a) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; a:A.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">ObjectPropertyAssertion(q a b) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; a[q-&gt;b].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">DataPropertyAssertion(q a "text"@en) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; a[q-&gt;"text"{en}.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">AnnotationAssertion(q a b) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; a[q-&gt;b].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">AnnotationAssertion(rdfs:comment a "text"@en) =&gt; &nbsp; a[_comment-&gt;"text"{en}].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">AnnotationAssertion(rdfs:label a "text"@en) &nbsp; =&gt; &nbsp; a[_representation -&gt;"text"{en}]</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">AnnotationAssertion(&lt;obl:reserved:synonym&gt; a "text"@en)</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; a[_synonym("en")-&gt;"text"].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">Declaration(Class(A)) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">SubClassOf(B A) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; B::A.</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">InverseObjectProperties(p r) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; A[p{inverseOf(r)}*=&gt;B].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">SymmetricObjectProperty(p) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt; &nbsp; A[p{symmetric}*=&gt;()].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">TransitiveObjectProperty(p) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[p{transitive}*=&gt;()].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">SubClassOf(A ObjectMinCardinality(1 p)) &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[p{1:*}*=&gt;()].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">SubClassOf(A DataMinCardinality(1 p)) &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[p{1:*}*=&gt;()].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">SubClassOf(A ObjectMaxCardinality(1 p)) &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[p{0:1}*=&gt;()].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">SubClassOf(A DataMaxCardinality(1 p)) &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[p{0:1}*=&gt;()].</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">{A domain of p, B range of p} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =&gt; &nbsp; A[p*=&gt;B].</span></p>
+<p class="p_Heading2"><span class="f_Heading2">OWL2 (RL) in ObjectLogic</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Predefined and Named Classes </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:48px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:48px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax1</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax2</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:48px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">named class </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">CN </span></p>
+<p class="p_TableContent"><span class="f_TableContent">CN</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">CN</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:71px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">universal class </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:71px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:Thing </span></p>
+<p class="p_TableContent"><span class="f_TableContent">owl:Thing</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:71px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:Thing for ObjectLogic</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">empty class </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:Nothing </span></p>
+<p class="p_TableContent"><span class="f_TableContent">owl:Nothing</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:71px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:Nothing for ObjectLogic</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 7px 0px 7px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; vertical-align: super;">1 </span><span style="font-size: 10pt; font-family: 'Arial';">Second column, upper part: OWL2 Functional Syntax</span></p>
+<p style="margin: 7px 0px 7px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; vertical-align: super;">2</span><span style="font-size: 10pt; font-family: 'Arial';">Second column, lower part: RDF Syntax</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Boolean Connectives and Enumeration of Individuals </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:84px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">intersection </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:84px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectIntersectionOf(C1 … Cn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Class.</span><br>
+<span class="f_TableContent">_:x owl:intersectionOf ( C1 … Cn ).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:84px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_IntersectionOf([C1, C2, …,Cn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">union </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectUnionOf(C1 … Cn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Class.</span><br>
+<span class="f_TableContent">_:x owl:unionOf ( C1 … Cn ).</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_UnionOf([C1, … Cn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">complement </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectComplementOf(C) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Class.</span><br>
+<span class="f_TableContent">_:x owl:complementOf C.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ComplementOf(C)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">enumeration </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectOneOf(a1 … an)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Class.</span><br>
+<span class="f_TableContent">_:x owl:oneOf ( a1 … an ).</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_OneOf([a1, …, an])</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Object Property Restrictions </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:62px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">universal</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:62px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectAllValuesFrom(P C)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:allValuesFrom C</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:62px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_AllValuesFrom(P, C)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:85px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">existential</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:85px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectSomeValuesFrom(P C)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:someValuesFrom C</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:85px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_SomeValuesFrom(P, C)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">individual value</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectHasValue(P a)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:hasValue a.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_HasValue(P, a)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">local reflexivity </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectHasSelf(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P. </span><br>
+<span class="f_TableContent">_:x owl:hasSelf "true"^^xsd:boolean.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_HasSelf(P)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">exact cardinality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectExactCardinality(n P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:cardinality n.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ExactCardinality(n, P, owl#Thing)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:99px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">qualified exact cardinality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:99px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectExactCardinality(n P C)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:qualifiedCardinality n.</span><br>
+<span class="f_TableContent">_:x owl:onClass C.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:99px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ExactCardinality(n, P, C)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:85px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">maximum cardinality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:85px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectMaxCardinality(n P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:maxCardinality n.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:85px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MaxCardinality(n, P, owl#Thing)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">qualified maximum cardinality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectMaxCardinality(n P C) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:maxQualifiedCardinality n.</span><br>
+<span class="f_TableContent">_:x owl:onClass C.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MaxCardinality(n, P, C)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">minimum cardinality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectMinCardinality(n P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:minCardinality n.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MinCardinality(n, P, owl#Thing)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">qualified minimum cardinality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectMinCardinality(n P C) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty P.</span><br>
+<span class="f_TableContent">_:x owl:minQualifiedCardinality n.</span><br>
+<span class="f_TableContent">_:x owl:onClass C.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MinCardinality(n, P, C)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Data Property Restrictions </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:62px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">universal </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:62px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataAllValuesFrom(R D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:allValuesFrom D.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:62px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_AllValuesFrom(R, D)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:85px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">existential </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:85px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataSomeValuesFrom(R D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:someValuesFrom D.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:85px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_SomeValuesFrom(R, D)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">literal value</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataHasValue(R v) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:hasValue v.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_HasValue(R, v)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">exact cardinality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataExactCardinality(n R) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:cardinality n.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ExactCardinality(n, R, rdfs#Literal)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:47px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">qualified exact cardinality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:47px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataExactCardinality(n R D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:qualifiedCardinality n. </span><br>
+<span class="f_TableContent">_:x owl:onDataRange D.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:47px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ExactCardinality(n, R, D)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">maximum cardinality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataMaxCardinality(n R) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:maxCardinality n.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MaxCardinality( n, R, rdfs#Literal)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:85px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">qualified maximum cardinality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:85px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataMaxCardinality(n R D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:maxQualifiedCardinality n.</span><br>
+<span class="f_TableContent">_:x owl:onDataRange D.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:85px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MaxCardinality(n, R, D)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">minimum cardinality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataMinCardinality(n R) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:minCardinality n.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:68px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MinCardinality(n, P, rdfs#Literal)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">qualified minimum cardinality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataMinCardinality(n R D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperty R.</span><br>
+<span class="f_TableContent">_:x owl:minQualifiedCardinality n.</span><br>
+<span class="f_TableContent">_:x owl:onDataRange D.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:68px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_MinCardinality(n, R, D)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Restrictions Using n-ary Data Range </span></p>
+<p>In the following table 'Dn' is an n-ary data range. </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">n-ary universal1</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataAllValuesFrom(R1 … Rn Dn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperties ( R1 … Rn ).</span><br>
+<span class="f_TableContent">_:x owl:allValuesFrom Dn.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">not supported</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">n-ary existential1 </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataSomeValuesFrom(R1 … Rn Dn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:Restriction.</span><br>
+<span class="f_TableContent">_:x owl:onProperties ( R1 … Rn).</span><br>
+<span class="f_TableContent">_:x owl:someValuesFrom Dn.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">not supported</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 7px 0px 7px 0px;"><span style="font-size: 10pt; font-family: 'Arial'; vertical-align: super;">1</span><span style="font-size: 10pt; font-family: 'Arial';">Unsupported by OWL API and thus unsupported in ObjectLogic.</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Properties</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="middle" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">named object property </span></p>
+</td>
+<td valign="middle" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">PN </span></p>
+<p class="p_TableContent"><span class="f_TableContent">PN</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">PN</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">universal object property </span></p>
+</td>
+<td valign="middle" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:topObjectProperty </span></p>
+<p class="p_TableContent"><span class="f_TableContent">owl:topObjectProperty</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#topObjectProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">empty object property </span></p>
+</td>
+<td valign="middle" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:bottomObjectProperty </span></p>
+<p class="p_TableContent"><span class="f_TableContent">owl:bottomObjectProperty</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#bottomObjectProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">inverse property </span></p>
+</td>
+<td valign="middle" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectInverseOf(PN) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x owl:inverseOf PN</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_InverseOf(PN)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Data Property Expressions </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">named data property </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">R </span></p>
+<p class="p_TableContent"><span class="f_TableContent">R</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">R</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">universal data property </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:topDataProperty </span></p>
+<p class="p_TableContent"><span class="f_TableContent">owl:topDataProperty</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:#topDataProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">empty data property </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:bottomDataProperty </span></p>
+<p class="p_TableContent"><span class="f_TableContent">owl:bottomDataProperty</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl:#bottomDataProperty</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Individuals &amp; Literals</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">named individual </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">aN </span></p>
+<p class="p_TableContent"><span class="f_TableContent">aN</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">anonymous individual1</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_:a </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:a</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_#‘a‘</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">literal (datatype value) </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"abc"^^DN </span></p>
+<p class="p_TableContent"><span class="f_TableContent">"abc"^^DN</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">"abc"^^DN</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 11pt; vertical-align: super;">1 </span><span style="font-size: 11pt;">The semantics of anonymous individuals is not supported by OntoBroker, instead anonymous individuals are mapped to unique ids on import.</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Data Ranges</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">named datatype </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DN </span></p>
+<p class="p_TableContent"><span class="f_TableContent">DN</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DN</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">data range complement </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataComplementOf(D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type rdfs:Datatype.</span><br>
+<span class="f_TableContent">_:x owl:datatypeComplementOf D.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ComplementOf(D)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:83px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">data range intersection </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:83px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataIntersectionOf(D1…Dn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type rdfs:Datatype.</span><br>
+<span class="f_TableContent">_:x owl:intersectionOf (D1…Dn).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:83px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_IntersectionOf([D1, D2, …,Dn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">data range union </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataUnionOf(D1…Dn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type rdfs:Datatype.</span><br>
+<span class="f_TableContent">_:x owl:unionOf (D1…Dn).</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:81px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_UnionOf([D1, … ,Dn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:81px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">literal enumeration </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:81px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataOneOf(v1 … vn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type rdfs:Datatype.</span><br>
+<span class="f_TableContent">_:x owl:oneOf ( v1 … vn ).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:81px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_OneOf([v1, … ,vn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">datatype restriction </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DatatypeRestriction(DN f1 v1 … fn vn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type rdfs:Datatype.</span><br>
+<span class="f_TableContent">_:x owl:onDatatype DN.</span><br>
+<span class="f_TableContent">_:x owl:withRestrictions (_:x1 ... _:xn).</span><br>
+<span class="f_TableContent">_:xj fj vj. &nbsp; &nbsp; &nbsp;j=1…n</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DatatypeRestriction(DN, [f1, v1, … fn, vn])</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Axioms</span></p>
+<p style="margin: 7px 0px 7px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">OWL 2 RL supports all axioms of OWL 2 apart from disjoint unions of classes (</span><span style="font-size: 10pt; font-family: 'Arial'; font-weight: bold;">DisjointUnion</span><span style="font-size: 10pt; font-family: 'Arial';">) and reflexive object property axioms (</span><span style="font-size: 10pt; font-family: 'Arial'; font-weight: bold;">ReflexiveObjectProperty</span><span style="font-size: 10pt; font-family: 'Arial';">).</span></p>
+<p>Class Expression Axioms </p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">subclass </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SubClassOf(C1 C2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">C1 rdfs:subClassOf C2.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">C1::C2</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">equivalent classes </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">EquivalentClasses(C1 C2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">C1 owl:equivalenClass C2.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_EquivalentClasses(C1, C2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:37px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">equivalent classes</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:37px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">EquivalentClasses(C1 … Cn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">Cj owl:equivalentClass Cj+1. j=1…n-1</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:37px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_EquivalentClasses1([C1,…, Cn ])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:62px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">disjoint classes </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:62px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointClasses(C1 C2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">C1 owl:disjointWith C2.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:62px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointClasses(C1, C2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">pairwise disjoint classes </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointClasses(C1 … Cn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:AllDisjointClasses.</span><br>
+<span class="f_TableContent">_:x owl:members ( C1 … Cn ).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointClasses1([C1,…, Cn ])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">disjoint union </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointUnionOf(CN C1 … Cn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">CN owl:disjointUnionOf ( C1 … Cn ).</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointUnionOf(CN, ([C1,…, Cn ])</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Object Property Axioms </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">subproperty </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SubObjectPropertyOf(P1 P2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P1 rdfs:subPropertyOf &nbsp;P2.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">P1 &lt;&lt; P2</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:111px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">property chain inclusion </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:111px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SubObjectPropertyOf(ObjectPropertyChain(P1 … Pn) P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P owl:propertyChainAxiom (P1 … Pn).</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:111px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_ PropertyChain([P1, P2, …,Pn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:37px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">property domain </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:37px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyDomain(P C) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdfs:domain C.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:37px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">C[P*=&gt;rdfs#Resource]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">property range </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyRange(P C) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdfs:range C.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">equivalent properties </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">EquivalentObjectProperties(P1 … Pn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">Pj owl:equivalentProperty Pj+1. j=1…n-1</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_EquivalentProperties1([P1 … Pn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">disjoint properties </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointObjectProperties(P1 P2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P1 owl:propertyDisjointWith P2.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointProperties(P1 P2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">pairwise disjoint properties </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointObjectProperties(P1 … Pn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:AllDisjointProperties.</span><br>
+<span class="f_TableContent">_:x owl:members ( P1 … Pn ).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointProperties1([P1 … … Pn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">inverse properties </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">InverseObjectProperties(P1 P2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P1 owl:inverseOf P2.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing[P1{inverseOf(P2)*=&gt;()]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">functional property </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">FunctionalObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:FunctionalProperty.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing[P{0:1}*=&gt;()]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">inverse functional property </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">InverseFunctionalObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:InverseFunctionalProperty.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing[P{inverseFunctional}*=&gt;()]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">reflexive property </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ReflexiveObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:ReflexiveProperty.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Not supported, since not supported in OWL RL</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">irreflexive property </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">IrreflexiveObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:IrreflexiveProperty.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing [P {irreflexive} *=&gt; ()].</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">symmetric property </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SymmetricObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:SymmetricProperty.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing [P {symmetric} *=&gt; ()].</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">asymmetric property </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">AsymmetricObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:AsymmetricProperty.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing [P {asymmetric} *=&gt; ()].</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">transitive property</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">TransitiveObjectProperty(P) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">P rdf:type owl:TransitiveProperty.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing [P {transitive} *=&gt; ()].</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Data Property Axioms </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">subproperty </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SubDataPropertyOf(R1 R2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">R1 rdfs:subPropertyOf R2.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">R1 &lt;&lt; R2</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">property domain </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataPropertyDomain(R C) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">R rdfs:domain C.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">C[R*=&gt;rdfs#Resource]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">property range</span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataPropertyRange(R D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">R rdfs:range D.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">owl#Thing[R*=&gt;D]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">equivalent properties</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">EquivalentDataProperties(R1 R2) </span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_EquivalentProperties(R1,R2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">equivalent properties </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">EquivalentDataProperties(R1 … Rn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">Rj owl:equivalentProperty Rj+1. j=1…n-1</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_EquivalentProperties1([R1 … Rn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">disjoint properties </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointDataProperties(R1 R2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">R1 owl:propertyDisjointWith R2.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointProperties(R1 R2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">pairwise disjoint properties </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DisjointDataProperties(R1 … Rn) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:AllDisjointProperties.</span><br>
+<span class="f_TableContent">_:x owl:members ( R1 … Rn ).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DisjointProperties1([R1 … … Rn])</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">functional property </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">FunctionalDataProperty(R) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">R rdf:type owl:FunctionalProperty.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Datatype Definitions </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">datatype definition </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DatatypeDefinition(DN D) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">DN owl:equivalentClass D.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DatatypeDefinition(DN, D)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Assertions </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="213" bgcolor="#c9c9c9" style="width:213px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#c9c9c9" style="width:232px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">individual equality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">SameIndividual(a1 … an) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">aj owl:sameAs aj+1. j=1…n-1</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_SameIndividual(a1, a2)</span></p>
+<p class="p_TableContent"><span class="f_TableContent">_SameIndividual1([a1 … an]) </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">individual inequality </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DifferentIndividuals(a1 a2) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">a1 owl:differentFrom a2.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:37px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DifferentIndividuals(a1, a2)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">pairwise individual inequality </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DifferentIndividuals(a1 … an) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:AllDifferent.</span><br>
+<span class="f_TableContent">_:x owl:members (a1 … an).</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_DifferentIndividuals1([a1 … an]) </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class assertion </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ClassAssertion(C a) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">a rdf:type C.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">a:C</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">positive object property assertion </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">ObjectPropertyAssertion( PN a1 a2 ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">a1 PN a2.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">a1[PN -&gt;a2]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:61px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">positive data property assertion </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:61px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DataPropertyAssertion( R a v )</span></p>
+<p class="p_TableContent"><span class="f_TableContent">a R v.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:61px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">a[R -&gt;v]</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">negative object property assertion </span></p>
+</td>
+<td valign="top" width="213" style="width:213px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">NegativeObjectPropertyAssertion(P a1 a2 ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:NegativePropertyAssertion.</span><br>
+<span class="f_TableContent">_:x owl:sourceIndividual a1.</span><br>
+<span class="f_TableContent">_:x owl:assertionProperty P.</span><br>
+<span class="f_TableContent">_:x owl:targetIndividual a2.</span></p>
+</td>
+<td valign="top" width="232" style="width:232px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_NegativePropertyAssertion(P, a1, a2 )</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">negative data property assertion </span></p>
+</td>
+<td valign="top" width="213" bgcolor="#ffffff" style="width:213px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">NegativeDataPropertyAssertion(R a v ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">_:x rdf:type owl:NegativePropertyAssertion.</span><br>
+<span class="f_TableContent">_:x owl:sourceIndividual a.</span><br>
+<span class="f_TableContent">_:x owl:assertionProperty R.</span><br>
+<span class="f_TableContent">_:x owl:targetValue v.</span></p>
+</td>
+<td valign="top" width="232" bgcolor="#ffffff" style="width:232px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_NegativePropertyAssertion(R, a, v )</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Keys </span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:53px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="203" bgcolor="#c9c9c9" style="width:203px; height:53px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="241" bgcolor="#c9c9c9" style="width:241px; height:53px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:65px; border: solid 1px #c9c9c9;"><p style="line-height: 1.15; margin: 0px 0px 13px 0px;"><span style="font-size: 10pt; font-family: 'Arial';">Key </span></p>
+</td>
+<td valign="top" width="203" style="width:203px; height:65px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">HasKey(C (P1 … Pm) (R1 … Rn) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">C owl:hasKey (P1 … Pm R1 … Rn). </span><br>
+<span class="f_TableContent">m+n&gt;0</span></p>
+</td>
+<td valign="top" width="241" style="width:241px; height:65px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">_HasKey(C, [P1,..,Pm, R1 … Rn] )</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading3"><span class="f_Heading3">Declarations</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 3px 0px;"><table cellspacing="0" cellpadding="2" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#c9c9c9" style="width:97px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">Language Feature</span></p>
+</td>
+<td valign="top" width="203" bgcolor="#c9c9c9" style="width:203px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">OWL2 Functional Syntax</span></p>
+<p class="p_Table_Heading"><span class="f_Table_Heading">RDF Syntax</span></p>
+</td>
+<td valign="top" width="241" bgcolor="#c9c9c9" style="width:241px; height:51px; background-color:#c9c9c9; border: solid 1px #c9c9c9;"><p class="p_Table_Heading"><span class="f_Table_Heading">ObjectLogic Syntax</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">class </span></p>
+</td>
+<td valign="top" width="203" style="width:203px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Declaration( Class( CN ) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">CN rdf:type owl:Class.</span></p>
+</td>
+<td valign="top" width="241" style="width:241px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">CN[].</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">datatype </span></p>
+</td>
+<td valign="top" width="203" bgcolor="#ffffff" style="width:203px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Declaration( Datatype( DN ) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">DN rdf:type rdfs:Datatype.</span></p>
+</td>
+<td valign="top" width="241" bgcolor="#ffffff" style="width:241px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">DN:owl#DatatypeProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">object property </span></p>
+</td>
+<td valign="top" width="203" style="width:203px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Declaration( ObjectProperty( PN ) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">PN rdf:type owl:ObjectProperty.</span></p>
+</td>
+<td valign="top" width="241" style="width:241px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">PN:owl#ObjectProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">data property </span></p>
+</td>
+<td valign="top" width="203" bgcolor="#ffffff" style="width:203px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Declaration( DataProperty( R ) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">R rdf:type owl:DatatypeProperty.</span></p>
+</td>
+<td valign="top" width="241" bgcolor="#ffffff" style="width:241px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">R:owl#DataProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" style="width:97px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">annotation property </span></p>
+</td>
+<td valign="top" width="203" style="width:203px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Declaration( AnnotationProperty( A ) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">&nbsp;</span></p>
+<p class="p_TableContent"><span class="f_TableContent">A rdf:type owl:AnnotationProperty.</span></p>
+</td>
+<td valign="top" width="241" style="width:241px; height:34px; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">A:owl#AnnotationProperty</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="97" bgcolor="#ffffff" style="width:97px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">named individual </span></p>
+</td>
+<td valign="top" width="203" bgcolor="#ffffff" style="width:203px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">Declaration( NamedIndividual( aN ) ) </span></p>
+<p class="p_TableContent"><span class="f_TableContent">aN rdf:type owl:NamedIndividual.</span></p>
+</td>
+<td valign="top" width="241" bgcolor="#ffffff" style="width:241px; height:34px; background-color:#ffffff; border: solid 1px #c9c9c9;"><p class="p_TableContent"><span class="f_TableContent">aN: owl:NamedIndividual</span></p>
+</td>
+</tr>
+</table>
+</div>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/ontology_transformation.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:07 GMT -->
+</html>

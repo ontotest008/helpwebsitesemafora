@@ -1,0 +1,236 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/provenance_option_for_queries.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:57 GMT -->
+<head> 
+   <title> Provenance Option for Queries: connectorprovenance </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index83ef.html?provenance_option_for_queries.htm"; }
+  else { parent.quicksync('a3.8.1.1.15'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="add_an_evaluation_method.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="query_option_explain.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="query_languages_for_f_logic_on.htm">Query Languages for ObjectLogic</a> &gt; <a href="f_logic.htm">ObjectLogic</a> &gt; <a href="query_options.htm">Query Options</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="query_languages_for_f_logic_on.htm">Query Languages for ObjectLogic</a> &gt; <a href="f_logic.htm">ObjectLogic</a> &gt; <a href="query_options.htm">Query Options</a> 
+     <a href="add_an_evaluation_method.htm">add_an_evaluation_method.htm</a>&nbsp;/&nbsp;
+     provenance_option_for_queries.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Provenance Option for Queries: connectorprovenance</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>This option for queries returns provenance information on how the answers depend on the facts in connected information sources. A list of such provenance information is given for each answer. This list provides the access literals and the variable substitutions for these access literals. Let’s have a look at a simple example.The following query requests the employee id and the last name of employees in the “Employees” table of the database "data:1433_Northwind_test"</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?- _dbaccessuser("dbo"."Employees","F"("EmployeeID",?VAR1,"LastName",?VAR2),"data:1433_Northwind_test").</span></p>
+<p> We get ansers like</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?VAR1= 1, ?VAR2 = "Davolio ",</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?VAR1= 9, ?VAR2 = "Dodsworth",</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">?VAR1= 8, ?VAR2 = "Callahan"</span></p>
+<p> If we add the connector provenance option to the query:</p>
+<p class="p_CodeExample"><span class="f_CodeExample">@{options[connectorprovenance(?Z)]} ?- _dbaccessuser("dbo"."Employees","F"("EmployeeID",?VAR1,"LastName",?VAR2),"data:1433_Northwind_test").</span></p>
+<p> We get the variable ?Z bound to a list of instantiations of the _dbaccessuser predicate: </p>
+<p class="p_CodeExample"><span class="f_CodeExample">?VAR1= 1, ?VAR2 = "Callahan", ?Z = [_dbaccessuser("dbo"."Employees","F"("EmployeeID",1,"LastName",”Davolio”),"data:1433_Northwind_test")] ?VAR1= 9, ?VAR2 = "Dodsworth", ?Z = [_dbaccessuser("dbo"."Employees","F"("EmployeeID",9,"LastName","Dodsworth"),"data:1433_Northwind_test")]</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">?VAR1= 8, ?VAR2 = "Callahan", ?Z = [_dbaccessuser("dbo"."Employees","F"("EmployeeID",8,"LastName","Callahan"),"data:1433_Northwind_test")]</span></p>
+<p>Indicating that id = 1, last name = "Callahan", id = 9, last name = "Dodsworth", and id = 8, last name = "Callahan" has been found in the database which lead to our answers.</p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/provenance_option_for_queries.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:08:58 GMT -->
+</html>

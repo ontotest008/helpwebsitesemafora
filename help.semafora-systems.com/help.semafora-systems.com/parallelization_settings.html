@@ -1,0 +1,240 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/parallelization_settings.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:27 GMT -->
+<head> 
+   <title> Parallelization Settings </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content="multiple CPUs"> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="indexedcb.html?parallelization_settings.htm"; }
+  else { parent.quicksync('a3.15.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="configuration_gui.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="genetic_optimizer.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; <a href="configuring_ontobroker.htm">Configuring OntoBroker</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; <a href="configuring_ontobroker.htm">Configuring OntoBroker</a> 
+     <a href="configuration_gui.htm">configuration_gui.htm</a>&nbsp;/&nbsp;
+     parallelization_settings.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">Parallelization Settings</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>OntoBroker can use multiple CPUs for processing executing server commands, for loading ontologies, and for parallelizing evaluation of a query. Each of these three areas can be configured separately using configuration switches.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.ServerCommands = &lt;on | off&gt; &nbsp;  </span></p>
+<p>If this switch is on, OntoBroker can process multiple server commands (e.g. queries) from clients at the same time.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.ServerCommands.MaxThreads = &lt;integer|auto&gt;  </span></p>
+<p>This switch determines the maximum number of threads used for parallelizing server commands (only if Parallelize.ServerCommands = on). The default value is "auto", i.e. automatic configuration depending on the number of available CPUs (cores). </p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.Loader = &lt;on | off&gt; &nbsp;  </span></p>
+<p>This switch controls the loading of multiple ontologies. If it is turned on, OntoBroker can load multiple ontology files on a parallel basis. For persistent storages (e.g. H2), this feature is always turned off automatically, as it has a negative impact on performance.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.Loader.MaxThreads = &lt;integer|auto&gt;  </span></p>
+<p>This switch sets the maximum number of threads used for loading ontology files. </p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.Reasoner = on | off &nbsp; &nbsp;  </span></p>
+<p>This switch controls the evaluation of queries. If it is turned on, the evaluation of a query may be distributed on multiple threads wherever possible.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.Reasoner.MaxThreads = &lt;integer|auto&gt; &nbsp; </span></p>
+<p>This switch determines the overall number of threads available for executing query evaluation tasks.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.Reasoner.Connectors.MaxThreads = &lt;integer|auto&gt;  </span></p>
+<p>This switch determines how many threads are available for connectors. Every connector call is processed in a seperate thread. As connectors communicate with external resources, this switch controls the load OntoBroker can produce on these resources.</p>
+<p>Some evaluation methods support two types of parallelization: operatornet parallelization (this is the OntoConfig switch "Parallelize.Reasoner") and join-level parallelization. For the latter there is now an explicit switch.</p>
+<p class="p_CodeExample"><span class="f_CodeExample">Parallelize.Joins = on | off Parallelize.Joins.MaxThreads = &lt;integer&gt; | auto</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/parallelization_settings.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:10:27 GMT -->
+</html>

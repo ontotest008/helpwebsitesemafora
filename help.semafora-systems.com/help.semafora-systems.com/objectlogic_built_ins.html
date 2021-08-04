@@ -1,0 +1,468 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+
+<!-- Mirrored from help.semafora-systems.com/objectlogic_built_ins.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:14 GMT -->
+<head> 
+   <title> ObjectLogic Built-ins </title> 
+   <meta name="generator" content="Help & Manual"> 
+   <meta name="keywords" content=""> 
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet"> 
+
+<!-- non-scrolling headers for CHM and Webhelp--> 
+<style type="text/css" media="screen"> 
+<!-- 
+   body { 
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+      background: #FFFFFF; 
+   } 
+
+   /* Set the padding in the OUTER div for MSIE and CHM to prevent the 
+      width bug and the horizontal scrollbar bug from activating. */ 
+
+  #idcontent {    
+      width: 100%; 
+      padding: 0px !important; 
+      padding: 10px 15px 5px 10px; 
+   } 
+
+/* Set the padding in the INNER div for all other browsers. */ 
+
+  #innerdiv {    
+      padding: 10px 5px 5px 10px !important;  
+      padding: 0px; 
+   } 
+
+         /* These styles are for the header, the print link 
+         and the navigation links. Change .topichead padding
+         to 5px 5px 0px 5px if you use the Print Topic link.  */
+
+    .topichead {
+       padding: 5px;
+    }
+    
+    .navlinks {
+      font-size: 10pt;
+    }
+    .navlinks a {
+      text-decoration: underline;
+      color: black;
+    }
+    .navlinks a:visited {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navlinks a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    /* These styles are dynamically assigned with Javascript. 
+    Since the media type is "screen", they do not apply for print */ 
+
+   html.nonscroll { 
+      overflow:hidden; 
+   } 
+   body.nonscroll {    
+      overflow:hidden; 
+      height:100%; 
+   } 
+   div.nonscroll { 
+      overflow:auto; 
+   } 
+   --> 
+   </style> 
+
+ <style TYPE="text/css" media="print">
+   <!--
+
+     /* Hide navigation links and add space between header and
+      text in the printed version. DON'T change this instance for
+     adding the Print Topic link, you need the instance further up! */
+
+     #idnav { display:none;	}
+     .topichead { padding: 5px 5px 20px 5px; }
+   -->
+   </style>
+
+<!-- NS-Header and page initialization -->
+<script type="text/javascript"> 
+<!--
+function pageOffset(win)
+{
+    if(!win) win = window;
+    var pos = {left:0,top:0};
+
+    if(typeof win.pageXOffset != 'undefined')
+    {
+         // Mozilla/Netscape
+         pos.left = win.pageXOffset;
+         pos.top = win.pageYOffset;
+    }
+    else
+    {
+         var obj = (win.document.compatMode && win.document.compatMode == "CSS1Compat") ?
+         win.document.documentElement : win.document.body || null;
+
+         pos.left = obj.scrollLeft;
+         pos.top = obj.scrollTop;
+    }
+    return pos;
+}
+
+   function doResize() { 
+     var clheight, headheight;
+     if (self.innerHeight) // all except Explorer 
+     { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+     { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+     { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+      function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       aTop = pageOffset.top; //document.getElementById('body').scrollTop; 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+       if (contentbody.scrollTo) { contentbody.scrollTo(aTop,0); }
+      } 
+   } 
+-->
+   </script> 
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index0c61.html?objectlogic_built_ins.htm"; }
+  else { parent.quicksync('a3.22.4.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head> 
+
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div> 
+<div id="idheader"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"; alink="black">
+  
+  <tr valign="middle">
+    <td width="10px">&nbsp;</td>
+    <td align="left"> <span style="font-size: 9pt"> 
+     <a href="information_about__queryindex_.html"><img src="previous.gif" border=0 alt="Previous topic"></a>&nbsp;  
+      <a href="about_the_ontoprise_helpsystem.html"><img src="top.gif" border=0 alt="Top" style="padding-top:5px"></a>&nbsp;
+     <a href="general_syntactic_changes.html"><img src="next.gif" border=0 alt="Next topic"></a>
+     <!--IF_TOPIC_BREADCRUMBS>OntoBroker 6.1 &gt; Appendix &gt; <a href="built_ins_new.htm">Built-ins</a> > <%TOPIC_HEADER_TEXT%--></span>
+    </td>
+
+     <!--td align="left"> <span style="font-size: 9pt"> 
+     OntoBroker 6.1 &gt; Appendix &gt; <a href="built_ins_new.htm">Built-ins</a> 
+     <a href="information_about__queryindex_.htm">information_about__queryindex_.htm</a>&nbsp;/&nbsp;
+     objectlogic_built_ins.htm
+    </td-->
+
+    <td align="right"> <span style="font-size: 9pt"> 
+     
+     &nbsp;<a href="javascript: print();"><img src="print.gif" border="0" style="padding-top:5px; padding-right:5px" alt="Print this Topic" title="Print this Topic"></a>
+     
+     </span>
+    </td>
+  </tr>
+  
+  <tr valign="middle" style="padding-top:10px">
+    <td width="10px">&nbsp;</td>
+    <td width="70%" align="left" style="border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#CECECE"><p class="p_Heading1"><span class="f_Heading1">ObjectLogic Built-ins</span></p>
+</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+</table>
+</div> 
+
+<div id="idcontent"><div id="innerdiv"> 
+<p>The descriptions of all of the Built-ins include <span style="font-style: italic;">arity, signatures</span> (which indicate the type of the arguments), <span style="font-style: italic;">bindings</span> (where <span style="font-size: 10pt; font-family: 'Arial';">f</span> means that the argument must be free and <span style="font-size: 10pt; font-family: 'Arial';">b</span> that it must be bound), plain English <span style="font-style: italic;">description,</span> and <span style="font-style: italic;">examples.</span> The abbreviations for the various types mentioned in the signatures are as follows: </p>
+<p class="p_Heading2"><span class="f_Heading2">Comparisons </span><br>
+== </p>
+<p class="p_Heading3"><span class="f_Heading3">Arity: 2 </span></p>
+<p>Signatures: various datatypes possible <br>
+Bindings: bb, bf, fb, ff <br>
+Description: </p>
+<p>True if argument 2 can be obtained from argument 1 by variable renaming. </p>
+<p>Examples: </p>
+<p>?X==?Y </p>
+<p>= </p>
+<p class="p_Heading3"><span class="f_Heading3">Arity: 2 </span></p>
+<p>Signatures: various datatypes possible <br>
+Bindings: ff, fb, bf, bb <br>
+Description: </p>
+<p>Argument 1 unifies with argument 2. </p>
+<p>Examples: </p>
+<p>?X=?Y <br>
+?X=5 </p>
+<p>!= </p>
+<p class="p_Heading3"><span class="f_Heading3">Arity: 2 </span></p>
+<p>Signatures: various datatypes possible  <br>
+Bindings: ff, fb, bf, bb <br>
+Description: </p>
+<p>Argument 1 does not unify with argument 2. </p>
+<p>Examples: </p>
+<p>?X!=?Y </p>
+<p class="p_Heading2"><span class="f_Heading2">Basic Mathematical Built-ins</span></p>
+<p class="p_Heading3"><span class="f_Heading3">_multiply </span></p>
+<p>Arity: 3 <br>
+Signatures: =&gt;(_number,_number,_number) <br>
+The arguments can be any number of a supported numeric data type. Conversion rules apply.<br>
+Bindings: fbb, bfb, bbf, <br>
+&nbsp;<br>
+Description: </p>
+<p>Multiplies the numbers in arguments 1 and 3. Binds the result to argument 3. </p>
+<p>Examples: </p>
+<p>_multiply(2,3,?X) </p>
+<p class="p_Heading3"><span class="f_Heading3">_add </span></p>
+<p>Arity: 3 <br>
+Signatures: =&gt;(_number,_number,_number) <br>
+The arguments can be any number of a supported numeric data type. Conversion rules apply. <br>
+Bindings: fbb, bfb, bbf, bbb <br>
+Description: </p>
+<p>Adds the numbers in arguments 1 and 2. Binds argument 3 to the result. </p>
+<p>Examples: </p>
+<p>_add(1,?X,5) </p>
+<p class="p_Heading3"><span class="f_Heading3">_abs </span></p>
+<p>Arity: 2 <br>
+Signatures: =&gt;(_number,_number,_number) <br>
+The arguments can be any number of a supported numeric data type. Conversion rules apply.<br>
+Bindings: bf, fb, bb <br>
+Description: </p>
+<p>Binds argument 2 to the absolute value of argument 1. </p>
+<p>Examples: </p>
+<p>_abs(-1,?X) </p>
+<p class="p_Heading2"><span class="f_Heading2">Basic Mathematical Functions</span><br>
+These are basic mathematical functions are available in is-statements, e.g. ?X is (?Y+3/?Z+5)*sin(?Z) which means that the value of the expression on the right is assigned to variable ?X. Note that functions are not prefixed with an underscore '_'. </p>
+<p>mod will just be available for long and int. sin, cos, tan, asin, acos, atan, exp, pow, log and sqrt will just be availabe for double. </p>
+<p class="p_Heading3"><span class="f_Heading3">+ </span></p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Multiplies argument by +1 and returns the result. </p>
+<p>Examples: </p>
+<p>+2 </p>
+<p class="p_Heading3"><span class="f_Heading3">- </span></p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Multiplies argument 1 by -1 and returns the result. </p>
+<p>Examples: </p>
+<p>-2 </p>
+<p class="p_Heading3"><span class="f_Heading3">+</span> </p>
+<p>Arity: 2 <br>
+Signatures: (_number,_number), (_string,string), (_dateTime,_duration,), ( _time,_duration,), &nbsp;(_date,_duration). <br>
+Bindings: bb <br>
+Description: </p>
+<p>Adds the two numbers, strings, or dates/times with duration, and returns the result. </p>
+<p>Examples: </p>
+<p>3+2 </p>
+<p class="p_Heading3"><span class="f_Heading3">- </span></p>
+<p>Arity: 2 <br>
+Signatures: (_number,_number,), (_dateTime,_duration,), &nbsp;(_time,_duration,), (_date,_duration). <br>
+Bindings: bb <br>
+Description: </p>
+<p>Subtracts the two numbers or dates/times with duration, and returns the result. </p>
+<p>Examples: </p>
+<p>3-2 </p>
+<p class="p_Heading3"><span class="f_Heading3">*</span> </p>
+<p>Arity: 2 <br>
+Signatures: _number,_number <br>
+Bindings: bb <br>
+Description: </p>
+<p>Multiplies the two numbers given in arguments 1 and 2 and returns the result. </p>
+<p>Examples: </p>
+<p>3*2 </p>
+<p class="p_Heading3"><span class="f_Heading3">/ </span></p>
+<p>Arity: 2 <br>
+Signatures: _number,_number <br>
+Bindings: bb <br>
+Description: </p>
+<p>Divides the two numbers given in arguments 1 and 2 and returns the result. </p>
+<p>Examples: </p>
+<p>3.2 / 1.1 </p>
+<p class="p_Heading3"><span class="f_Heading3">mod</span> </p>
+<p>Arity: 2 <br>
+Signatures: _integer,_integer <br>
+Bindings: bb <br>
+Description: </p>
+<p>Computes the remainder of the division of the two integers given in arguments 1 and 2 and returns the result. </p>
+<p>Examples: </p>
+<p>5 mod 2 </p>
+<p class="p_Heading3"><span class="f_Heading3">abs</span> </p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the absolute value of the argument. </p>
+<p>Examples: </p>
+<p>abs(-1) </p>
+<p class="p_Heading3"><span class="f_Heading3">max </span></p>
+<p>Arity: 2 <br>
+Signatures: _number,_number <br>
+Bindings: bb <br>
+Description: </p>
+<p>Returns the greater of the values of arguments 1 and 2. </p>
+<p>Examples: </p>
+<p>max(1,2) </p>
+<p class="p_Heading3"><span class="f_Heading3">min</span> </p>
+<p>Arity: 2 <br>
+Signatures: _number,_number <br>
+Bindings: bb <br>
+Description: </p>
+<p>Returns the smaller of the values of arguments 1 and 2. </p>
+<p>Examples: </p>
+<p>min(1,2) </p>
+<p class="p_Heading3"><span class="f_Heading3">round </span></p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the closest integer to the value of argument 1. </p>
+<p>Examples: </p>
+<p>round(2.4) </p>
+<p class="p_Heading3"><span class="f_Heading3">ceil </span></p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the smallest _long or _integer value that is not smaller than the value in argument 1. _integer is returned if the argument is _integer or _decimal. Otherwise, _long is returned. </p>
+<p>Examples: </p>
+<p>ceil(2.3) </p>
+<p class="p_Heading3"><span class="f_Heading3">floor</span> </p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the largest _long or _integer value that is not smaller than the value in argument 1. _integer is returned if the argument is _integer or _decimal. Otherwise, _long is returned. </p>
+<p>Examples: </p>
+<p>floor(2.3) </p>
+<p class="p_Heading3"><span class="f_Heading3">tan </span></p>
+<p>Arity: 1 <br>
+Signatures: _double <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the tangent of the value in argument 1. </p>
+<p>Examples: </p>
+<p>tan(0.8) </p>
+<p class="p_Heading3"><span class="f_Heading3">atan </span></p>
+<p>Arity: 1 <br>
+Signatures: _double <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the arctangent of the value in argument 1. </p>
+<p>Examples: </p>
+<p>atan(8) </p>
+<p><span class="f_Heading3">sin</span> </p>
+<p>Arity: 1 <br>
+Signatures: _double <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the sine of the value in argument 1. </p>
+<p>Examples: </p>
+<p>sin(5) </p>
+<p class="p_Heading3"><span class="f_Heading3">asin </span></p>
+<p>Arity: 1 <br>
+Signatures: _double <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the arcsine of the value in argument 1. </p>
+<p>Examples: </p>
+<p>asin(0.5) </p>
+<p class="p_Heading3"><span class="f_Heading3">cos</span> </p>
+<p>Arity: 1 <br>
+Signatures: _double <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the cosine value of the value in argument 1. </p>
+<p>Examples: </p>
+<p>cos(8) </p>
+<p class="p_Heading3"><span class="f_Heading3">acos</span> </p>
+<p>Arity: 1 <br>
+Signatures: _double <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the arccosine value of the value in argument 1. </p>
+<p>Examples: </p>
+<p>acos(0.8) </p>
+<p class="p_Heading3"><span class="f_Heading3">exp </span></p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the Euler's number raised to the power of the value given in argument 1. </p>
+<p>Examples: </p>
+<p>exp(3) </p>
+<p class="p_Heading3"><span class="f_Heading3">sqrt </span></p>
+<p>Arity: 1 <br>
+Signatures: _number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns the positive square root of a positive number. </p>
+<p>Examples: </p>
+<p>exp(3) </p>
+<p class="p_Heading3"><span class="f_Heading3">log </span></p>
+<p>Arity: 1 <br>
+Signatures: _number,_number <br>
+Bindings: b <br>
+Description: </p>
+<p>Returns natural the logarithm of the value in argument 1. </p>
+<p>Examples: </p>
+<p>log(1) </p>
+<p class="p_Heading3"><span class="f_Heading3">pow </span></p>
+<p>Arity: 3 <br>
+Signatures: _number,_number <br>
+Bindings: bb <br>
+Description: </p>
+<p>Raises argument 1 to the power given in argument 2. </p>
+<p>Examples: </p>
+<p>pow(2,3) </p>
+<p>&nbsp;</p>
+<p><span style="font-size: 8pt;">from the copyright of the web page http://forum.projects.semwebcentral.org/forum-syntax.html</span></p>
+ 
+</div></div> 
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("index.html") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("index.html") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body> 
+
+<!-- Mirrored from help.semafora-systems.com/objectlogic_built_ins.htm by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2019 09:11:14 GMT -->
+</html>
